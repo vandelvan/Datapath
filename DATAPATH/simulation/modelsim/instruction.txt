@@ -1,0 +1,8 @@
+00000010 //Instruccion 1, leer en pos 16 y 17, escribir en pos 0
+00010001 
+00000000 
+00100000 
+00000010 //Instruccion 2, leer en pos 18 y 19, escribir en pos 1
+01010011 
+00001000 
+00100100 

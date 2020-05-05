@@ -1,0 +1,217 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/simulation/modelsim
+vADD
+Z1 !s110 1588702829
+!i10b 1
+!s100 TFG7;8HBQ<@408FU5dFga3
+I]di:D9Qhl>SC?Y^cb3c@d0
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1585872592
+8C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/add.v
+FC:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/add.v
+L0 1
+Z3 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z4 !s108 1588702829.000000
+!s107 C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/add.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH|C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/add.v|
+!i113 1
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH
+Z7 tCvgOpt 0
+n@a@d@d
+vCAND
+Z8 !s110 1588702828
+!i10b 1
+!s100 7RAC1>HHbHd5fH:jiHDP21
+IWhe=c5WF6DKllk_GgP=7g0
+R2
+R0
+w1588191001
+8C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/CAND.v
+FC:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/CAND.v
+L0 1
+R3
+r1
+!s85 0
+31
+Z9 !s108 1588702828.000000
+!s107 C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/CAND.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH|C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/CAND.v|
+!i113 1
+R5
+R6
+R7
+n@c@a@n@d
+vDATAPATH
+R8
+!i10b 1
+!s100 3bX1YI@4FbIVk2U0]@co12
+IYJ2JQKHU]d6L_RTkinUBE2
+R2
+R0
+w1588204673
+8C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v
+FC:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH|C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v|
+!i113 1
+R5
+R6
+R7
+n@d@a@t@a@p@a@t@h
+vDATAPATH_TB
+R1
+!i10b 1
+!s100 7jf7Mgn>R1?UdE[`^7SPJ0
+IlSV_k1jEl3fJNk:fKH0KA2
+R2
+R0
+w1588702818
+8C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH_TB.v
+FC:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH_TB.v
+L0 4
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH|C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH_TB.v|
+!i113 1
+R5
+R6
+R7
+n@d@a@t@a@p@a@t@h_@t@b
+vINST_MEM
+R1
+!i10b 1
+!s100 n_:9EH[7b=8Bd]ZgC>>HK3
+IcKgW28f0<2YlL@_Aeiz@g2
+R2
+R0
+w1587588212
+8C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/inst_mem.v
+FC:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/inst_mem.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/inst_mem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH|C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/inst_mem.v|
+!i113 1
+R5
+R6
+R7
+n@i@n@s@t_@m@e@m
+vMUX1
+R8
+!i10b 1
+!s100 zJO=9`6]17KFijzzQlXOQ2
+I^TZkU4]H7NRRmE=3`e5LM0
+R2
+R0
+w1588203308
+8C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX1.v
+FC:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX1.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH|C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX1.v|
+!i113 1
+R5
+R6
+R7
+n@m@u@x1
+vMUX5
+R8
+!i10b 1
+!s100 T8>W9KdIDHRi>JM3f4VFc3
+I?hAIe<lM17YdXlnk_dzhi2
+R2
+R0
+w1588646134
+8C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX5.v
+FC:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX5.v
+L0 1
+R3
+r1
+!s85 0
+31
+R9
+!s107 C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH|C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX5.v|
+!i113 1
+R5
+R6
+R7
+n@m@u@x5
+vPC
+R1
+!i10b 1
+!s100 [7Kc<cMJHf]kmI8=fDR<i0
+I8^>=1`;K28k^PHY7A;EER0
+R2
+R0
+w1587651787
+8C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/pc.v
+FC:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/pc.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/pc.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH|C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/pc.v|
+!i113 1
+R5
+R6
+R7
+n@p@c
+vREGISTERS
+R1
+!i10b 1
+!s100 5C@39ad=eSPUhBP;GG]<E0
+IY`C08_<96M0EEFjKWjQ3f2
+R2
+R0
+w1587651457
+8C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v
+FC:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v
+L0 1
+R3
+r1
+!s85 0
+31
+R4
+!s107 C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH|C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v|
+!i113 1
+R5
+R6
+R7
+n@r@e@g@i@s@t@e@r@s
