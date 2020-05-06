@@ -8,7 +8,7 @@ always @*
 	begin
 		if(compand)
 		begin
-			pc=add1;
+			pc=add1;//iria ALUresult
 		end
 		else
 		begin
