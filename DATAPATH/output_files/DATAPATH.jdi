@@ -1,8 +1,8 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="455343009c15c9717ba3"/>
+    <hash md5_digest_80b="33647739cb0603baebf8"/>
   </project>
   <file_info>
-    <file device="5M570ZF256C4" path="DATAPATH.sof" usercode="0xFFFFFFFF"/>
+    <file device="5M80ZT100C4" path="DATAPATH.sof" usercode="0xFFFFFFFF"/>
   </file_info>
 </sld_project_info>

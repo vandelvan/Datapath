@@ -14,7 +14,7 @@
 
 
 // 
-// Device: Altera 5M570ZF256C4 Package FBGA256
+// Device: Altera 5M80ZT100C4 Package TQFP100
 // 
 
 // 
@@ -24,7 +24,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "DATAPATH")
-  (DATE "05/04/2020 19:08:25")
+  (DATE "05/06/2020 16:04:33")
   (VENDOR "Altera")
   (PROGRAM "Quartus Prime")
   (VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition")
@@ -33,928 +33,288 @@
 
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[0\]\~I)
+    (INSTANCE pru\[0\]\~I)
     (DELAY
       (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[1\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[2\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[3\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[4\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[5\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[6\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[7\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[8\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[9\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[10\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[11\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[12\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[13\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[14\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[15\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[16\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[17\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[18\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[19\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[20\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[21\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[22\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[23\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[24\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[25\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[26\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[27\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[28\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[29\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[30\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE datos_esc\[31\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (IOPATH padio combout (907:907:907) (907:907:907))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s1\[0\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3214:3214:3214) (3214:3214:3214))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[1\]\~I)
+    (INSTANCE pru\[1\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4882:4882:4882) (4882:4882:4882))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[2\]\~I)
+    (INSTANCE pru\[2\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4705:4705:4705) (4705:4705:4705))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[3\]\~I)
+    (INSTANCE pru\[3\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4668:4668:4668) (4668:4668:4668))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[4\]\~I)
+    (INSTANCE pru\[4\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (5125:5125:5125) (5125:5125:5125))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[5\]\~I)
+    (INSTANCE pru\[5\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (3214:3214:3214) (3214:3214:3214))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[6\]\~I)
+    (INSTANCE pru\[6\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (3219:3219:3219) (3219:3219:3219))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[7\]\~I)
+    (INSTANCE pru\[7\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (3227:3227:3227) (3227:3227:3227))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[8\]\~I)
+    (INSTANCE pru\[8\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4712:4712:4712) (4712:4712:4712))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[9\]\~I)
+    (INSTANCE pru\[9\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4865:4865:4865) (4865:4865:4865))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[10\]\~I)
+    (INSTANCE pru\[10\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (3221:3221:3221) (3221:3221:3221))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[11\]\~I)
+    (INSTANCE pru\[11\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4877:4877:4877) (4877:4877:4877))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[12\]\~I)
+    (INSTANCE pru\[12\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (5106:5106:5106) (5106:5106:5106))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[13\]\~I)
+    (INSTANCE pru\[13\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4747:4747:4747) (4747:4747:4747))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[14\]\~I)
+    (INSTANCE pru\[14\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4283:4283:4283) (4283:4283:4283))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[15\]\~I)
+    (INSTANCE pru\[15\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (3221:3221:3221) (3221:3221:3221))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[16\]\~I)
+    (INSTANCE pru\[16\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4244:4244:4244) (4244:4244:4244))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[17\]\~I)
+    (INSTANCE pru\[17\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4687:4687:4687) (4687:4687:4687))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[18\]\~I)
+    (INSTANCE pru\[18\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (3214:3214:3214) (3214:3214:3214))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[19\]\~I)
+    (INSTANCE pru\[19\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (5179:5179:5179) (5179:5179:5179))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[20\]\~I)
+    (INSTANCE pru\[20\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4687:4687:4687) (4687:4687:4687))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[21\]\~I)
+    (INSTANCE pru\[21\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4697:4697:4697) (4697:4697:4697))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[22\]\~I)
+    (INSTANCE pru\[22\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (3221:3221:3221) (3221:3221:3221))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[23\]\~I)
+    (INSTANCE pru\[23\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (3174:3174:3174) (3174:3174:3174))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[24\]\~I)
+    (INSTANCE pru\[24\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4691:4691:4691) (4691:4691:4691))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[25\]\~I)
+    (INSTANCE pru\[25\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (5197:5197:5197) (5197:5197:5197))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[26\]\~I)
+    (INSTANCE pru\[26\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4668:4668:4668) (4668:4668:4668))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[27\]\~I)
+    (INSTANCE pru\[27\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (5176:5176:5176) (5176:5176:5176))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[28\]\~I)
+    (INSTANCE pru\[28\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4902:4902:4902) (4902:4902:4902))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[29\]\~I)
+    (INSTANCE pru\[29\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4727:4727:4727) (4727:4727:4727))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[30\]\~I)
+    (INSTANCE pru\[30\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (3167:3167:3167) (3167:3167:3167))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )
   )
   (CELL
     (CELLTYPE "maxv_io")
-    (INSTANCE s1\[31\]\~I)
+    (INSTANCE pru\[31\]\~I)
     (DELAY
       (ABSOLUTE
-        (PORT datain (4105:4105:4105) (4105:4105:4105))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[0\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3214:3214:3214) (3214:3214:3214))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[1\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4882:4882:4882) (4882:4882:4882))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[2\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4705:4705:4705) (4705:4705:4705))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[3\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4668:4668:4668) (4668:4668:4668))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[4\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (5125:5125:5125) (5125:5125:5125))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[5\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3214:3214:3214) (3214:3214:3214))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[6\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3219:3219:3219) (3219:3219:3219))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[7\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3227:3227:3227) (3227:3227:3227))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[8\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4712:4712:4712) (4712:4712:4712))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[9\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4865:4865:4865) (4865:4865:4865))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[10\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3221:3221:3221) (3221:3221:3221))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[11\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4877:4877:4877) (4877:4877:4877))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[12\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (5106:5106:5106) (5106:5106:5106))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[13\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4747:4747:4747) (4747:4747:4747))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[14\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3271:3271:3271) (3271:3271:3271))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[15\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3221:3221:3221) (3221:3221:3221))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[16\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4244:4244:4244) (4244:4244:4244))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[17\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4687:4687:4687) (4687:4687:4687))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[18\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3214:3214:3214) (3214:3214:3214))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[19\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (5179:5179:5179) (5179:5179:5179))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[20\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4687:4687:4687) (4687:4687:4687))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[21\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4697:4697:4697) (4697:4697:4697))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[22\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3221:3221:3221) (3221:3221:3221))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[23\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3174:3174:3174) (3174:3174:3174))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[24\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4691:4691:4691) (4691:4691:4691))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[25\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (5197:5197:5197) (5197:5197:5197))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[26\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4668:4668:4668) (4668:4668:4668))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[27\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (5176:5176:5176) (5176:5176:5176))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[28\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4902:4902:4902) (4902:4902:4902))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[29\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (4727:4727:4727) (4727:4727:4727))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[30\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3167:3167:3167) (3167:3167:3167))
-        (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
-      )
-    )
-  )
-  (CELL
-    (CELLTYPE "maxv_io")
-    (INSTANCE s2\[31\]\~I)
-    (DELAY
-      (ABSOLUTE
-        (PORT datain (3247:3247:3247) (3247:3247:3247))
         (IOPATH datain padio (1762:1762:1762) (1762:1762:1762))
       )
     )

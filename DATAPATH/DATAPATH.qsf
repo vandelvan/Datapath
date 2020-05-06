@@ -54,5 +54,12 @@ set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH DATAPATH_TB -se
 set_global_assignment -name EDA_TEST_BENCH_NAME DATAPATH_TB -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DATAPATH_TB
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DATAPATH_TB -section_id DATAPATH_TB
-set_global_assignment -name EDA_TEST_BENCH_FILE DATAPATH_TB.v -section_id DATAPATH_TB
 set_global_assignment -name VERILOG_FILE MUX1.v
+set_global_assignment -name VERILOG_FILE ALU.v
+set_global_assignment -name VERILOG_FILE MUX2.v
+set_global_assignment -name VERILOG_FILE SIGNEXT.v
+set_global_assignment -name EDA_TEST_BENCH_NAME SIGNEXT_TB -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id SIGNEXT_TB
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME SIGNEXT_TB -section_id SIGNEXT_TB
+set_global_assignment -name EDA_TEST_BENCH_FILE DATAPATH_TB.v -section_id DATAPATH_TB
+set_global_assignment -name EDA_TEST_BENCH_FILE SIGNEXT_TB.v -section_id SIGNEXT_TB

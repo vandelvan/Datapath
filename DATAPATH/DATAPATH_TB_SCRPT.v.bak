@@ -1,0 +1,43 @@
+//Archivo de TestBench para verilog basico generado por Veriscript_TB BETA 1.0
+`timescale 1ns/1ns
+
+module DATAPATH_TB();
+    wire [31:0]pru;
+    reg clk=0;
+    reg br;
+    reg regdst;
+    reg enable;
+    reg alusrc;
+    reg [2:0]aluop;
+    DATAPATH DUV(.clk(clk),.br(br),.regdst(regdst),.enable(enable),.alusrc(alusrc),.aluop(aluop),.pru(pru));
+
+    always #1 clk=!clk;
+
+    initial begin
+
+        br=1'd1;
+        regdst=1'd1;
+        enable=1'd1;
+        alusrc=1'd1;
+        aluop=3'd4;
+        #2;
+
+        br=1'd0;
+        regdst=1'd1;
+        enable=1'd0;
+        alusrc=1'd1;
+        aluop=3'd1;
+        #2;
+
+        br=1'd1;
+        regdst=1'd0;
+        enable=1'd0;
+        alusrc=1'd0;
+        aluop=3'd7;
+        #2;
+
+        $stop;
+
+        end
+
+endmodule

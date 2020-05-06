@@ -10,101 +10,141 @@
 # Copying C:/intelFPGA_lite/18.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH {C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX5.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:20:28 on May 05,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH" C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX5.v 
+# Start time: 16:46:09 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v 
 # -- Compiling module MUX5
 # 
 # Top level modules:
 # 	MUX5
-# End time: 13:20:28 on May 05,2020, Elapsed time: 0:00:00
+# End time: 16:46:09 on May 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH {C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/CAND.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/CAND.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:20:28 on May 05,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH" C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/CAND.v 
+# Start time: 16:46:09 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/CAND.v 
 # -- Compiling module CAND
 # 
 # Top level modules:
 # 	CAND
-# End time: 13:20:28 on May 05,2020, Elapsed time: 0:00:00
+# End time: 16:46:09 on May 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH {C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:20:28 on May 05,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH" C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v 
+# Start time: 16:46:09 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v 
 # -- Compiling module DATAPATH
 # 
 # Top level modules:
 # 	DATAPATH
-# End time: 13:20:28 on May 05,2020, Elapsed time: 0:00:00
+# End time: 16:46:09 on May 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH {C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX1.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:20:28 on May 05,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH" C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX1.v 
+# Start time: 16:46:09 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v 
 # -- Compiling module MUX1
 # 
 # Top level modules:
 # 	MUX1
-# End time: 13:20:28 on May 05,2020, Elapsed time: 0:00:00
+# End time: 16:46:09 on May 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH {C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/pc.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/ALU.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:20:29 on May 05,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH" C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/pc.v 
+# Start time: 16:46:09 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 16:46:09 on May 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:46:09 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v 
+# -- Compiling module MUX2
+# 
+# Top level modules:
+# 	MUX2
+# End time: 16:46:09 on May 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:46:09 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v 
+# -- Compiling module SIGNEXT
+# 
+# Top level modules:
+# 	SIGNEXT
+# End time: 16:46:09 on May 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/pc.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:46:09 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/pc.v 
 # -- Compiling module PC
 # 
 # Top level modules:
 # 	PC
-# End time: 13:20:29 on May 05,2020, Elapsed time: 0:00:00
+# End time: 16:46:09 on May 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH {C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/add.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/add.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:20:29 on May 05,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH" C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/add.v 
+# Start time: 16:46:09 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/add.v 
 # -- Compiling module ADD
 # 
 # Top level modules:
 # 	ADD
-# End time: 13:20:29 on May 05,2020, Elapsed time: 0:00:00
+# End time: 16:46:09 on May 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH {C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/inst_mem.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:20:29 on May 05,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH" C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/inst_mem.v 
+# Start time: 16:46:09 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v 
 # -- Compiling module INST_MEM
 # 
 # Top level modules:
 # 	INST_MEM
-# End time: 13:20:29 on May 05,2020, Elapsed time: 0:00:00
+# End time: 16:46:09 on May 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH {C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/registers.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:20:29 on May 05,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH" C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v 
+# Start time: 16:46:09 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/registers.v 
 # -- Compiling module REGISTERS
 # 
 # Top level modules:
 # 	REGISTERS
-# End time: 13:20:29 on May 05,2020, Elapsed time: 0:00:00
+# End time: 16:46:10 on May 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/alucontrol.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 16:46:10 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/alucontrol.v 
+# -- Compiling module ALUCONTROL
+# 
+# Top level modules:
+# 	ALUCONTROL
+# End time: 16:46:10 on May 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH {C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH_TB.v}
+# vlog -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH {C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 13:20:29 on May 05,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH" C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH_TB.v 
+# Start time: 16:46:10 on May 06,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/Gustavo/Datapath/DATAPATH" C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v 
 # -- Compiling module DATAPATH_TB
 # 
 # Top level modules:
 # 	DATAPATH_TB
-# End time: 13:20:29 on May 05,2020, Elapsed time: 0:00:00
+# End time: 16:46:10 on May 06,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs="+acc"  DATAPATH_TB
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs=""+acc"" DATAPATH_TB 
-# Start time: 13:20:29 on May 05,2020
+# Start time: 16:46:10 on May 06,2020
 # Loading work.DATAPATH_TB
 # Loading work.DATAPATH
 # Loading work.PC
@@ -114,6 +154,10 @@
 # Loading work.MUX5
 # Loading work.MUX1
 # Loading work.REGISTERS
+# Loading work.MUX2
+# Loading work.ALU
+# Loading work.SIGNEXT
+# Loading work.ALUCONTROL
 # 
 # add wave *
 # view structure
@@ -121,8 +165,8 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH_TB.v(41)
-#    Time: 5 ns  Iteration: 0  Instance: /DATAPATH_TB
-# Break in Module DATAPATH_TB at C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH_TB.v line 41
-# End time: 13:20:51 on May 05,2020, Elapsed time: 0:00:22
+# ** Note: $stop    : C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v(29)
+#    Time: 6 ns  Iteration: 0  Instance: /DATAPATH_TB
+# Break in Module DATAPATH_TB at C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v line 29
+# End time: 16:46:35 on May 06,2020, Elapsed time: 0:00:25
 # Errors: 0, Warnings: 0

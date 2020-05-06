@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DATAPATH
-Mon May 04 19:08:05 2020
+Wed May 06 16:04:25 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -16,6 +16,7 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   8. General Register Statistics
   9. Port Connectivity Checks: "INST_MEM:p3"
  10. Analysis & Synthesis Messages
+ 11. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -41,13 +42,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon May 04 19:08:05 2020       ;
+; Analysis & Synthesis Status ; Successful - Wed May 06 16:04:25 2020       ;
 ; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name               ; DATAPATH                                    ;
 ; Top-level Entity Name       ; DATAPATH                                    ;
 ; Family                      ; MAX V                                       ;
 ; Total logic elements        ; 0                                           ;
-; Total pins                  ; 101                                         ;
+; Total pins                  ; 40                                          ;
 ; Total virtual pins          ; 0                                           ;
 ; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
 +-----------------------------+---------------------------------------------+
@@ -139,54 +140,54 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                   ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                               ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------+---------+
-; MUX5.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX5.v      ;         ;
-; CAND.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/CAND.v      ;         ;
-; DATAPATH.v                       ; yes             ; User Verilog HDL File        ; C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v  ;         ;
-; MUX1.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX1.v      ;         ;
-; pc.v                             ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/pc.v        ;         ;
-; add.v                            ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/add.v       ;         ;
-; inst_mem.v                       ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/inst_mem.v  ;         ;
-; registers.v                      ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                        ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                    ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------+---------+
+; MUX5.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v       ;         ;
+; CAND.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Gustavo/Datapath/DATAPATH/CAND.v       ;         ;
+; DATAPATH.v                       ; yes             ; User Verilog HDL File        ; C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v   ;         ;
+; MUX1.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v       ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File        ; C:/Users/Gustavo/Datapath/DATAPATH/ALU.v        ;         ;
+; MUX2.v                           ; yes             ; User Verilog HDL File        ; C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v       ;         ;
+; SIGNEXT.v                        ; yes             ; User Verilog HDL File        ; C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v    ;         ;
+; pc.v                             ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/pc.v         ;         ;
+; add.v                            ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/add.v        ;         ;
+; inst_mem.v                       ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v   ;         ;
+; registers.v                      ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/registers.v  ;         ;
+; alucontrol.v                     ; yes             ; Auto-Found Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/alucontrol.v ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Total logic elements                        ; 0            ;
-;     -- Combinational with no register       ; 0            ;
-;     -- Register only                        ; 0            ;
-;     -- Combinational with a register        ; 0            ;
-;                                             ;              ;
-; Logic element usage by number of LUT inputs ;              ;
-;     -- 4 input functions                    ; 0            ;
-;     -- 3 input functions                    ; 0            ;
-;     -- 2 input functions                    ; 0            ;
-;     -- 1 input functions                    ; 0            ;
-;     -- 0 input functions                    ; 0            ;
-;                                             ;              ;
-; Logic elements by mode                      ;              ;
-;     -- normal mode                          ; 0            ;
-;     -- arithmetic mode                      ; 0            ;
-;     -- qfbk mode                            ; 0            ;
-;     -- register cascade mode                ; 0            ;
-;     -- synchronous clear/load mode          ; 0            ;
-;     -- asynchronous clear/load mode         ; 0            ;
-;                                             ;              ;
-; Total registers                             ; 0            ;
-; I/O pins                                    ; 101          ;
-; Maximum fan-out node                        ; datos_esc[0] ;
-; Maximum fan-out                             ; 2            ;
-; Total fan-out                               ; 64           ;
-; Average fan-out                             ; 0.63         ;
-+---------------------------------------------+--------------+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 0     ;
+;     -- Combinational with no register       ; 0     ;
+;     -- Register only                        ; 0     ;
+;     -- Combinational with a register        ; 0     ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 0     ;
+;     -- 3 input functions                    ; 0     ;
+;     -- 2 input functions                    ; 0     ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 0     ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 0     ;
+;     -- asynchronous clear/load mode         ; 0     ;
+;                                             ;       ;
+; Total registers                             ; 0     ;
+; I/O pins                                    ; 40    ;
++---------------------------------------------+-------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -194,7 +195,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
-; |DATAPATH                  ; 0 (0)       ; 0            ; 0          ; 101  ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DATAPATH           ; DATAPATH    ; work         ;
+; |DATAPATH                  ; 0 (0)       ; 0            ; 0          ; 40   ; 0            ; 0 (0)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |DATAPATH           ; DATAPATH    ; work         ;
 +----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -220,7 +221,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; Port          ; Type   ; Severity ; Details                                                                             ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 ; datos[31..26] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; datos[10..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
 +---------------+--------+----------+-------------------------------------------------------------------------------------+
 
 
@@ -230,82 +230,106 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon May 04 19:07:47 2020
+    Info: Processing started: Wed May 06 16:04:08 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DATAPATH -c DATAPATH
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file mux5.v
-    Info (12023): Found entity 1: MUX5 File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX5.v Line: 1
+    Info (12023): Found entity 1: MUX5 File: C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cand.v
-    Info (12023): Found entity 1: CAND File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/CAND.v Line: 1
+    Info (12023): Found entity 1: CAND File: C:/Users/Gustavo/Datapath/DATAPATH/CAND.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
-    Info (12023): Found entity 1: DATAPATH File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 1
+    Info (12023): Found entity 1: DATAPATH File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux1.v
-    Info (12023): Found entity 1: MUX1 File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/MUX1.v Line: 1
+    Info (12023): Found entity 1: MUX1 File: C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file alu.v
+    Info (12023): Found entity 1: ALU File: C:/Users/Gustavo/Datapath/DATAPATH/ALU.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file mux2.v
+    Info (12023): Found entity 1: MUX2 File: C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file signext.v
+    Info (12023): Found entity 1: SIGNEXT File: C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at DATAPATH.v(25): created implicit net for "zf" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 25
 Info (12127): Elaborating entity "DATAPATH" for the top level hierarchy
 Warning (12125): Using design file pc.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: PC File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/pc.v Line: 2
-Info (12128): Elaborating entity "PC" for hierarchy "PC:p1" File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 15
+    Info (12023): Found entity 1: PC File: C:/Users/Gustavo/Datapath/DATAPATH/pc.v Line: 2
+Info (12128): Elaborating entity "PC" for hierarchy "PC:p1" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 22
 Warning (12125): Using design file add.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: ADD File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/add.v Line: 1
-Info (12128): Elaborating entity "ADD" for hierarchy "ADD:p2" File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 16
-Warning (10230): Verilog HDL assignment warning at add.v(10): truncated value with size 32 to match size of target (8) File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/add.v Line: 10
+    Info (12023): Found entity 1: ADD File: C:/Users/Gustavo/Datapath/DATAPATH/add.v Line: 1
+Info (12128): Elaborating entity "ADD" for hierarchy "ADD:p2" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 23
+Warning (10230): Verilog HDL assignment warning at add.v(10): truncated value with size 32 to match size of target (8) File: C:/Users/Gustavo/Datapath/DATAPATH/add.v Line: 10
 Warning (12125): Using design file inst_mem.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: INST_MEM File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/inst_mem.v Line: 2
-Info (12128): Elaborating entity "INST_MEM" for hierarchy "INST_MEM:p3" File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 17
-Warning (10858): Verilog HDL warning at inst_mem.v(6): object MR used but never assigned File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/inst_mem.v Line: 6
-Warning (10030): Net "MR" at inst_mem.v(6) has no driver or initial value, using a default initial value '0' File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/inst_mem.v Line: 6
-Info (12128): Elaborating entity "CAND" for hierarchy "CAND:p4" File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 18
-Info (12128): Elaborating entity "MUX5" for hierarchy "MUX5:p5" File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 19
-Info (12128): Elaborating entity "MUX1" for hierarchy "MUX1:p6" File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 20
+    Info (12023): Found entity 1: INST_MEM File: C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v Line: 2
+Info (12128): Elaborating entity "INST_MEM" for hierarchy "INST_MEM:p3" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 24
+Warning (10858): Verilog HDL warning at inst_mem.v(6): object MR used but never assigned File: C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v Line: 6
+Warning (10030): Net "MR" at inst_mem.v(6) has no driver or initial value, using a default initial value '0' File: C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v Line: 6
+Info (12128): Elaborating entity "CAND" for hierarchy "CAND:p4" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 25
+Info (12128): Elaborating entity "MUX5" for hierarchy "MUX5:p5" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 26
+Info (12128): Elaborating entity "MUX1" for hierarchy "MUX1:p6" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 27
 Warning (12125): Using design file registers.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
-    Info (12023): Found entity 1: REGISTERS File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 1
-Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:p7" File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 21
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~0" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~1" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~2" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~3" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~4" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~5" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~6" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~7" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~8" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~9" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~10" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~11" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~12" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~13" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~14" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~15" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~16" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~17" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~18" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~19" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~20" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~21" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~22" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~23" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~24" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~25" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~26" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~27" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~28" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~29" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~30" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (14026): LATCH primitive "REGISTERS:p7|mem~31" is permanently enabled File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/registers.v Line: 8
-Warning (21074): Design contains 5 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 2
-    Warning (15610): No output dependent on input pin "br" File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 2
-    Warning (15610): No output dependent on input pin "zf" File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 2
-    Warning (15610): No output dependent on input pin "regdst" File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 2
-    Warning (15610): No output dependent on input pin "enable" File: C:/Users/Gustavo/Desktop/SegundoCUCEI/DATAPATH/DATAPATH.v Line: 2
-Info (21057): Implemented 101 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 37 input pins
-    Info (21059): Implemented 64 output pins
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 46 warnings
+    Info (12023): Found entity 1: REGISTERS File: C:/Users/Gustavo/Datapath/DATAPATH/registers.v Line: 1
+Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:p7" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 28
+Info (12128): Elaborating entity "MUX2" for hierarchy "MUX2:p8" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 29
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:p9" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 30
+Info (12128): Elaborating entity "SIGNEXT" for hierarchy "SIGNEXT:p10" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 31
+Warning (12125): Using design file alucontrol.v, which is not specified as a design file for the current project, but contains definitions for 1 design units and 1 entities in project
+    Info (12023): Found entity 1: ALUCONTROL File: C:/Users/Gustavo/Datapath/DATAPATH/alucontrol.v Line: 1
+Info (12128): Elaborating entity "ALUCONTROL" for hierarchy "ALUCONTROL:p11" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 32
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "pru[0]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[1]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[2]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[3]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[4]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[5]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[6]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[7]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[8]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[9]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[10]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[11]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[12]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[13]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[14]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[15]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[16]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[17]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[18]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[19]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[20]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[21]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[22]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[23]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[24]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[25]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[26]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[27]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[28]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[29]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[30]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "pru[31]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 2
+    Warning (15610): No output dependent on input pin "br" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 2
+    Warning (15610): No output dependent on input pin "regdst" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 2
+    Warning (15610): No output dependent on input pin "enable" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 2
+    Warning (15610): No output dependent on input pin "alusrc" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 2
+    Warning (15610): No output dependent on input pin "aluop[0]" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (15610): No output dependent on input pin "aluop[1]" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (15610): No output dependent on input pin "aluop[2]" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+Info (21057): Implemented 40 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 32 output pins
+Info (144001): Generated suppressed messages file C:/Users/Gustavo/Datapath/DATAPATH/output_files/DATAPATH.map.smsg
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 52 warnings
     Info: Peak virtual memory: 4710 megabytes
-    Info: Processing ended: Mon May 04 19:08:05 2020
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:32
+    Info: Processing ended: Wed May 06 16:04:25 2020
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:35
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in C:/Users/Gustavo/Datapath/DATAPATH/output_files/DATAPATH.map.smsg.
 
 
