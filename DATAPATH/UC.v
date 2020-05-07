@@ -1,13 +1,13 @@
 module UC(
 	input [5:0]opcode,
-	output reg regDst,
-	output reg branch,
-	output reg memRead,
-	output reg memtoReg,
-	output reg [1:0]aluOp,
-	output reg memWrite,
-	output reg aluSrc,
-	output reg regWrite
+	output reg regDst,//a MUX1
+	output reg branch,//a CAND
+	output reg memRead,//a dataMemory
+	output reg memtoReg,//a MUX6
+	output reg [1:0]aluOp,//a aluControl
+	output reg memWrite,//a dataMemory
+	output reg aluSrc,// a MUX2
+	output reg regWrite//a registers enable
 );
 
 always @*

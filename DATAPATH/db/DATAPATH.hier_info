@@ -1,36 +1,21 @@
-|UC
-opcode[0] => Equal0.IN5
-opcode[0] => Equal1.IN2
-opcode[0] => Equal2.IN3
-opcode[0] => Equal3.IN5
-opcode[1] => Equal0.IN4
-opcode[1] => Equal1.IN1
-opcode[1] => Equal2.IN2
-opcode[1] => Equal3.IN4
-opcode[2] => Equal0.IN3
-opcode[2] => Equal1.IN5
-opcode[2] => Equal2.IN5
-opcode[2] => Equal3.IN0
-opcode[3] => Equal0.IN2
-opcode[3] => Equal1.IN4
-opcode[3] => Equal2.IN1
-opcode[3] => Equal3.IN3
-opcode[4] => Equal0.IN1
-opcode[4] => Equal1.IN3
-opcode[4] => Equal2.IN4
-opcode[4] => Equal3.IN2
-opcode[5] => Equal0.IN0
-opcode[5] => Equal1.IN0
-opcode[5] => Equal2.IN0
-opcode[5] => Equal3.IN1
-regDst << regDst$latch.DB_MAX_OUTPUT_PORT_TYPE
-branch << branch$latch.DB_MAX_OUTPUT_PORT_TYPE
-memRead << memRead$latch.DB_MAX_OUTPUT_PORT_TYPE
-memtoReg << memtoReg$latch.DB_MAX_OUTPUT_PORT_TYPE
-aluOp[0] << aluOp[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
-aluOp[1] << aluOp[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
-memWrite << memWrite$latch.DB_MAX_OUTPUT_PORT_TYPE
-aluSrc << aluSrc$latch.DB_MAX_OUTPUT_PORT_TYPE
-regWrite << regWrite$latch.DB_MAX_OUTPUT_PORT_TYPE
+|ALUCONTROL
+opf[0] => Decoder0.IN5
+opf[1] => Decoder0.IN4
+opf[2] => Decoder0.IN3
+opf[3] => Decoder0.IN2
+opf[4] => Decoder0.IN1
+opf[5] => Decoder0.IN0
+aluop[0] => Mux0.IN5
+aluop[0] => Mux1.IN5
+aluop[0] => Decoder1.IN1
+aluop[0] => Mux2.IN5
+aluop[1] => Mux0.IN4
+aluop[1] => Mux1.IN4
+aluop[1] => Decoder1.IN0
+aluop[1] => Mux2.IN4
+ops[0] << Mux2.DB_MAX_OUTPUT_PORT_TYPE
+ops[1] << ops.DB_MAX_OUTPUT_PORT_TYPE
+ops[2] << Mux1.DB_MAX_OUTPUT_PORT_TYPE
+ops[3] << Mux0.DB_MAX_OUTPUT_PORT_TYPE
 
 

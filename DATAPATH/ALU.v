@@ -15,7 +15,7 @@ begin
 		4'b0101: res= a * b;
 		4'b0110: res= a - b;
 		4'b1000: res= a / b;
-		4'b1001: res= (a < b);
+		4'b1001: res= (a < b);//slt?
 		4'b1111: res= 32'dx;
 		default: res=32'd0;
 		

@@ -1,11 +1,11 @@
-Fitter Status : Successful - Thu May 07 14:15:37 2020
+Fitter Status : Successful - Thu May 07 16:01:13 2020
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : DATAPATH
-Top-level Entity Name : UC
+Top-level Entity Name : ALUCONTROL
 Family : MAX V
 Device : 5M40ZE64C4
 Timing Models : Final
-Total logic elements : 25 / 40 ( 63 % )
-Total pins : 15 / 54 ( 28 % )
+Total logic elements : 14 / 40 ( 35 % )
+Total pins : 12 / 54 ( 22 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )

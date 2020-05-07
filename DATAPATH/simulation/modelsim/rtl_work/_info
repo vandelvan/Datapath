@@ -8,49 +8,49 @@ z2
 !i10f 100
 cModel Technology
 Z0 dC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/simulation/modelsim
-vUC
-Z1 !s110 1588878962
+vALUCONTROL
+Z1 !s110 1588885307
 !i10b 1
-!s100 346dhM^jzi^52FaWBBf;l2
-IU^7IR3_d]dN3CRAIb;hkG1
+!s100 nEh;6oI@DOk2z9`h4maX03
+IGd7eN0CXYnBZcH10[=R[V0
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1588877667
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v
+w1588885139
+8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/alucontrol.v
+FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/alucontrol.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1588878962.000000
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v|
+Z4 !s108 1588885307.000000
+!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/alucontrol.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/alucontrol.v|
 !i113 1
 Z5 o-vlog01compat -work work
 Z6 !s92 -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH
 Z7 tCvgOpt 0
-n@u@c
-vUC_tb
+n@a@l@u@c@o@n@t@r@o@l
+vALUCONTROL_tb
 R1
 !i10b 1
-!s100 GhM7gh64:Tl0ZM[N^=Z`l0
-Izd=408Mi@f0ckQSf2Ri6F2
+!s100 M98CX<9FPJ[i`3>eo?BVB0
+IB4In8TTcnS@dM0_Nh?4Rm0
 R2
 R0
-w1588878862
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC_tb.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC_tb.v
+w1588884566
+8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL_tb.v
+FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL_tb.v
 L0 2
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC_tb.v|
+!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL_tb.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL_tb.v|
 !i113 1
 R5
 R6
 R7
-n@u@c_tb
+n@a@l@u@c@o@n@t@r@o@l_tb

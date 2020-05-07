@@ -1,0 +1,5 @@
+module ALUCONTROL_tb(
+	input [5:0] opf,//func
+	input [1:0] aluop,
+	output reg [3:0] ops//selector de la alu
+);
