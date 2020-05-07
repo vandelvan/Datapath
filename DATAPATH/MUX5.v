@@ -1,6 +1,7 @@
 module MUX5(
-	input [7:0] add1,
-	input compand,
+	input [7:0] add1,//vienen del suma+4
+	input [7:0] aluResult,
+	input compand,//resultado compuerta and
 	output reg [7:0] pc
 );
 
@@ -8,7 +9,7 @@ always @*
 	begin
 		if(compand)
 		begin
-			pc=add1;//iria ALUresult
+			pc=aluResult;
 		end
 		else
 		begin

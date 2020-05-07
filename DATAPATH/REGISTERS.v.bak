@@ -10,14 +10,15 @@ reg [31:0] mem [0:31];
 
 always @*
 	begin
+		
 		if(enable)
-		begin//se lee y escribe
+		begin
 			mem[wr]=wd;
 			rd1=mem[rr1];
 			rd2=mem[rr2];
 		end
 		else
-		begin//solo se lee
+		begin
 			rd1=mem[rr1];
 			rd2=mem[rr2];
 		end

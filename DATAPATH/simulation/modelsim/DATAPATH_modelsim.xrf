@@ -7,6 +7,7 @@ source_file = 1, C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALU.v
 source_file = 1, C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX2.v
 source_file = 1, C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SIGNEXT.v
 source_file = 1, C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v
+source_file = 1, C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC_tb.v
 source_file = 1, C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/db/DATAPATH.cbx.xml
 design_name = UC
 instance = comp, \opcode[1]~I , opcode[1], UC, 1
