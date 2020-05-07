@@ -58,107 +58,71 @@
  ---------------------------------------------------------------------------------
 
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-CHIP  "DATAPATH"  ASSIGNED TO AN: 5M80ZT100C4
+CHIP  "DATAPATH"  ASSIGNED TO AN: 5M40ZE64C4
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-GND                          : 1         : gnd    :                   :         :           :                
-pru[31]                      : 2         : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 3         :        :                   :         : 1         :                
-pru[4]                       : 4         : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 1         :        :                   :         : 1         :                
+opcode[2]                    : 2         : input  : 3.3-V LVTTL       :         : 1         : N              
+opcode[3]                    : 3         : input  : 3.3-V LVTTL       :         : 1         : N              
+memtoReg                     : 4         : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 5         :        :                   :         : 1         :                
-GND*                         : 6         :        :                   :         : 1         :                
-GND*                         : 7         :        :                   :         : 1         :                
-GND*                         : 8         :        :                   :         : 1         :                
-VCCIO1                       : 9         : power  :                   : 3.3V    : 1         :                
-GND                          : 10        : gnd    :                   :         :           :                
-GND                          : 11        : gnd    :                   :         :           :                
-pru[30]                      : 12        : output : 3.3-V LVTTL       :         : 1         : N              
-VCCINT                       : 13        : power  :                   : 1.8V    :           :                
-GND*                         : 14        :        :                   :         : 1         :                
-GND*                         : 15        :        :                   :         : 1         :                
-pru[19]                      : 16        : output : 3.3-V LVTTL       :         : 1         : N              
-pru[11]                      : 17        : output : 3.3-V LVTTL       :         : 1         : N              
+VCCIO1                       : 6         : power  :                   : 3.3V    : 1         :                
+aluSrc                       : 7         : output : 3.3-V LVTTL       :         : 1         : N              
+VCCINT                       : 8         : power  :                   : 1.8V    :           :                
+aluOp[0]                     : 9         : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 10        :        :                   :         : 1         :                
+GND*                         : 11        :        :                   :         : 1         :                
+GND*                         : 12        :        :                   :         : 1         :                
+GND*                         : 13        :        :                   :         : 1         :                
+TMS                          : 14        : input  :                   :         : 1         :                
+TDI                          : 15        : input  :                   :         : 1         :                
+TCK                          : 16        : input  :                   :         : 1         :                
+TDO                          : 17        : output :                   :         : 1         :                
 GND*                         : 18        :        :                   :         : 1         :                
-GND*                         : 19        :        :                   :         : 1         :                
+branch                       : 19        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 20        :        :                   :         : 1         :                
-pru[15]                      : 21        : output : 3.3-V LVTTL       :         : 1         : N              
-TMS                          : 22        : input  :                   :         : 1         :                
-TDI                          : 23        : input  :                   :         : 1         :                
-TCK                          : 24        : input  :                   :         : 1         :                
-TDO                          : 25        : output :                   :         : 1         :                
-pru[16]                      : 26        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 27        :        :                   :         : 1         :                
+GND*                         : 21        :        :                   :         : 1         :                
+GND*                         : 22        :        :                   :         : 1         :                
+VCCIO1                       : 23        : power  :                   : 3.3V    : 1         :                
+GND*                         : 24        :        :                   :         : 1         :                
+GND*                         : 25        :        :                   :         : 1         :                
+memWrite                     : 26        : output : 3.3-V LVTTL       :         : 1         : N              
+memRead                      : 27        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 28        :        :                   :         : 1         :                
-pru[12]                      : 29        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 29        :        :                   :         : 1         :                
 GND*                         : 30        :        :                   :         : 1         :                
-VCCIO1                       : 31        : power  :                   : 3.3V    : 1         :                
-GND                          : 32        : gnd    :                   :         :           :                
+GND*                         : 31        :        :                   :         : 1         :                
+GND*                         : 32        :        :                   :         : 1         :                
 GND*                         : 33        :        :                   :         : 1         :                
-GND*                         : 34        :        :                   :         : 1         :                
-GND*                         : 35        :        :                   :         : 1         :                
-pru[0]                       : 36        : output : 3.3-V LVTTL       :         : 1         : N              
-pru[13]                      : 37        : output : 3.3-V LVTTL       :         : 1         : N              
-clk                          : 38        : input  : 3.3-V LVTTL       :         : 1         : N              
-pru[27]                      : 39        : output : 3.3-V LVTTL       :         : 1         : N              
-pru[22]                      : 40        : output : 3.3-V LVTTL       :         : 1         : N              
-pru[6]                       : 41        : output : 3.3-V LVTTL       :         : 1         : N              
-pru[20]                      : 42        : output : 3.3-V LVTTL       :         : 1         : N              
-aluop[2]                     : 43        : input  : 3.3-V LVTTL       :         : 1         : N              
-regdst                       : 44        : input  : 3.3-V LVTTL       :         : 1         : N              
-VCCIO1                       : 45        : power  :                   : 3.3V    : 1         :                
-GND                          : 46        : gnd    :                   :         :           :                
-pru[10]                      : 47        : output : 3.3-V LVTTL       :         : 1         : N              
-pru[25]                      : 48        : output : 3.3-V LVTTL       :         : 1         : N              
-pru[9]                       : 49        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 50        :        :                   :         : 1         :                
-GND*                         : 51        :        :                   :         : 1         :                
-pru[3]                       : 52        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 34        :        :                   :         : 2         :                
+GND*                         : 35        :        :                   :         : 2         :                
+GND*                         : 36        :        :                   :         : 2         :                
+GND*                         : 37        :        :                   :         : 2         :                
+aluOp[1]                     : 38        : output : 3.3-V LVTTL       :         : 2         : N              
+VCCIO2                       : 39        : power  :                   : 3.3V    : 2         :                
+GND*                         : 40        :        :                   :         : 2         :                
+VCCINT                       : 41        : power  :                   : 1.8V    :           :                
+opcode[4]                    : 42        : input  : 3.3-V LVTTL       :         : 2         : N              
+regWrite                     : 43        : output : 3.3-V LVTTL       :         : 2         : N              
+regDst                       : 44        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 45        :        :                   :         : 2         :                
+GND*                         : 46        :        :                   :         : 2         :                
+GND*                         : 47        :        :                   :         : 2         :                
+GND*                         : 48        :        :                   :         : 2         :                
+GND*                         : 49        :        :                   :         : 2         :                
+GND*                         : 50        :        :                   :         : 2         :                
+GND*                         : 51        :        :                   :         : 2         :                
+GND*                         : 52        :        :                   :         : 2         :                
 GND*                         : 53        :        :                   :         : 2         :                
-pru[29]                      : 54        : output : 3.3-V LVTTL       :         : 2         : N              
-enable                       : 55        : input  : 3.3-V LVTTL       :         : 2         : N              
-br                           : 56        : input  : 3.3-V LVTTL       :         : 2         : N              
-pru[1]                       : 57        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 58        :        :                   :         : 2         :                
-VCCIO2                       : 59        : power  :                   : 3.3V    : 2         :                
-GND                          : 60        : gnd    :                   :         :           :                
-GND*                         : 61        :        :                   :         : 2         :                
-GND*                         : 62        :        :                   :         : 2         :                
-VCCINT                       : 63        : power  :                   : 1.8V    :           :                
-GND*                         : 64        :        :                   :         : 2         :                
-GND                          : 65        : gnd    :                   :         :           :                
-pru[23]                      : 66        : output : 3.3-V LVTTL       :         : 2         : N              
-aluop[1]                     : 67        : input  : 3.3-V LVTTL       :         : 2         : N              
-pru[7]                       : 68        : output : 3.3-V LVTTL       :         : 2         : N              
-pru[5]                       : 69        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 70        :        :                   :         : 2         :                
-pru[14]                      : 71        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 72        :        :                   :         : 2         :                
-pru[26]                      : 73        : output : 3.3-V LVTTL       :         : 2         : N              
-pru[21]                      : 74        : output : 3.3-V LVTTL       :         : 2         : N              
-alusrc                       : 75        : input  : 3.3-V LVTTL       :         : 2         : N              
-pru[24]                      : 76        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 77        :        :                   :         : 2         :                
-pru[8]                       : 78        : output : 3.3-V LVTTL       :         : 2         : N              
-GND                          : 79        : gnd    :                   :         :           :                
-VCCIO2                       : 80        : power  :                   : 3.3V    : 2         :                
-GND*                         : 81        :        :                   :         : 2         :                
-GND*                         : 82        :        :                   :         : 2         :                
-GND*                         : 83        :        :                   :         : 2         :                
-GND*                         : 84        :        :                   :         : 2         :                
-GND*                         : 85        :        :                   :         : 2         :                
-GND*                         : 86        :        :                   :         : 2         :                
-pru[17]                      : 87        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 88        :        :                   :         : 2         :                
-pru[2]                       : 89        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 90        :        :                   :         : 2         :                
-GND*                         : 91        :        :                   :         : 2         :                
-GND*                         : 92        :        :                   :         : 2         :                
-GND                          : 93        : gnd    :                   :         :           :                
-VCCIO2                       : 94        : power  :                   : 3.3V    : 2         :                
-GND*                         : 95        :        :                   :         : 2         :                
-pru[18]                      : 96        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 97        :        :                   :         : 2         :                
-pru[28]                      : 98        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 99        :        :                   :         : 2         :                
-aluop[0]                     : 100       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 54        :        :                   :         : 2         :                
+GND*                         : 55        :        :                   :         : 2         :                
+GND*                         : 56        :        :                   :         : 2         :                
+VCCIO2                       : 57        : power  :                   : 3.3V    : 2         :                
+opcode[0]                    : 58        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 59        :        :                   :         : 2         :                
+GND*                         : 60        :        :                   :         : 2         :                
+opcode[5]                    : 61        : input  : 3.3-V LVTTL       :         : 2         : N              
+opcode[1]                    : 62        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 63        :        :                   :         : 2         :                
+GND*                         : 64        :        :                   :         : 1         :                

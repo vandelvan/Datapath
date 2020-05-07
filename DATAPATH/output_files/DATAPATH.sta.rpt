@@ -1,5 +1,5 @@
 Timing Analyzer report for DATAPATH
-Wed May 06 16:04:31 2020
+Thu May 07 09:33:40 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -20,7 +20,11 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
  12. Report TCCS
  13. Report RSKM
  14. Unconstrained Paths Summary
- 15. Timing Analyzer Messages
+ 15. Unconstrained Input Ports
+ 16. Unconstrained Output Ports
+ 17. Unconstrained Input Ports
+ 18. Unconstrained Output Ports
+ 19. Timing Analyzer Messages
 
 
 
@@ -50,7 +54,7 @@ refer to the applicable agreement for further details.
 ; Timing Analyzer       ; Legacy Timing Analyzer                              ;
 ; Revision Name         ; DATAPATH                                            ;
 ; Device Family         ; MAX V                                               ;
-; Device Name           ; 5M80ZT100C4                                         ;
+; Device Name           ; 5M40ZE64C4                                          ;
 ; Timing Models         ; Final                                               ;
 ; Delay Model           ; Slow Model                                          ;
 ; Rise/Fall Delays      ; Unavailable                                         ;
@@ -62,7 +66,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 4           ;
+; Number detected on machine ; 2           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -140,11 +144,73 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 +---------------------------------+-------+------+
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
-; Unconstrained Input Ports       ; 0     ; 0    ;
-; Unconstrained Input Port Paths  ; 0     ; 0    ;
-; Unconstrained Output Ports      ; 0     ; 0    ;
-; Unconstrained Output Port Paths ; 0     ; 0    ;
+; Unconstrained Input Ports       ; 6     ; 6    ;
+; Unconstrained Input Port Paths  ; 54    ; 54   ;
+; Unconstrained Output Ports      ; 9     ; 9    ;
+; Unconstrained Output Port Paths ; 9     ; 9    ;
 +---------------------------------+-------+------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; opcode[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode[3]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode[4]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode[5]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; aluOp[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; aluOp[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; aluSrc      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; branch      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; memRead     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; memWrite    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; memtoReg    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; regDst      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; regWrite    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Unconstrained Input Ports                                                                         ;
++------------+--------------------------------------------------------------------------------------+
+; Input Port ; Comment                                                                              ;
++------------+--------------------------------------------------------------------------------------+
+; opcode[0]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode[1]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode[2]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode[3]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode[4]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; opcode[5]  ; No input delay, min/max delays, false-path exceptions, or max skew assignments found ;
++------------+--------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------+
+; Unconstrained Output Ports                                                                          ;
++-------------+---------------------------------------------------------------------------------------+
+; Output Port ; Comment                                                                               ;
++-------------+---------------------------------------------------------------------------------------+
+; aluOp[0]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; aluOp[1]    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; aluSrc      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; branch      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; memRead     ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; memWrite    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; memtoReg    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; regDst      ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
+; regWrite    ; No output delay, min/max delays, false-path exceptions, or max skew assignments found ;
++-------------+---------------------------------------------------------------------------------------+
 
 
 +--------------------------+
@@ -153,13 +219,14 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed May 06 16:04:30 2020
+    Info: Processing started: Thu May 07 09:33:38 2020
 Info: Command: quartus_sta DATAPATH -c DATAPATH
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
+Warning (335093): The Timing Analyzer is analyzing 9 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'DATAPATH.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332096): The command derive_clocks did not find any clocks to derive.  No clocks were created or changed.
@@ -174,12 +241,12 @@ Info (332140): No Recovery paths to report
 Info (332140): No Removal paths to report
 Info (332140): No Minimum Pulse Width paths to report
 Info (332001): The selected device family is not supported by the report_metastability command.
-Info (332101): Design is fully constrained for setup requirements
-Info (332101): Design is fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4657 megabytes
-    Info: Processing ended: Wed May 06 16:04:31 2020
-    Info: Elapsed time: 00:00:01
+Info (332102): Design is not fully constrained for setup requirements
+Info (332102): Design is not fully constrained for hold requirements
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4649 megabytes
+    Info: Processing ended: Thu May 07 09:33:40 2020
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

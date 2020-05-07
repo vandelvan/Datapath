@@ -1,0 +1,4 @@
+module UC(
+	input [5:0]opcode,
+);
+endmodule

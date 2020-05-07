@@ -1,1 +1,2 @@
-Warning (10273): Verilog HDL warning at ALU.v(19): extended using "x" or "z" File: C:/Users/Gustavo/Datapath/DATAPATH/ALU.v Line: 19
+Info (10281): Verilog HDL Declaration information at DATAPATH.v(3): object "aluop" differs only in case from object "aluOp" in the same scope File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
+Warning (10273): Verilog HDL warning at ALU.v(19): extended using "x" or "z" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALU.v Line: 19
