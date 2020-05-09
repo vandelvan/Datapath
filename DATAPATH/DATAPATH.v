@@ -1,6 +1,5 @@
 module DATAPATH(
 	input clk,
-	input [2:0]aluop,
 	output [31:0]pru
 );
 
@@ -37,7 +36,7 @@ REGISTERS p7(.rr1(datos[25:21]),.rr2(datos[20:16]),.wr(rd),.wd(datos_esc),.enabl
 MUX2 p8(.alusrc(aluSrc),.regs(s2),.sign(sign),.finaldata2(s2_fin));
 ALU p9(.a(s1),.b(s2_fin),.sel(sel),.zf(zf),.res(datos_esc));
 SIGNEXT p10(.datoin(datos[15:0]),.datoout(sign));
-ALUCONTROL p11(.opf(datos[5:0]),.aluop(aluop),.ops(sel));
+ALUCONTROL p11(.opf(datos[5:0]),.aluop(aluOp),.ops(sel));
 UC p12(.opcode(datos[31:26]),.regDst(regDst),.branch(branch),.memRead(memRead),.memtoReg(memtoReg),.aluOp(aluOp),.memWrite(memWrite),.aluSrc(aluSrc),.regWrite(regWrite));
 
 endmodule

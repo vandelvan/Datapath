@@ -23,6 +23,8 @@ begin
 				6'b101010: ops = 4'b1001;//slt?
 				default: ops = 4'b1111;//x
 			endcase
+		2'b11://branchGTZ, no importa func
+			ops=4'b1011;
 		default: ops=4'b1111;
 	endcase
 end

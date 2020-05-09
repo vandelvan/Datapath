@@ -1,8 +1,8 @@
 
 module PC(
 	input clk,
-	input [7:0] ent,
-	output reg [7:0] pc
+	input [31:0] ent,
+	output reg [31:0] pc
 );
 
 
@@ -16,7 +16,7 @@ always @(posedge clk)
 		else
 			begin
 
-				pc=8'd0;
+				pc=32'd0;
 			end
 	end
 	

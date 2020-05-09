@@ -1,8 +1,8 @@
 module MUX5(
-	input [7:0] add1,//vienen del suma+4
-	input [7:0] aluResult,
+	input [31:0] add1,//vienen del suma+4
+	input [31:0] aluResult,
 	input compand,//resultado compuerta and
-	output reg [7:0] pc
+	output reg [31:0] pc
 );
 
 always @*

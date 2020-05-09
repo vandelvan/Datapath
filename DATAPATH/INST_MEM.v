@@ -1,9 +1,9 @@
 
 module INST_MEM(
-	input [7:0] dir,
+	input [31:0] dir,
 	output reg [31:0] datos,d
 );
-reg [7:0] MR [0:127];
+reg [7:0] MR [0:65535];
 
 
 always@*

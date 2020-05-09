@@ -5,7 +5,7 @@ if {[file exists rtl_work]} {
 vlib rtl_work
 vmap work rtl_work
 
-vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v}
+vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/alucontrol.v}
 
 vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL_tb.v}
 
