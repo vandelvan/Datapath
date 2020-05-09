@@ -1,5 +1,5 @@
 Flow report for DATAPATH
-Fri May 08 19:34:22 2020
+Sat May 09 18:19:47 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Fri May 08 19:34:22 2020       ;
+; Flow Status           ; Successful - Sat May 09 18:19:47 2020       ;
 ; Quartus Prime Version ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name         ; DATAPATH                                    ;
 ; Top-level Entity Name ; DATAPATH                                    ;
 ; Family                ; MAX V                                       ;
-; Total logic elements  ; 0 / 40 ( 0 % )                              ;
-; Total pins            ; 33 / 54 ( 61 % )                            ;
+; Total logic elements  ; 0 / 240 ( 0 % )                             ;
+; Total pins            ; 65 / 114 ( 57 % )                           ;
 ; Total virtual pins    ; 0                                           ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                               ;
-; Device                ; 5M40ZE64C4                                  ;
+; Device                ; 5M240ZT144C4                                ;
 ; Timing Models         ; Final                                       ;
 +-----------------------+---------------------------------------------+
 
@@ -59,7 +59,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/08/2020 19:33:46 ;
+; Start date & time ; 05/09/2020 18:19:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DATAPATH            ;
 +-------------------+---------------------+
@@ -70,12 +70,12 @@ refer to the applicable agreement for further details.
 +--------------------------------------+------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                        ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 963347811259.158898442609748 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 963347811259.158906635905408 ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                           ; --            ; --          ; ALUCONTROL_tb  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                           ; --            ; --          ; UC_tb          ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                           ; --            ; --          ; DATAPATH_TB    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                           ; --            ; --          ; SIGNEXT_TB     ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; ALUCONTROL_tb                ; --            ; --          ; eda_simulation ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DATAPATH_TB                  ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                  ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)    ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE              ; --            ; --          ; eda_simulation ;
@@ -101,12 +101,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:28     ; 1.0                     ; 4948 MB             ; 00:00:43                           ;
-; Fitter               ; 00:00:02     ; 1.0                     ; 5062 MB             ; 00:00:02                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4655 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4657 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4611 MB             ; 00:00:01                           ;
-; Total                ; 00:00:33     ; --                      ; --                  ; 00:00:48                           ;
+; Analysis & Synthesis ; 00:00:19     ; 1.0                     ; 4712 MB             ; 00:00:35                           ;
+; Fitter               ; 00:00:01     ; 1.0                     ; 5068 MB             ; 00:00:02                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4654 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4658 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4614 MB             ; 00:00:01                           ;
+; Total                ; 00:00:24     ; --                      ; --                  ; 00:00:40                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

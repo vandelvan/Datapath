@@ -1,5 +1,5 @@
 Assembler report for DATAPATH
-Fri May 08 19:34:18 2020
+Sat May 09 18:19:42 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -37,11 +37,11 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Fri May 08 19:34:18 2020 ;
+; Assembler Status      ; Successful - Sat May 09 18:19:42 2020 ;
 ; Revision Name         ; DATAPATH                              ;
 ; Top-level Entity Name ; DATAPATH                              ;
 ; Family                ; MAX V                                 ;
-; Device                ; 5M40ZE64C4                            ;
+; Device                ; 5M240ZT144C4                          ;
 +-----------------------+---------------------------------------+
 
 
@@ -66,8 +66,8 @@ refer to the applicable agreement for further details.
 +----------------+-----------------------------------------------------------------------+
 ; Option         ; Setting                                                               ;
 +----------------+-----------------------------------------------------------------------+
-; JTAG usercode  ; 0x0019335A                                                            ;
-; Checksum       ; 0x0019365A                                                            ;
+; JTAG usercode  ; 0x003434F0                                                            ;
+; Checksum       ; 0x0034352C                                                            ;
 +----------------+-----------------------------------------------------------------------+
 
 
@@ -77,14 +77,14 @@ refer to the applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri May 08 19:34:17 2020
+    Info: Processing started: Sat May 09 18:19:41 2020
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off DATAPATH -c DATAPATH
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4655 megabytes
-    Info: Processing ended: Fri May 08 19:34:18 2020
+    Info: Peak virtual memory: 4658 megabytes
+    Info: Processing ended: Sat May 09 18:19:42 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

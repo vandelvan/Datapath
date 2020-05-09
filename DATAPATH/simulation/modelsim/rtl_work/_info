@@ -9,188 +9,188 @@ z2
 cModel Technology
 Z0 dC:/Users/Gustavo/Datapath/DATAPATH/simulation/modelsim
 vADD
-Z1 !s110 1588967589
+Z1 !s110 1589066445
 !i10b 1
-!s100 TFG7;8HBQ<@408FU5dFga3
-If3MP@5II]432`][]5F1C71
+!s100 HIbk3OmG]A3UIGoea=W`d2
+I[k5hRgfhS56eD9zG7f=e<1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1588865298
+w1588984233
 8C:/Users/Gustavo/Datapath/DATAPATH/add.v
 FC:/Users/Gustavo/Datapath/DATAPATH/add.v
 L0 1
-Z4 OV;L;10.5b;63
+Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1588967589.000000
+Z4 !s108 1589066445.000000
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/add.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/add.v|
 !i113 1
-Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH
-Z8 tCvgOpt 0
+Z5 o-vlog01compat -work work
+Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH
+Z7 tCvgOpt 0
 n@a@d@d
 vALU
 R1
 !i10b 1
-!s100 VJlMMLODaQK?ZW6_J[KBn0
-I:VWlH6UhhATV;O^nEVb=Y2
+!s100 j_F=5QBTfiM>K@Eeh1kM`2
+IfSL2UCLn^F`^5;]]Mgk<g0
 R2
 R0
-w1588963794
+w1589065850
 8C:/Users/Gustavo/Datapath/DATAPATH/ALU.v
 FC:/Users/Gustavo/Datapath/DATAPATH/ALU.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-Z9 !s108 1588967588.000000
+R4
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/ALU.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@a@l@u
 vALUCONTROL
 R1
 !i10b 1
-!s100 nEh;6oI@DOk2z9`h4maX03
-IPm>_kJj>]R@QiYg9BKX<G3
+!s100 5?0Cj8m=BTJzQ_WRLWD8T3
+IEb`1=8ATQ;m0NL;HXa@3I1
 R2
 R0
-Z10 w1588888491
+w1588984061
 8C:/Users/Gustavo/Datapath/DATAPATH/alucontrol.v
 FC:/Users/Gustavo/Datapath/DATAPATH/alucontrol.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/alucontrol.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/alucontrol.v|
 !i113 1
-R6
-R7
-R8
-n@a@l@u@c@o@n@t@r@o@l
-vALUCONTROL_tb
-R1
-!i10b 1
-!s100 M98CX<9FPJ[i`3>eo?BVB0
-Ia`>AzYI0SgR>`E8ezK;bY3
-R2
-R0
-R10
-8C:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL_tb.v
-FC:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL_tb.v
-L0 2
-R4
-r1
-!s85 0
-31
 R5
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL_tb.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL_tb.v|
-!i113 1
 R6
 R7
-R8
-n@a@l@u@c@o@n@t@r@o@l_tb
+n@a@l@u@c@o@n@t@r@o@l
 vCAND
-Z11 !s110 1588967588
+Z8 !s110 1589066444
 !i10b 1
 !s100 7RAC1>HHbHd5fH:jiHDP21
 I9k4BLiY2LU^?keOYV2gh;2
 R2
 R0
-R3
+Z9 w1588865298
 8C:/Users/Gustavo/Datapath/DATAPATH/CAND.v
 FC:/Users/Gustavo/Datapath/DATAPATH/CAND.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R9
+Z10 !s108 1589066444.000000
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/CAND.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/CAND.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@c@a@n@d
 vDATAPATH
-R11
+R1
 !i10b 1
-!s100 Pm1;8k=W=j;MPIk7X:0?h3
-IXWd_mOm:;6c]A97kT_JQ82
+!s100 EJCk73kRj4YWb2A?Q9?5]1
+IGlJcg>:HUcShKeNh:a[5X0
 R2
 R0
-R3
+w1589063812
 8C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v
 FC:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R9
+R10
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@d@a@t@a@p@a@t@h
-vINST_MEM
+vDATAPATH_TB
 R1
 !i10b 1
-!s100 4H8mS;SV?B4Aa]m=n]Y6f3
-IH=d;79X26k]^ASnCZfHGQ3
+!s100 [STPG@GI;Q?:1_glVXbYB3
+IQGHE9_V3W35UQF?OM79Fn0
 R2
 R0
+w1589066067
+8C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v
+FC:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v
+L0 4
 R3
-8C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v
-FC:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v
-L0 2
-R4
 r1
 !s85 0
 31
+R4
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v|
+!i113 1
 R5
+R6
+R7
+n@d@a@t@a@p@a@t@h_@t@b
+vINST_MEM
+R1
+!i10b 1
+!s100 GWnn?7;[C?J2PFS21lfPG2
+Ilh6XHN^Db@X2VJhd_2[f^0
+R2
+R0
+w1589063192
+8C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v
+FC:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v
+L0 2
+R3
+r1
+!s85 0
+31
+R4
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@i@n@s@t_@m@e@m
 vMUX1
-R11
+R1
 !i10b 1
 !s100 zJO=9`6]17KFijzzQlXOQ2
 I7f7VU[DNLGHMKd65meG=V1
 R2
 R0
-R3
+R9
 8C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v
 FC:/Users/Gustavo/Datapath/DATAPATH/MUX1.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R9
+R4
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@m@u@x1
 vMUX2
 R1
@@ -199,90 +199,113 @@ R1
 IJj3ONbmbh_`L7kVz2D`P01
 R2
 R0
-R10
+Z11 w1588888491
 8C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v
 FC:/Users/Gustavo/Datapath/DATAPATH/MUX2.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@m@u@x2
-vMUX5
-R11
+vMUX3
+R1
 !i10b 1
-!s100 b=[9fN3QkDl>WjdKOef_B2
-I0]TWX4Omc26`Q:jI7@jWn1
+!s100 2XcVFP]bK3@S4a8:0iDYT3
+IcDFbol=]R?Aa;^U5ao8U82
 R2
 R0
-R10
-8C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v
-FC:/Users/Gustavo/Datapath/DATAPATH/MUX5.v
+w1589061879
+8C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v
+FC:/Users/Gustavo/Datapath/DATAPATH/MUX3.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R9
+R4
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v|
+!i113 1
+R5
+R6
+R7
+n@m@u@x3
+vMUX5
+R8
+!i10b 1
+!s100 @F9:AC?`T`YN]O:FRJGLH2
+IXkY8XBPeF8Q;]BgfIZTlh3
+R2
+R0
+w1588984344
+8C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v
+FC:/Users/Gustavo/Datapath/DATAPATH/MUX5.v
+L0 1
+R3
+r1
+!s85 0
+31
+R10
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@m@u@x5
 vPC
 R1
 !i10b 1
-!s100 [7Kc<cMJHf]kmI8=fDR<i0
-IiID[e0J9PTcaYcY_Ce]851
+!s100 9iS1:Z[Acz=3V[;?`P14I1
+IaFlZCYo?SD`AMX2izn??30
 R2
 R0
-R3
+w1588984225
 8C:/Users/Gustavo/Datapath/DATAPATH/pc.v
 FC:/Users/Gustavo/Datapath/DATAPATH/pc.v
 L0 2
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/pc.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/pc.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@p@c
 vREGISTERS
 R1
 !i10b 1
-!s100 D_gRml`EbhAdkKD^=VJ453
-I5_f<W^n1@L6ZX7WO3Y2Se1
+!s100 <KI[6oB=Cj7g<22]NF82f2
+IA=>e^::b1j5<]AMmJ8[GT1
 R2
 R0
-R10
+w1589066356
 8C:/Users/Gustavo/Datapath/DATAPATH/registers.v
 FC:/Users/Gustavo/Datapath/DATAPATH/registers.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/registers.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/registers.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@r@e@g@i@s@t@e@r@s
 vSIGNEXT
 R1
@@ -291,42 +314,42 @@ R1
 I@_;[UB;237TZacf>E[OMz3
 R2
 R0
-R10
+R11
 8C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v
 FC:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@s@i@g@n@e@x@t
 vUC
 R1
 !i10b 1
-!s100 346dhM^jzi^52FaWBBf;l2
-I`aFgD432:oc=?IE8jRR``3
+!s100 I=L<o`O]M87V04]S6Yi=O3
+IF?:IzanN:?@97IP6ZTAzS0
 R2
 R0
-R10
+w1589065903
 8C:/Users/Gustavo/Datapath/DATAPATH/UC.v
 FC:/Users/Gustavo/Datapath/DATAPATH/UC.v
 L0 1
-R4
+R3
 r1
 !s85 0
 31
-R5
+R4
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/UC.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/UC.v|
 !i113 1
+R5
 R6
 R7
-R8
 n@u@c

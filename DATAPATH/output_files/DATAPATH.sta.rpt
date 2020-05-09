@@ -1,5 +1,5 @@
 Timing Analyzer report for DATAPATH
-Fri May 08 19:34:20 2020
+Sat May 09 18:19:45 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -50,7 +50,7 @@ refer to the applicable agreement for further details.
 ; Timing Analyzer       ; Legacy Timing Analyzer                              ;
 ; Revision Name         ; DATAPATH                                            ;
 ; Device Family         ; MAX V                                               ;
-; Device Name           ; 5M40ZE64C4                                          ;
+; Device Name           ; 5M240ZT144C4                                        ;
 ; Timing Models         ; Final                                               ;
 ; Delay Model           ; Slow Model                                          ;
 ; Rise/Fall Delays      ; Unavailable                                         ;
@@ -153,7 +153,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri May 08 19:34:19 2020
+    Info: Processing started: Sat May 09 18:19:43 2020
 Info: Command: quartus_sta DATAPATH -c DATAPATH
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -177,9 +177,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4657 megabytes
-    Info: Processing ended: Fri May 08 19:34:20 2020
-    Info: Elapsed time: 00:00:01
+    Info: Peak virtual memory: 4658 megabytes
+    Info: Processing ended: Sat May 09 18:19:45 2020
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

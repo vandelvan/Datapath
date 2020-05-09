@@ -5,10 +5,10 @@ module REGISTERS(
 	output reg [31:0] rd1,rd2
 );
 
-reg [31:0] mem [0:31];
+reg [31:0] mem [0:1023];
 
 
-always @*
+always @(rr1,rr2,wd) //No le hace caso a wr, para evitar errores
 	begin
 		if(enable)
 		begin//se lee y escribe

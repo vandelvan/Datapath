@@ -13,7 +13,7 @@ module UC(
 
 always @*
 begin
-	if(opcode == 6'd0)//cualquier tipo R
+	if(opcode == 6'b000000)//cualquier tipo R
 		begin
 			regDst = 1'b1;
 			aluSrc = 1'b0;

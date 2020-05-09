@@ -16,10 +16,10 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
-// DATE "05/08/2020 19:34:22"
+// DATE "05/09/2020 18:19:47"
 
 // 
-// Device: Altera 5M40ZE64C4 Package EQFP64
+// Device: Altera 5M240ZT144C4 Package TQFP144
 // 
 
 // 
@@ -30,8 +30,10 @@
 
 module DATAPATH (
 	clk,
+	md,
 	pru);
 input 	clk;
+input 	[31:0] md;
 output 	[31:0] pru;
 
 // Design Ports Information
@@ -54,7 +56,7 @@ initial $sdf_annotate("DATAPATH_v.sdo");
 
 
 
-// Location: PIN_24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+// Location: PIN_111,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
 maxv_io \clk~I (
 	.datain(gnd),
 	.oe(gnd),
@@ -64,7 +66,327 @@ maxv_io \clk~I (
 defparam \clk~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_64,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_70,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[0]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[0]));
+// synopsys translate_off
+defparam \md[0]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_68,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[1]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[1]));
+// synopsys translate_off
+defparam \md[1]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_127,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[2]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[2]));
+// synopsys translate_off
+defparam \md[2]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_51,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[3]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[3]));
+// synopsys translate_off
+defparam \md[3]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_129,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[4]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[4]));
+// synopsys translate_off
+defparam \md[4]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_102,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[5]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[5]));
+// synopsys translate_off
+defparam \md[5]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_118,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[6]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[6]));
+// synopsys translate_off
+defparam \md[6]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_61,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[7]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[7]));
+// synopsys translate_off
+defparam \md[7]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_60,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[8]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[8]));
+// synopsys translate_off
+defparam \md[8]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_93,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[9]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[9]));
+// synopsys translate_off
+defparam \md[9]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_96,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[10]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[10]));
+// synopsys translate_off
+defparam \md[10]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_87,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[11]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[11]));
+// synopsys translate_off
+defparam \md[11]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_75,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[12]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[12]));
+// synopsys translate_off
+defparam \md[12]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_132,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[13]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[13]));
+// synopsys translate_off
+defparam \md[13]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[14]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[14]));
+// synopsys translate_off
+defparam \md[14]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_52,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[15]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[15]));
+// synopsys translate_off
+defparam \md[15]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_74,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[16]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[16]));
+// synopsys translate_off
+defparam \md[16]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[17]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[17]));
+// synopsys translate_off
+defparam \md[17]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_86,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[18]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[18]));
+// synopsys translate_off
+defparam \md[18]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[19]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[19]));
+// synopsys translate_off
+defparam \md[19]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_73,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[20]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[20]));
+// synopsys translate_off
+defparam \md[20]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_55,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[21]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[21]));
+// synopsys translate_off
+defparam \md[21]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_32,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[22]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[22]));
+// synopsys translate_off
+defparam \md[22]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_103,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[23]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[23]));
+// synopsys translate_off
+defparam \md[23]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_88,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[24]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[24]));
+// synopsys translate_off
+defparam \md[24]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_41,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[25]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[25]));
+// synopsys translate_off
+defparam \md[25]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_69,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[26]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[26]));
+// synopsys translate_off
+defparam \md[26]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[27]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[27]));
+// synopsys translate_off
+defparam \md[27]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_78,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[28]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[28]));
+// synopsys translate_off
+defparam \md[28]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_89,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[29]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[29]));
+// synopsys translate_off
+defparam \md[29]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_108,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[30]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[30]));
+// synopsys translate_off
+defparam \md[30]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_95,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[31]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[31]));
+// synopsys translate_off
+defparam \md[31]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_97,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[0]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -74,7 +396,7 @@ maxv_io \pru[0]~I (
 defparam \pru[0]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_62,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_94,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[1]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -84,7 +406,7 @@ maxv_io \pru[1]~I (
 defparam \pru[1]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_53,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_44,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[2]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -94,7 +416,7 @@ maxv_io \pru[2]~I (
 defparam \pru[2]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_122,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[3]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -104,7 +426,7 @@ maxv_io \pru[3]~I (
 defparam \pru[3]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_91,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[4]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -114,7 +436,7 @@ maxv_io \pru[4]~I (
 defparam \pru[4]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_30,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[5]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -124,7 +446,7 @@ maxv_io \pru[5]~I (
 defparam \pru[5]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_61,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[6]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -134,7 +456,7 @@ maxv_io \pru[6]~I (
 defparam \pru[6]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[7]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -144,7 +466,7 @@ maxv_io \pru[7]~I (
 defparam \pru[7]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_130,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[8]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -154,7 +476,7 @@ maxv_io \pru[8]~I (
 defparam \pru[8]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_37,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[9]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -164,7 +486,7 @@ maxv_io \pru[9]~I (
 defparam \pru[9]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_46,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_120,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[10]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -174,7 +496,7 @@ maxv_io \pru[10]~I (
 defparam \pru[10]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_43,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[11]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -184,7 +506,7 @@ maxv_io \pru[11]~I (
 defparam \pru[11]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_50,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_76,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[12]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -194,7 +516,7 @@ maxv_io \pru[12]~I (
 defparam \pru[12]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_32,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_142,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[13]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -224,7 +546,7 @@ maxv_io \pru[15]~I (
 defparam \pru[15]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_18,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_107,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[16]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -234,7 +556,7 @@ maxv_io \pru[16]~I (
 defparam \pru[16]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_25,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[17]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -244,7 +566,7 @@ maxv_io \pru[17]~I (
 defparam \pru[17]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_31,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[18]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -254,7 +576,7 @@ maxv_io \pru[18]~I (
 defparam \pru[18]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_48,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_105,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[19]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -264,7 +586,7 @@ maxv_io \pru[19]~I (
 defparam \pru[19]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_63,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_28,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[20]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -274,7 +596,7 @@ maxv_io \pru[20]~I (
 defparam \pru[20]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_28,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_29,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[21]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -284,7 +606,7 @@ maxv_io \pru[21]~I (
 defparam \pru[21]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_27,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_85,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[22]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -294,7 +616,7 @@ maxv_io \pru[22]~I (
 defparam \pru[22]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_104,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[23]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -304,7 +626,7 @@ maxv_io \pru[23]~I (
 defparam \pru[23]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_47,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_50,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[24]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -314,7 +636,7 @@ maxv_io \pru[24]~I (
 defparam \pru[24]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_117,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[25]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -324,7 +646,7 @@ maxv_io \pru[25]~I (
 defparam \pru[25]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_33,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[26]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -334,7 +656,7 @@ maxv_io \pru[26]~I (
 defparam \pru[26]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_140,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[27]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -344,7 +666,7 @@ maxv_io \pru[27]~I (
 defparam \pru[27]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_36,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[28]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -354,7 +676,7 @@ maxv_io \pru[28]~I (
 defparam \pru[28]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_45,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_79,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[29]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -364,7 +686,7 @@ maxv_io \pru[29]~I (
 defparam \pru[29]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_121,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[30]~I (
 	.datain(gnd),
 	.oe(vcc),
@@ -374,7 +696,7 @@ maxv_io \pru[30]~I (
 defparam \pru[30]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_37,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+// Location: PIN_63,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
 maxv_io \pru[31]~I (
 	.datain(gnd),
 	.oe(vcc),
