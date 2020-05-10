@@ -13,17 +13,17 @@ wire [31:0]s2; //Read data 2
 wire [31:0]s2_fin; //Read data despues del mux
 wire [31:0]sign; //Sign extend
 wire [31:0]datos_esc; //Datos que salen de la alu
-wire compand;
-wire [4:0]rd; 
-wire [3:0]sel;
-wire regDst;
-wire branch;
-wire memRead;//a dataMemory
-wire memtoReg;//a MUX6
-wire [1:0]aluOp;//a aluControl
-wire memWrite;//a dataMemory
-wire aluSrc;
-wire regWrite;
+wire compand;//CAND a MUX5
+wire [4:0]rd;//MUX1 a REGISTRERS 
+wire [3:0]sel;//ALUCONTROL a ALU
+wire regDst;//UC a MUX1
+wire branch;//UC a CAND
+wire memRead;//UC a dataMemory
+wire memtoReg;//UC a  MUX3
+wire [1:0]aluOp;//UC a ALUControl
+wire memWrite;//UC a dataMemory
+wire aluSrc;//UC a MUX2
+wire regWrite;//UC a REGISTRERS
 wire [31:0]final_esc; //Datos a escribir en los registros
 
 

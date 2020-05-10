@@ -7,9 +7,9 @@ module MUX3(
 always @*
 begin 
 	if(memtoReg)
-		final_esc=md;
+		final_esc=md;//readData de dataMemory 
 	else
-		final_esc=regs;
+		final_esc=regs;//viene de ALUresult
 end
 
 endmodule	
