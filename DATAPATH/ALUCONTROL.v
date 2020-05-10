@@ -24,7 +24,7 @@ begin
 				default: ops = 4'b1111;//x
 			endcase
 		2'b11://branchGTZ, no importa func
-			ops=4'b1011;
+			ops=4'b1011;//a >= 0
 		default: ops=4'b1111;
 	endcase
 end
