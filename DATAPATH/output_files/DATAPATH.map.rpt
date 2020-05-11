@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DATAPATH
-Sat May 09 18:19:38 2020
+Mon May 11 14:40:47 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat May 09 18:19:38 2020       ;
+; Analysis & Synthesis Status ; Successful - Mon May 11 14:40:47 2020       ;
 ; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name               ; DATAPATH                                    ;
 ; Top-level Entity Name       ; DATAPATH                                    ;
@@ -244,7 +244,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sat May 09 18:19:19 2020
+    Info: Processing started: Mon May 11 14:40:29 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DATAPATH -c DATAPATH
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -290,7 +290,10 @@ Warning (12125): Using design file registers.v, which is not specified as a desi
     Info (12023): Found entity 1: REGISTERS File: C:/Users/Gustavo/Datapath/DATAPATH/registers.v Line: 1
 Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:p7" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 39
 Warning (10235): Verilog HDL Always Construct warning at registers.v(13): variable "enable" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/registers.v Line: 13
+Warning (10235): Verilog HDL Always Construct warning at registers.v(15): variable "wd" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/registers.v Line: 15
 Warning (10235): Verilog HDL Always Construct warning at registers.v(15): variable "wr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/registers.v Line: 15
+Warning (10235): Verilog HDL Always Construct warning at registers.v(17): variable "rr2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/registers.v Line: 17
+Warning (10235): Verilog HDL Always Construct warning at registers.v(22): variable "rr2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/registers.v Line: 22
 Info (12128): Elaborating entity "MUX2" for hierarchy "MUX2:p8" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 40
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:p9" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 41
 Info (12128): Elaborating entity "SIGNEXT" for hierarchy "SIGNEXT:p10" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 42
@@ -390,11 +393,11 @@ Info (21057): Implemented 65 device resources after synthesis - the final resour
     Info (21058): Implemented 33 input pins
     Info (21059): Implemented 32 output pins
 Info (144001): Generated suppressed messages file C:/Users/Gustavo/Datapath/DATAPATH/output_files/DATAPATH.map.smsg
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 88 warnings
-    Info: Peak virtual memory: 4712 megabytes
-    Info: Processing ended: Sat May 09 18:19:38 2020
-    Info: Elapsed time: 00:00:19
-    Info: Total CPU time (on all processors): 00:00:35
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 91 warnings
+    Info: Peak virtual memory: 4714 megabytes
+    Info: Processing ended: Mon May 11 14:40:47 2020
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:34
 
 
 +------------------------------------------+

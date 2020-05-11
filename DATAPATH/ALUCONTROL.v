@@ -13,6 +13,7 @@ begin
 			ops = 4'b0110;//resta
 		2'b10://tipo r
 			case(opf)//func = selector
+				6'b000000: ops = 4'b1101;//no operation
 				6'b100100: ops = 4'b0000;//&
 				6'b100101: ops = 4'b0001;//|
 				6'b100000: ops = 4'b0010;//+

@@ -10,9 +10,9 @@ module DATAPATH_TB();
     always #1 clk=!clk;
 
     initial begin
-		  $readmemb("datos.txt",DUV.p7.mem,16,31);
-		  $readmemb("instruction.txt",DUV.p3.MR);
-        #6;
+		  $readmemb("TestF1_BReg.mem",DUV.p7.mem);
+		  $readmemb("TestF1_MemInst.mem",DUV.p3.MR);
+        #20;
 
         $stop;
 
