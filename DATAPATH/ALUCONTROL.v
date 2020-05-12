@@ -1,17 +1,17 @@
 module ALUCONTROL(
 	input [5:0] opf,//func
-	input [1:0] aluop,
+	input [3:0] aluop,
 	output reg [3:0] ops//selector de la alu
 );
 
 always @*
 begin
 	case(aluop)
-		2'b00://instrucciones sw y lw, no importa el func
+		4'b0000://instrucciones sw y lw, no importa el func
 			ops = 4'b0010;//suma
-		2'b01://branchEqual, no importa func
+		4'b0001://branchEqual, no importa func
 			ops = 4'b0110;//resta
-		2'b10://tipo r
+		4'b0010://tipo r
 			case(opf)//func = selector
 				6'b000000: ops = 4'b1101;//no operation
 				6'b100100: ops = 4'b0000;//&
@@ -24,7 +24,7 @@ begin
 				6'b101010: ops = 4'b1001;//slt?
 				default: ops = 4'b1111;//x
 			endcase
-		2'b11://branchGTZ, no importa func
+		4'b0011://branchGTZ, no importa func
 			ops=4'b1011;//a >= 0
 		default: ops=4'b1111;
 	endcase

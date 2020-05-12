@@ -5,7 +5,7 @@ module UC(
 	output reg branch,//a CAND
 	output reg memRead,//a dataMemory
 	output reg memtoReg,//a MUX3
-	output reg [1:0]aluOp,//a aluControl
+	output reg [3:0]aluOp,//a aluControl
 	output reg memWrite,//a dataMemory
 	output reg aluSrc,// a MUX2
 	output reg regWrite//a registers enable
@@ -23,8 +23,7 @@ begin
 			memRead = 1'b0;
 			memWrite = 1'b0;
 			branch = 1'b0;
-			aluOp[1] = 1'b1;
-			aluOp[0] = 1'b0;
+			aluOp = 4'b0010;
 		end
 	else
 	if(opcode == 6'b100011)//instruccion lw
@@ -37,8 +36,7 @@ begin
 			memRead = 1'b1;
 			memWrite = 1'b0;
 			branch = 1'b0;
-			aluOp[1] = 1'b0;
-			aluOp[0] = 1'b0;
+			aluOp = 4'b0000;
 		end
 	else
 	if(opcode == 6'b101011)//instruccion sw
@@ -51,8 +49,7 @@ begin
 			memRead = 1'b0;
 			memWrite = 1'b1;
 			branch = 1'b0;
-			aluOp[1] = 1'b0;
-			aluOp[0] = 1'b0;
+			aluOp= 4'b0000;
 		end
 	else
 	if(opcode == 6'b000100)//instruccion beq
@@ -65,8 +62,7 @@ begin
 			memRead = 1'b0;
 			memWrite = 1'b0;
 			branch = 1'b1;
-			aluOp[1] = 1'b0;
-			aluOp[0] = 1'b1;
+			aluOp = 4'b0001;
 		end
 	else
 	if(opcode == 6'b000010)//instruccion jump
@@ -79,8 +75,7 @@ begin
 			memRead = 1'bx;
 			memWrite = 1'bx;
 			branch = 1'bx;
-			aluOp[1] = 1'bx;
-			aluOp[0] = 1'bx;
+			aluOp = 4'bxxxx;
 		end
 end
 
