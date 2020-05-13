@@ -7,349 +7,50 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/Gustavo/Datapath/DATAPATH/simulation/modelsim
-vADD
-Z1 !s110 1589226831
+Z0 dC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/simulation/modelsim
+vDATAMEMORY
+Z1 !s110 1589332845
 !i10b 1
-!s100 HIbk3OmG]A3UIGoea=W`d2
-I[k5hRgfhS56eD9zG7f=e<1
+!s100 SnN1jcQB;jgGcVYR<]?^V1
+IJak:9Ddd1=4WB@W?7UG]V1
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1588984233
-8C:/Users/Gustavo/Datapath/DATAPATH/add.v
-FC:/Users/Gustavo/Datapath/DATAPATH/add.v
+w1589332724
+8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v
+FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v
 L0 1
 Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1589226830.000000
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/add.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/add.v|
+Z4 !s108 1589332845.000000
+!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v|
 !i113 1
 Z5 o-vlog01compat -work work
-Z6 !s92 -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH
+Z6 !s92 -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH
 Z7 tCvgOpt 0
-n@a@d@d
-vALU
-Z8 !s110 1589226830
-!i10b 1
-!s100 j_F=5QBTfiM>K@Eeh1kM`2
-IfSL2UCLn^F`^5;]]Mgk<g0
-R2
-R0
-w1589065850
-8C:/Users/Gustavo/Datapath/DATAPATH/ALU.v
-FC:/Users/Gustavo/Datapath/DATAPATH/ALU.v
-L0 1
-R3
-r1
-!s85 0
-31
-R4
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/ALU.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/ALU.v|
-!i113 1
-R5
-R6
-R7
-n@a@l@u
-vALUCONTROL
+n@d@a@t@a@m@e@m@o@r@y
+vDATAMEMORY_TB
 R1
 !i10b 1
-!s100 EDR9bJn7PBOCjj3VQ83O>3
-In<cWl]<JAJ3:]emQ_laT:1
+!s100 2IV^E6[dbRf`5g<UkZ4ba2
+IXnE5b74o?^1?fd13K9RaE2
 R2
 R0
-w1589225752
-8C:/Users/Gustavo/Datapath/DATAPATH/alucontrol.v
-FC:/Users/Gustavo/Datapath/DATAPATH/alucontrol.v
-L0 1
-R3
-r1
-!s85 0
-31
-Z9 !s108 1589226831.000000
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/alucontrol.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/alucontrol.v|
-!i113 1
-R5
-R6
-R7
-n@a@l@u@c@o@n@t@r@o@l
-vCAND
-R8
-!i10b 1
-!s100 7RAC1>HHbHd5fH:jiHDP21
-I9k4BLiY2LU^?keOYV2gh;2
-R2
-R0
-Z10 w1588865298
-8C:/Users/Gustavo/Datapath/DATAPATH/CAND.v
-FC:/Users/Gustavo/Datapath/DATAPATH/CAND.v
-L0 1
-R3
-r1
-!s85 0
-31
-R4
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/CAND.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/CAND.v|
-!i113 1
-R5
-R6
-R7
-n@c@a@n@d
-vDATAPATH
-R8
-!i10b 1
-!s100 EJCk73kRj4YWb2A?Q9?5]1
-IGlJcg>:HUcShKeNh:a[5X0
-R2
-R0
-Z11 w1589224527
-8C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v
-FC:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v
-L0 1
-R3
-r1
-!s85 0
-31
-R4
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v|
-!i113 1
-R5
-R6
-R7
-n@d@a@t@a@p@a@t@h
-vDATAPATH_TB
-R1
-!i10b 1
-!s100 Gh9dSkTiEU6dA_O2m9]_50
-INlXLB61hMG5OS_MheA;W53
-R2
-R0
-w1589225453
-8C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v
-FC:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v
-L0 4
-R3
-r1
-!s85 0
-31
-R9
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v|
-!i113 1
-R5
-R6
-R7
-n@d@a@t@a@p@a@t@h_@t@b
-vINST_MEM
-R1
-!i10b 1
-!s100 GWnn?7;[C?J2PFS21lfPG2
-Ilh6XHN^Db@X2VJhd_2[f^0
-R2
-R0
-w1589063192
-8C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v
-FC:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v
-L0 2
-R3
-r1
-!s85 0
-31
-R9
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/inst_mem.v|
-!i113 1
-R5
-R6
-R7
-n@i@n@s@t_@m@e@m
-vMUX1
-R8
-!i10b 1
-!s100 zJO=9`6]17KFijzzQlXOQ2
-I7f7VU[DNLGHMKd65meG=V1
-R2
-R0
-R10
-8C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v
-FC:/Users/Gustavo/Datapath/DATAPATH/MUX1.v
-L0 1
-R3
-r1
-!s85 0
-31
-R4
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v|
-!i113 1
-R5
-R6
-R7
-n@m@u@x1
-vMUX2
-R8
-!i10b 1
-!s100 bH9Ge?lXhWcjDFk>E0l@:1
-IJj3ONbmbh_`L7kVz2D`P01
-R2
-R0
-Z12 w1588888491
-8C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v
-FC:/Users/Gustavo/Datapath/DATAPATH/MUX2.v
-L0 1
-R3
-r1
-!s85 0
-31
-R4
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v|
-!i113 1
-R5
-R6
-R7
-n@m@u@x2
-vMUX3
-R8
-!i10b 1
-!s100 2XcVFP]bK3@S4a8:0iDYT3
-IcDFbol=]R?Aa;^U5ao8U82
-R2
-R0
-R11
-8C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v
-FC:/Users/Gustavo/Datapath/DATAPATH/MUX3.v
-L0 1
-R3
-r1
-!s85 0
-31
-R4
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v|
-!i113 1
-R5
-R6
-R7
-n@m@u@x3
-vMUX5
-R8
-!i10b 1
-!s100 @F9:AC?`T`YN]O:FRJGLH2
-IXkY8XBPeF8Q;]BgfIZTlh3
-R2
-R0
-w1588984344
-8C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v
-FC:/Users/Gustavo/Datapath/DATAPATH/MUX5.v
-L0 1
-R3
-r1
-!s85 0
-31
-R4
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v|
-!i113 1
-R5
-R6
-R7
-n@m@u@x5
-vPC
-R8
-!i10b 1
-!s100 9iS1:Z[Acz=3V[;?`P14I1
-IaFlZCYo?SD`AMX2izn??30
-R2
-R0
-w1588984225
-8C:/Users/Gustavo/Datapath/DATAPATH/pc.v
-FC:/Users/Gustavo/Datapath/DATAPATH/pc.v
+w1589332205
+8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v
+FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v
 L0 2
 R3
 r1
 !s85 0
 31
 R4
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/pc.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/pc.v|
+!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v|
 !i113 1
 R5
 R6
 R7
-n@p@c
-vREGISTERS
-R1
-!i10b 1
-!s100 z^[>oAKX>@93[zj4[3CVS0
-Ic`016Bcik75e5Y51ZU=2Q3
-R2
-R0
-w1589226024
-8C:/Users/Gustavo/Datapath/DATAPATH/registers.v
-FC:/Users/Gustavo/Datapath/DATAPATH/registers.v
-L0 1
-R3
-r1
-!s85 0
-31
-R9
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/registers.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/registers.v|
-!i113 1
-R5
-R6
-R7
-n@r@e@g@i@s@t@e@r@s
-vSIGNEXT
-R8
-!i10b 1
-!s100 G7J1J5akD:8QW_IG3>mLP3
-I@_;[UB;237TZacf>E[OMz3
-R2
-R0
-R12
-8C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v
-FC:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v
-L0 1
-R3
-r1
-!s85 0
-31
-R4
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v|
-!i113 1
-R5
-R6
-R7
-n@s@i@g@n@e@x@t
-vUC
-R8
-!i10b 1
-!s100 I=L<o`O]M87V04]S6Yi=O3
-IF?:IzanN:?@97IP6ZTAzS0
-R2
-R0
-w1589065903
-8C:/Users/Gustavo/Datapath/DATAPATH/UC.v
-FC:/Users/Gustavo/Datapath/DATAPATH/UC.v
-L0 1
-R3
-r1
-!s85 0
-31
-R4
-!s107 C:/Users/Gustavo/Datapath/DATAPATH/UC.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/UC.v|
-!i113 1
-R5
-R6
-R7
-n@u@c
+n@d@a@t@a@m@e@m@o@r@y_@t@b

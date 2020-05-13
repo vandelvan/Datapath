@@ -1,5 +1,5 @@
 Flow report for DATAPATH
-Tue May 12 17:15:59 2020
+Tue May 12 20:36:25 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -40,16 +40,16 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Tue May 12 17:15:59 2020       ;
+; Flow Status           ; Successful - Tue May 12 20:36:25 2020       ;
 ; Quartus Prime Version ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name         ; DATAPATH                                    ;
-; Top-level Entity Name ; UC                                          ;
+; Top-level Entity Name ; DATAPATH                                    ;
 ; Family                ; MAX V                                       ;
-; Total logic elements  ; 28 / 40 ( 70 % )                            ;
-; Total pins            ; 18 / 54 ( 33 % )                            ;
+; Total logic elements  ; 0 / 240 ( 0 % )                             ;
+; Total pins            ; 65 / 114 ( 57 % )                           ;
 ; Total virtual pins    ; 0                                           ;
 ; UFM blocks            ; 0 / 1 ( 0 % )                               ;
-; Device                ; 5M40ZE64C4                                  ;
+; Device                ; 5M240ZT144C4                                ;
 ; Timing Models         ; Final                                       ;
 +-----------------------+---------------------------------------------+
 
@@ -59,7 +59,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/12/2020 17:15:38 ;
+; Start date & time ; 05/12/2020 20:36:02 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DATAPATH            ;
 +-------------------+---------------------+
@@ -70,20 +70,29 @@ refer to the applicable agreement for further details.
 +--------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 277807423615509.158932173708800 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 277807423615509.158933376201184 ; --            ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; shiftLeft2_tb  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; ALUCONTROL_tb  ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; ADDER_TB       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; DATAMEMORY_TB  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; UC_tb          ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; DATAPATH_TB    ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                              ; --            ; --          ; SIGNEXT_TB     ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DATAPATH_TB                     ; --            ; --          ; eda_simulation ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; DATAMEMORY_TB                   ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                     ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)       ; <None>        ; --          ; --             ;
 ; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                 ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                  ; SHIFTLEFT2_TB.v                 ; --            ; --          ; SHIFTLEFT2_TB  ;
 ; EDA_TEST_BENCH_FILE                  ; ALUCONTROL_tb.v                 ; --            ; --          ; ALUCONTROL_tb  ;
+; EDA_TEST_BENCH_FILE                  ; ADDER_TB.v                      ; --            ; --          ; ADDER_TB       ;
+; EDA_TEST_BENCH_FILE                  ; DATAMEMORY_TB.v                 ; --            ; --          ; DATAMEMORY_TB  ;
 ; EDA_TEST_BENCH_FILE                  ; UC_tb.v                         ; --            ; --          ; UC_tb          ;
 ; EDA_TEST_BENCH_FILE                  ; DATAPATH_TB.v                   ; --            ; --          ; DATAPATH_TB    ;
 ; EDA_TEST_BENCH_FILE                  ; SIGNEXT_TB.v                    ; --            ; --          ; SIGNEXT_TB     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; SHIFTLEFT2_TB                   ; --            ; --          ; SHIFTLEFT2_TB  ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; ALUCONTROL_tb                   ; --            ; --          ; ALUCONTROL_tb  ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ADDER_TB                        ; --            ; --          ; ADDER_TB       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; DATAMEMORY_TB                   ; --            ; --          ; DATAMEMORY_TB  ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; UC_tb                           ; --            ; --          ; UC_tb          ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; DATAPATH_TB                     ; --            ; --          ; DATAPATH_TB    ;
 ; EDA_TEST_BENCH_MODULE_NAME           ; SIGNEXT_TB                      ; --            ; --          ; SIGNEXT_TB     ;
@@ -91,9 +100,11 @@ refer to the applicable agreement for further details.
 ; EDA_TEST_BENCH_NAME                  ; SIGNEXT_TB                      ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; UC_tb                           ; --            ; --          ; eda_simulation ;
 ; EDA_TEST_BENCH_NAME                  ; ALUCONTROL_tb                   ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; SHIFTLEFT2_TB                   ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; ADDER_TB                        ; --            ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_NAME                  ; DATAMEMORY_TB                   ; --            ; --          ; eda_simulation ;
 ; EDA_TIME_SCALE                       ; 1 ps                            ; --            ; --          ; eda_simulation ;
 ; PROJECT_OUTPUT_DIRECTORY             ; output_files                    ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                     ; UC                              ; DATAPATH      ; --          ; --             ;
 +--------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
@@ -102,12 +113,12 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4704 MB             ; 00:00:21                           ;
-; Fitter               ; 00:00:01     ; 1.0                     ; 5039 MB             ; 00:00:01                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4650 MB             ; 00:00:00                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4649 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4614 MB             ; 00:00:01                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:24                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4709 MB             ; 00:00:23                           ;
+; Fitter               ; 00:00:02     ; 1.0                     ; 5067 MB             ; 00:00:01                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 4650 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4652 MB             ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 4610 MB             ; 00:00:01                           ;
+; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:27                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -1,0 +1,8 @@
+`timescale 1ns/1ns
+module DATAMEMORY_TB();
+reg [31:0]address,//viene de aluResult
+reg [31:0]writeData,//viene de readData2
+reg memRead,
+reg memWrite,
+wire [31:0]readData
+endmodule

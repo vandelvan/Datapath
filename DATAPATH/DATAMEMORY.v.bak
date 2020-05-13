@@ -1,0 +1,10 @@
+module DATAMEMORY(
+	input [31:0]address,//viene de aluResult
+	input [31:0]writeData,//viene de readData2
+	input memRead,
+	input memWrite,
+	output reg [31:0]readData
+);
+
+initial
+endmodule
