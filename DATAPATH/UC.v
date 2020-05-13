@@ -13,7 +13,8 @@ module UC(
 
 always @*
 begin
-	if(opcode == 6'b000000)//cualquier tipo R
+	case(opcode)
+	6'b000000://cualquier tipo R
 		begin
 			regDst = 1'b1;
 			aluSrc = 1'b0;
@@ -25,8 +26,19 @@ begin
 			branch = 1'b0;
 			aluOp = 4'b0010;
 		end
-	else
-	if(opcode == 6'b100011)//instruccion lw
+	6'b011111://bitswap
+		begin
+			regDst = 1'b1;
+			aluSrc = 1'b0;
+			jump=1'b0;
+			memtoReg = 1'b0;
+			regWrite = 1'b1;
+			memRead = 1'b0;
+			memWrite = 1'b0;
+			branch = 1'b0;
+			aluOp = 4'b1111;
+		end
+	6'b100011://instruccion lw
 		begin
 			regDst = 1'b0;
 			aluSrc = 1'b1;
@@ -38,8 +50,20 @@ begin
 			branch = 1'b0;
 			aluOp = 4'b0000;
 		end
-	else
-	if(opcode == 6'b101011)//instruccion sw
+
+	6'b001000://instruccion addi
+		begin
+			regDst = 1'b0;
+			aluSrc = 1'b1;
+			jump=1'b0;
+			memtoReg = 1'b0;
+			regWrite = 1'b1;
+			memRead = 1'b0;
+			memWrite = 1'b0;
+			branch = 1'b0;
+			aluOp = 4'b0000;
+		end
+	6'b101011://instruccion sw
 		begin
 			regDst = 1'bx;
 			aluSrc = 1'b1;
@@ -51,8 +75,55 @@ begin
 			branch = 1'b0;
 			aluOp= 4'b0000;
 		end
-	else
-	if(opcode == 6'b000100)//instruccion beq
+	6'b001100://instruccion andi
+		begin
+			regDst = 1'b0;
+			aluSrc = 1'b1;
+			jump=1'b0;
+			memtoReg = 1'b0;
+			regWrite = 1'b1;
+			memRead = 1'b0;
+			memWrite = 1'b0;
+			branch = 1'b0;
+			aluOp = 4'b0100;
+		end
+	6'b001101://instruccion ori
+		begin
+			regDst = 1'b0;
+			aluSrc = 1'b1;
+			jump=1'b0;
+			memtoReg = 1'b0;
+			regWrite = 1'b1;
+			memRead = 1'b0;
+			memWrite = 1'b0;
+			branch = 1'b0;
+			aluOp = 4'b0101;
+		end
+	6'b001110://instruccion xori
+		begin
+			regDst = 1'b0;
+			aluSrc = 1'b1;
+			jump=1'b0;
+			memtoReg = 1'b0;
+			regWrite = 1'b1;
+			memRead = 1'b0;
+			memWrite = 1'b0;
+			branch = 1'b0;
+			aluOp = 4'b0111;
+		end
+	6'b001010://instruccion slti
+		begin
+			regDst = 1'b0;
+			aluSrc = 1'b1;
+			jump=1'b0;
+			memtoReg = 1'b0;
+			regWrite = 1'b1;
+			memRead = 1'b0;
+			memWrite = 1'b0;
+			branch = 1'b0;
+			aluOp = 4'b0110;
+		end
+	6'b000100://instruccion beq
 		begin
 			regDst = 1'bx;
 			aluSrc = 1'b0;
@@ -64,8 +135,20 @@ begin
 			branch = 1'b1;
 			aluOp = 4'b0001;
 		end
-	else
-	if(opcode == 6'b000010)//instruccion jump
+	6'b000001://instruccion bgtz
+		begin
+			regDst = 1'bx;
+			aluSrc = 1'b0;
+			jump=1'b0;
+			memtoReg = 1'bx;
+			regWrite = 1'b0;
+			memRead = 1'b0;
+			memWrite = 1'b0;
+			branch = 1'b1;
+			aluOp = 4'b0011;
+		end
+	
+	6'b000010://instruccion jump
 		begin
 			regDst = 1'bx;
 			aluSrc = 1'bx;
@@ -77,6 +160,7 @@ begin
 			branch = 1'bx;
 			aluOp = 4'bxxxx;
 		end
+	endcase
 end
 
 endmodule

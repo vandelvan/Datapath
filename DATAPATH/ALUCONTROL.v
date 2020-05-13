@@ -7,11 +7,12 @@ module ALUCONTROL(
 always @*
 begin
 	case(aluop)
-		4'b0000://instrucciones sw y lw, no importa el func
+		4'b0000://instrucciones sw y lw,addi, no importa el func
 			ops = 4'b0010;//suma
 		4'b0001://branchEqual, no importa func
 			ops = 4'b0110;//resta
 		4'b0010://tipo r
+		begin
 			case(opf)//func = selector
 				6'b000000: ops = 4'b1101;//no operation
 				6'b100100: ops = 4'b0000;//&
@@ -24,8 +25,19 @@ begin
 				6'b101010: ops = 4'b1001;//slt?
 				default: ops = 4'b1111;//x
 			endcase
+		end
 		4'b0011://branchGTZ, no importa func
 			ops=4'b1011;//a >= 0
+		4'b0100://andi
+			ops=4'b0000;
+		4'b0101://ori
+			ops=4'b0001;
+		4'b0110://slti
+			ops=4'b1001;
+		4'b0111://slti
+			ops=4'b0111;
+		4'b1111://bitswap
+			ops=4'b1100;
 		default: ops=4'b1111;
 	endcase
 end
