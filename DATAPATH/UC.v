@@ -123,6 +123,18 @@ begin
 			branch = 1'b0;
 			aluOp = 4'b0110;
 		end
+	6'b000100://instruccion b
+		begin
+			regDst = 1'bx;
+			aluSrc = 1'b0;
+			jump=1'b0;
+			memtoReg = 1'bx;
+			regWrite = 1'b0;
+			memRead = 1'b0;
+			memWrite = 1'b0;
+			branch = 1'b1;
+			aluOp = 4'b1000;
+		end
 	6'b000100://instruccion beq
 		begin
 			regDst = 1'bx;
