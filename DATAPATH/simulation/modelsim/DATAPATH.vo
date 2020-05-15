@@ -16,10 +16,10 @@
 // PROGRAM "Quartus Prime"
 // VERSION "Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition"
 
-// DATE "05/14/2020 20:08:15"
+// DATE "05/15/2020 18:44:30"
 
 // 
-// Device: Altera 5M570ZF256C4 Package FBGA256
+// Device: Altera 5M240ZT144C4 Package TQFP144
 // 
 
 // 
@@ -28,17 +28,13 @@
 
 `timescale 1 ps/ 1 ps
 
-module DATAMEMORY (
-	writeData,
-	address,
-	memWrite,
-	memRead,
-	readData);
-input 	[31:0] writeData;
-input 	[31:0] address;
-input 	memWrite;
-input 	memRead;
-output 	[31:0] readData;
+module DATAPATH (
+	clk,
+	md,
+	pru);
+input 	clk;
+input 	[31:0] md;
+output 	[31:0] pru;
 
 // Design Ports Information
 
@@ -58,2210 +54,656 @@ tri1 devoe;
 initial $sdf_annotate("DATAPATH_v.sdo");
 // synopsys translate_on
 
-wire \memWrite~combout ;
-wire \memRead~combout ;
-wire \readData[31]~0_combout ;
-wire \readData[0]$latch~combout ;
-wire \readData[1]$latch~combout ;
-wire \readData[2]$latch~combout ;
-wire \readData[3]$latch~combout ;
-wire \readData[4]$latch~combout ;
-wire \readData[5]$latch~combout ;
-wire \readData[6]$latch~combout ;
-wire \readData[7]$latch~combout ;
-wire \readData[8]$latch~combout ;
-wire \readData[9]$latch~combout ;
-wire \readData[10]$latch~combout ;
-wire \readData[11]$latch~combout ;
-wire \readData[12]$latch~combout ;
-wire \readData[13]$latch~combout ;
-wire \readData[14]$latch~combout ;
-wire \readData[15]$latch~combout ;
-wire \readData[16]$latch~combout ;
-wire \readData[17]$latch~combout ;
-wire \readData[18]$latch~combout ;
-wire \readData[19]$latch~combout ;
-wire \readData[20]$latch~combout ;
-wire \readData[21]$latch~combout ;
-wire \readData[22]$latch~combout ;
-wire \readData[23]$latch~combout ;
-wire \readData[24]$latch~combout ;
-wire \readData[25]$latch~combout ;
-wire \readData[26]$latch~combout ;
-wire \readData[27]$latch~combout ;
-wire \readData[28]$latch~combout ;
-wire \readData[29]$latch~combout ;
-wire \readData[30]$latch~combout ;
-wire \readData[31]$latch~combout ;
-wire [31:0] \writeData~combout ;
 
 
-// Location: PIN_N14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[0]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [0]),
-	.padio(writeData[0]));
-// synopsys translate_off
-defparam \writeData[0]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: PIN_M8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \memWrite~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\memWrite~combout ),
-	.padio(memWrite));
-// synopsys translate_off
-defparam \memWrite~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: PIN_L13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \memRead~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\memRead~combout ),
-	.padio(memRead));
-// synopsys translate_off
-defparam \memRead~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X10_Y3_N2
-maxv_lcell \readData[31]~0 (
-// Equation(s):
-// \readData[31]~0_combout  = ((\memWrite~combout ) # ((\memRead~combout )))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\memWrite~combout ),
-	.datac(vcc),
-	.datad(\memRead~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[31]~0_combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[31]~0 .lut_mask = "ffcc";
-defparam \readData[31]~0 .operation_mode = "normal";
-defparam \readData[31]~0 .output_mode = "comb_only";
-defparam \readData[31]~0 .register_cascade_mode = "off";
-defparam \readData[31]~0 .sum_lutc_input = "datac";
-defparam \readData[31]~0 .synch_mode = "off";
-// synopsys translate_on
-
-// Location: LC_X12_Y2_N2
-maxv_lcell \readData[0]$latch (
-// Equation(s):
-// \readData[0]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [0])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[0]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [0]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[0]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[0]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[0]$latch .lut_mask = "cfc0";
-defparam \readData[0]$latch .operation_mode = "normal";
-defparam \readData[0]$latch .output_mode = "comb_only";
-defparam \readData[0]$latch .register_cascade_mode = "off";
-defparam \readData[0]$latch .sum_lutc_input = "datac";
-defparam \readData[0]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_F14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[1]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [1]),
-	.padio(writeData[1]));
-// synopsys translate_off
-defparam \writeData[1]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X12_Y5_N8
-maxv_lcell \readData[1]$latch (
-// Equation(s):
-// \readData[1]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [1])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[1]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(\writeData~combout [1]),
-	.datab(vcc),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[1]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[1]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[1]$latch .lut_mask = "afa0";
-defparam \readData[1]$latch .operation_mode = "normal";
-defparam \readData[1]$latch .output_mode = "comb_only";
-defparam \readData[1]$latch .register_cascade_mode = "off";
-defparam \readData[1]$latch .sum_lutc_input = "datac";
-defparam \readData[1]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_C8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[2]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [2]),
-	.padio(writeData[2]));
-// synopsys translate_off
-defparam \writeData[2]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X8_Y6_N2
-maxv_lcell \readData[2]$latch (
-// Equation(s):
-// \readData[2]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [2])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[2]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [2]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[2]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[2]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[2]$latch .lut_mask = "cfc0";
-defparam \readData[2]$latch .operation_mode = "normal";
-defparam \readData[2]$latch .output_mode = "comb_only";
-defparam \readData[2]$latch .register_cascade_mode = "off";
-defparam \readData[2]$latch .sum_lutc_input = "datac";
-defparam \readData[2]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_A10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[3]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [3]),
-	.padio(writeData[3]));
-// synopsys translate_off
-defparam \writeData[3]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X8_Y7_N2
-maxv_lcell \readData[3]$latch (
-// Equation(s):
-// \readData[3]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [3])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[3]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(\writeData~combout [3]),
-	.datab(vcc),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[3]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[3]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[3]$latch .lut_mask = "afa0";
-defparam \readData[3]$latch .operation_mode = "normal";
-defparam \readData[3]$latch .output_mode = "comb_only";
-defparam \readData[3]$latch .register_cascade_mode = "off";
-defparam \readData[3]$latch .sum_lutc_input = "datac";
-defparam \readData[3]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_R10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[4]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [4]),
-	.padio(writeData[4]));
-// synopsys translate_off
-defparam \writeData[4]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X8_Y4_N9
-maxv_lcell \readData[4]$latch (
-// Equation(s):
-// \readData[4]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [4])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[4]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [4]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[4]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[4]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[4]$latch .lut_mask = "cfc0";
-defparam \readData[4]$latch .operation_mode = "normal";
-defparam \readData[4]$latch .output_mode = "comb_only";
-defparam \readData[4]$latch .register_cascade_mode = "off";
-defparam \readData[4]$latch .sum_lutc_input = "datac";
-defparam \readData[4]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_P13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[5]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [5]),
-	.padio(writeData[5]));
-// synopsys translate_off
-defparam \writeData[5]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X12_Y1_N9
-maxv_lcell \readData[5]$latch (
-// Equation(s):
-// \readData[5]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [5])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[5]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [5]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[5]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[5]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[5]$latch .lut_mask = "cfc0";
-defparam \readData[5]$latch .operation_mode = "normal";
-defparam \readData[5]$latch .output_mode = "comb_only";
-defparam \readData[5]$latch .register_cascade_mode = "off";
-defparam \readData[5]$latch .sum_lutc_input = "datac";
-defparam \readData[5]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_G14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[6]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [6]),
-	.padio(writeData[6]));
-// synopsys translate_off
-defparam \writeData[6]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X12_Y5_N9
-maxv_lcell \readData[6]$latch (
-// Equation(s):
-// \readData[6]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [6])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[6]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [6]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[6]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[6]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[6]$latch .lut_mask = "cfc0";
-defparam \readData[6]$latch .operation_mode = "normal";
-defparam \readData[6]$latch .output_mode = "comb_only";
-defparam \readData[6]$latch .register_cascade_mode = "off";
-defparam \readData[6]$latch .sum_lutc_input = "datac";
-defparam \readData[6]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_E14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[7]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [7]),
-	.padio(writeData[7]));
-// synopsys translate_off
-defparam \writeData[7]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X12_Y6_N9
-maxv_lcell \readData[7]$latch (
-// Equation(s):
-// \readData[7]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [7])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[7]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [7]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[7]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[7]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[7]$latch .lut_mask = "cfc0";
-defparam \readData[7]$latch .operation_mode = "normal";
-defparam \readData[7]$latch .output_mode = "comb_only";
-defparam \readData[7]$latch .register_cascade_mode = "off";
-defparam \readData[7]$latch .sum_lutc_input = "datac";
-defparam \readData[7]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_A15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[8]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [8]),
-	.padio(writeData[8]));
-// synopsys translate_off
-defparam \writeData[8]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X12_Y6_N2
-maxv_lcell \readData[8]$latch (
-// Equation(s):
-// \readData[8]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [8])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[8]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [8]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[8]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[8]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[8]$latch .lut_mask = "cfc0";
-defparam \readData[8]$latch .operation_mode = "normal";
-defparam \readData[8]$latch .output_mode = "comb_only";
-defparam \readData[8]$latch .register_cascade_mode = "off";
-defparam \readData[8]$latch .sum_lutc_input = "datac";
-defparam \readData[8]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_D5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[9]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [9]),
-	.padio(writeData[9]));
-// synopsys translate_off
-defparam \writeData[9]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X4_Y7_N2
-maxv_lcell \readData[9]$latch (
-// Equation(s):
-// \readData[9]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [9])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[9]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [9]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[9]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[9]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[9]$latch .lut_mask = "cfc0";
-defparam \readData[9]$latch .operation_mode = "normal";
-defparam \readData[9]$latch .output_mode = "comb_only";
-defparam \readData[9]$latch .register_cascade_mode = "off";
-defparam \readData[9]$latch .sum_lutc_input = "datac";
-defparam \readData[9]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_P12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[10]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [10]),
-	.padio(writeData[10]));
-// synopsys translate_off
-defparam \writeData[10]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X10_Y1_N2
-maxv_lcell \readData[10]$latch (
-// Equation(s):
-// \readData[10]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [10])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[10]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [10]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[10]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[10]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[10]$latch .lut_mask = "cfc0";
-defparam \readData[10]$latch .operation_mode = "normal";
-defparam \readData[10]$latch .output_mode = "comb_only";
-defparam \readData[10]$latch .register_cascade_mode = "off";
-defparam \readData[10]$latch .sum_lutc_input = "datac";
-defparam \readData[10]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_F15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[11]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [11]),
-	.padio(writeData[11]));
-// synopsys translate_off
-defparam \writeData[11]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X11_Y6_N2
-maxv_lcell \readData[11]$latch (
-// Equation(s):
-// \readData[11]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [11])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[11]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [11]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[11]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[11]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[11]$latch .lut_mask = "cfc0";
-defparam \readData[11]$latch .operation_mode = "normal";
-defparam \readData[11]$latch .output_mode = "comb_only";
-defparam \readData[11]$latch .register_cascade_mode = "off";
-defparam \readData[11]$latch .sum_lutc_input = "datac";
-defparam \readData[11]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_D16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[12]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [12]),
-	.padio(writeData[12]));
-// synopsys translate_off
-defparam \writeData[12]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X9_Y7_N2
-maxv_lcell \readData[12]$latch (
-// Equation(s):
-// \readData[12]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [12])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[12]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [12]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[12]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[12]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[12]$latch .lut_mask = "cfc0";
-defparam \readData[12]$latch .operation_mode = "normal";
-defparam \readData[12]$latch .output_mode = "comb_only";
-defparam \readData[12]$latch .register_cascade_mode = "off";
-defparam \readData[12]$latch .sum_lutc_input = "datac";
-defparam \readData[12]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_C11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[13]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [13]),
-	.padio(writeData[13]));
-// synopsys translate_off
-defparam \writeData[13]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X10_Y7_N3
-maxv_lcell \readData[13]$latch (
-// Equation(s):
-// \readData[13]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [13])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[13]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(\writeData~combout [13]),
-	.datab(vcc),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[13]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[13]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[13]$latch .lut_mask = "afa0";
-defparam \readData[13]$latch .operation_mode = "normal";
-defparam \readData[13]$latch .output_mode = "comb_only";
-defparam \readData[13]$latch .register_cascade_mode = "off";
-defparam \readData[13]$latch .sum_lutc_input = "datac";
-defparam \readData[13]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_T2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[14]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [14]),
-	.padio(writeData[14]));
-// synopsys translate_off
-defparam \writeData[14]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X3_Y4_N9
-maxv_lcell \readData[14]$latch (
-// Equation(s):
-// \readData[14]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [14])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[14]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [14]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[14]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[14]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[14]$latch .lut_mask = "cfc0";
-defparam \readData[14]$latch .operation_mode = "normal";
-defparam \readData[14]$latch .output_mode = "comb_only";
-defparam \readData[14]$latch .register_cascade_mode = "off";
-defparam \readData[14]$latch .sum_lutc_input = "datac";
-defparam \readData[14]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_T12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[15]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [15]),
-	.padio(writeData[15]));
-// synopsys translate_off
-defparam \writeData[15]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X11_Y1_N9
-maxv_lcell \readData[15]$latch (
-// Equation(s):
-// \readData[15]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [15])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[15]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(\writeData~combout [15]),
-	.datab(vcc),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[15]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[15]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[15]$latch .lut_mask = "afa0";
-defparam \readData[15]$latch .operation_mode = "normal";
-defparam \readData[15]$latch .output_mode = "comb_only";
-defparam \readData[15]$latch .register_cascade_mode = "off";
-defparam \readData[15]$latch .sum_lutc_input = "datac";
-defparam \readData[15]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_C12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[16]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [16]),
-	.padio(writeData[16]));
-// synopsys translate_off
-defparam \writeData[16]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X11_Y7_N2
-maxv_lcell \readData[16]$latch (
-// Equation(s):
-// \readData[16]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [16])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[16]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(\writeData~combout [16]),
-	.datab(vcc),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[16]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[16]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[16]$latch .lut_mask = "afa0";
-defparam \readData[16]$latch .operation_mode = "normal";
-defparam \readData[16]$latch .output_mode = "comb_only";
-defparam \readData[16]$latch .register_cascade_mode = "off";
-defparam \readData[16]$latch .sum_lutc_input = "datac";
-defparam \readData[16]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_A4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[17]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [17]),
-	.padio(writeData[17]));
-// synopsys translate_off
-defparam \writeData[17]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X3_Y7_N3
-maxv_lcell \readData[17]$latch (
-// Equation(s):
-// \readData[17]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [17])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[17]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(\writeData~combout [17]),
-	.datab(vcc),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[17]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[17]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[17]$latch .lut_mask = "afa0";
-defparam \readData[17]$latch .operation_mode = "normal";
-defparam \readData[17]$latch .output_mode = "comb_only";
-defparam \readData[17]$latch .register_cascade_mode = "off";
-defparam \readData[17]$latch .sum_lutc_input = "datac";
-defparam \readData[17]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_P9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[18]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [18]),
-	.padio(writeData[18]));
-// synopsys translate_off
-defparam \writeData[18]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X9_Y5_N2
-maxv_lcell \readData[18]$latch (
-// Equation(s):
-// \readData[18]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [18])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[18]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(\writeData~combout [18]),
-	.datab(vcc),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[18]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[18]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[18]$latch .lut_mask = "afa0";
-defparam \readData[18]$latch .operation_mode = "normal";
-defparam \readData[18]$latch .output_mode = "comb_only";
-defparam \readData[18]$latch .register_cascade_mode = "off";
-defparam \readData[18]$latch .sum_lutc_input = "datac";
-defparam \readData[18]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_L14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[19]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [19]),
-	.padio(writeData[19]));
-// synopsys translate_off
-defparam \writeData[19]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X12_Y3_N8
-maxv_lcell \readData[19]$latch (
-// Equation(s):
-// \readData[19]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [19])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[19]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(\writeData~combout [19]),
-	.datab(vcc),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[19]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[19]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[19]$latch .lut_mask = "afa0";
-defparam \readData[19]$latch .operation_mode = "normal";
-defparam \readData[19]$latch .output_mode = "comb_only";
-defparam \readData[19]$latch .register_cascade_mode = "off";
-defparam \readData[19]$latch .sum_lutc_input = "datac";
-defparam \readData[19]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_A6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[20]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [20]),
-	.padio(writeData[20]));
-// synopsys translate_off
-defparam \writeData[20]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X6_Y7_N2
-maxv_lcell \readData[20]$latch (
-// Equation(s):
-// \readData[20]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [20])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[20]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [20]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[20]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[20]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[20]$latch .lut_mask = "cfc0";
-defparam \readData[20]$latch .operation_mode = "normal";
-defparam \readData[20]$latch .output_mode = "comb_only";
-defparam \readData[20]$latch .register_cascade_mode = "off";
-defparam \readData[20]$latch .sum_lutc_input = "datac";
-defparam \readData[20]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_K15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[21]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [21]),
-	.padio(writeData[21]));
-// synopsys translate_off
-defparam \writeData[21]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X12_Y3_N9
-maxv_lcell \readData[21]$latch (
-// Equation(s):
-// \readData[21]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [21])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[21]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [21]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[21]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[21]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[21]$latch .lut_mask = "cfc0";
-defparam \readData[21]$latch .operation_mode = "normal";
-defparam \readData[21]$latch .output_mode = "comb_only";
-defparam \readData[21]$latch .register_cascade_mode = "off";
-defparam \readData[21]$latch .sum_lutc_input = "datac";
-defparam \readData[21]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_D14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[22]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [22]),
-	.padio(writeData[22]));
-// synopsys translate_off
-defparam \writeData[22]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X12_Y6_N3
-maxv_lcell \readData[22]$latch (
-// Equation(s):
-// \readData[22]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [22])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[22]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [22]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[22]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[22]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[22]$latch .lut_mask = "cfc0";
-defparam \readData[22]$latch .operation_mode = "normal";
-defparam \readData[22]$latch .output_mode = "comb_only";
-defparam \readData[22]$latch .register_cascade_mode = "off";
-defparam \readData[22]$latch .sum_lutc_input = "datac";
-defparam \readData[22]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_A5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[23]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [23]),
-	.padio(writeData[23]));
-// synopsys translate_off
-defparam \writeData[23]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X5_Y7_N2
-maxv_lcell \readData[23]$latch (
-// Equation(s):
-// \readData[23]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [23])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[23]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(\writeData~combout [23]),
-	.datab(vcc),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[23]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[23]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[23]$latch .lut_mask = "afa0";
-defparam \readData[23]$latch .operation_mode = "normal";
-defparam \readData[23]$latch .output_mode = "comb_only";
-defparam \readData[23]$latch .register_cascade_mode = "off";
-defparam \readData[23]$latch .sum_lutc_input = "datac";
-defparam \readData[23]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_R9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[24]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [24]),
-	.padio(writeData[24]));
-// synopsys translate_off
-defparam \writeData[24]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X7_Y4_N9
-maxv_lcell \readData[24]$latch (
-// Equation(s):
-// \readData[24]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [24])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[24]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(\writeData~combout [24]),
-	.datab(vcc),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[24]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[24]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[24]$latch .lut_mask = "afa0";
-defparam \readData[24]$latch .operation_mode = "normal";
-defparam \readData[24]$latch .output_mode = "comb_only";
-defparam \readData[24]$latch .register_cascade_mode = "off";
-defparam \readData[24]$latch .sum_lutc_input = "datac";
-defparam \readData[24]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_M14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[25]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [25]),
-	.padio(writeData[25]));
-// synopsys translate_off
-defparam \writeData[25]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X12_Y4_N3
-maxv_lcell \readData[25]$latch (
-// Equation(s):
-// \readData[25]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [25])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[25]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(\writeData~combout [25]),
-	.datab(vcc),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[25]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[25]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[25]$latch .lut_mask = "afa0";
-defparam \readData[25]$latch .operation_mode = "normal";
-defparam \readData[25]$latch .output_mode = "comb_only";
-defparam \readData[25]$latch .register_cascade_mode = "off";
-defparam \readData[25]$latch .sum_lutc_input = "datac";
-defparam \readData[25]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_B9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[26]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [26]),
-	.padio(writeData[26]));
-// synopsys translate_off
-defparam \writeData[26]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X7_Y7_N2
-maxv_lcell \readData[26]$latch (
-// Equation(s):
-// \readData[26]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [26])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[26]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [26]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[26]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[26]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[26]$latch .lut_mask = "cfc0";
-defparam \readData[26]$latch .operation_mode = "normal";
-defparam \readData[26]$latch .output_mode = "comb_only";
-defparam \readData[26]$latch .register_cascade_mode = "off";
-defparam \readData[26]$latch .sum_lutc_input = "datac";
-defparam \readData[26]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_H14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[27]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [27]),
-	.padio(writeData[27]));
-// synopsys translate_off
-defparam \writeData[27]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X12_Y4_N2
-maxv_lcell \readData[27]$latch (
-// Equation(s):
-// \readData[27]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [27])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[27]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [27]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[27]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[27]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[27]$latch .lut_mask = "cfc0";
-defparam \readData[27]$latch .operation_mode = "normal";
-defparam \readData[27]$latch .output_mode = "comb_only";
-defparam \readData[27]$latch .register_cascade_mode = "off";
-defparam \readData[27]$latch .sum_lutc_input = "datac";
-defparam \readData[27]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_D11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[28]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [28]),
-	.padio(writeData[28]));
-// synopsys translate_off
-defparam \writeData[28]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X9_Y7_N3
-maxv_lcell \readData[28]$latch (
-// Equation(s):
-// \readData[28]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [28])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[28]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(\writeData~combout [28]),
-	.datab(vcc),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[28]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[28]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[28]$latch .lut_mask = "afa0";
-defparam \readData[28]$latch .operation_mode = "normal";
-defparam \readData[28]$latch .output_mode = "comb_only";
-defparam \readData[28]$latch .register_cascade_mode = "off";
-defparam \readData[28]$latch .sum_lutc_input = "datac";
-defparam \readData[28]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_B3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[29]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [29]),
-	.padio(writeData[29]));
-// synopsys translate_off
-defparam \writeData[29]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X6_Y7_N3
-maxv_lcell \readData[29]$latch (
-// Equation(s):
-// \readData[29]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [29])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[29]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [29]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[29]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[29]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[29]$latch .lut_mask = "cfc0";
-defparam \readData[29]$latch .operation_mode = "normal";
-defparam \readData[29]$latch .output_mode = "comb_only";
-defparam \readData[29]$latch .register_cascade_mode = "off";
-defparam \readData[29]$latch .sum_lutc_input = "datac";
-defparam \readData[29]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_F13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[30]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [30]),
-	.padio(writeData[30]));
-// synopsys translate_off
-defparam \writeData[30]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X12_Y5_N4
-maxv_lcell \readData[30]$latch (
-// Equation(s):
-// \readData[30]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [30])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[30]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [30]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[30]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[30]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[30]$latch .lut_mask = "cfc0";
-defparam \readData[30]$latch .operation_mode = "normal";
-defparam \readData[30]$latch .output_mode = "comb_only";
-defparam \readData[30]$latch .register_cascade_mode = "off";
-defparam \readData[30]$latch .sum_lutc_input = "datac";
-defparam \readData[30]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_P10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \writeData[31]~I (
-	.datain(gnd),
-	.oe(gnd),
-	.combout(\writeData~combout [31]),
-	.padio(writeData[31]));
-// synopsys translate_off
-defparam \writeData[31]~I .operation_mode = "input";
-// synopsys translate_on
-
-// Location: LC_X7_Y5_N2
-maxv_lcell \readData[31]$latch (
-// Equation(s):
-// \readData[31]$latch~combout  = ((GLOBAL(\readData[31]~0_combout ) & (\writeData~combout [31])) # (!GLOBAL(\readData[31]~0_combout ) & ((\readData[31]$latch~combout ))))
-
-	.clk(gnd),
-	.dataa(vcc),
-	.datab(\writeData~combout [31]),
-	.datac(\readData[31]~0_combout ),
-	.datad(\readData[31]$latch~combout ),
-	.aclr(gnd),
-	.aload(gnd),
-	.sclr(gnd),
-	.sload(gnd),
-	.ena(vcc),
-	.cin(gnd),
-	.cin0(gnd),
-	.cin1(vcc),
-	.inverta(gnd),
-	.regcascin(gnd),
-	.devclrn(devclrn),
-	.devpor(devpor),
-	.combout(\readData[31]$latch~combout ),
-	.regout(),
-	.cout(),
-	.cout0(),
-	.cout1());
-// synopsys translate_off
-defparam \readData[31]$latch .lut_mask = "cfc0";
-defparam \readData[31]$latch .operation_mode = "normal";
-defparam \readData[31]$latch .output_mode = "comb_only";
-defparam \readData[31]$latch .register_cascade_mode = "off";
-defparam \readData[31]$latch .sum_lutc_input = "datac";
-defparam \readData[31]$latch .synch_mode = "off";
-// synopsys translate_on
-
-// Location: PIN_P6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[10]~I (
+// Location: PIN_111,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \clk~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[10]));
+	.padio(clk));
 // synopsys translate_off
-defparam \address[10]~I .operation_mode = "input";
+defparam \clk~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_R16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[11]~I (
+// Location: PIN_70,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[0]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[11]));
+	.padio(md[0]));
 // synopsys translate_off
-defparam \address[11]~I .operation_mode = "input";
+defparam \md[0]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_J5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[12]~I (
+// Location: PIN_68,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[1]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[12]));
+	.padio(md[1]));
 // synopsys translate_off
-defparam \address[12]~I .operation_mode = "input";
+defparam \md[1]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_N3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[13]~I (
+// Location: PIN_127,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[2]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[13]));
+	.padio(md[2]));
 // synopsys translate_off
-defparam \address[13]~I .operation_mode = "input";
+defparam \md[2]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_B14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[14]~I (
+// Location: PIN_51,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[3]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[14]));
+	.padio(md[3]));
 // synopsys translate_off
-defparam \address[14]~I .operation_mode = "input";
+defparam \md[3]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_P5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[15]~I (
+// Location: PIN_129,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[4]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[15]));
+	.padio(md[4]));
 // synopsys translate_off
-defparam \address[15]~I .operation_mode = "input";
+defparam \md[4]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_D1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[16]~I (
+// Location: PIN_102,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[5]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[16]));
+	.padio(md[5]));
 // synopsys translate_off
-defparam \address[16]~I .operation_mode = "input";
+defparam \md[5]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_N16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[17]~I (
+// Location: PIN_118,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[6]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[17]));
+	.padio(md[6]));
 // synopsys translate_off
-defparam \address[17]~I .operation_mode = "input";
+defparam \md[6]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_H15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[18]~I (
+// Location: PIN_61,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[7]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[18]));
+	.padio(md[7]));
 // synopsys translate_off
-defparam \address[18]~I .operation_mode = "input";
+defparam \md[7]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_F1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[19]~I (
+// Location: PIN_60,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[8]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[19]));
+	.padio(md[8]));
 // synopsys translate_off
-defparam \address[19]~I .operation_mode = "input";
+defparam \md[8]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_N12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[20]~I (
+// Location: PIN_93,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[9]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[20]));
+	.padio(md[9]));
 // synopsys translate_off
-defparam \address[20]~I .operation_mode = "input";
+defparam \md[9]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_B5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[21]~I (
+// Location: PIN_96,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[10]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[21]));
+	.padio(md[10]));
 // synopsys translate_off
-defparam \address[21]~I .operation_mode = "input";
+defparam \md[10]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_R7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[22]~I (
+// Location: PIN_87,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[11]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[22]));
+	.padio(md[11]));
 // synopsys translate_off
-defparam \address[22]~I .operation_mode = "input";
+defparam \md[11]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_K14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[23]~I (
+// Location: PIN_75,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[12]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[23]));
+	.padio(md[12]));
 // synopsys translate_off
-defparam \address[23]~I .operation_mode = "input";
+defparam \md[12]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_A8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[24]~I (
+// Location: PIN_132,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[13]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[24]));
+	.padio(md[13]));
 // synopsys translate_off
-defparam \address[24]~I .operation_mode = "input";
+defparam \md[13]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_L1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[25]~I (
+// Location: PIN_1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[14]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[25]));
+	.padio(md[14]));
 // synopsys translate_off
-defparam \address[25]~I .operation_mode = "input";
+defparam \md[14]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_H1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[26]~I (
+// Location: PIN_52,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[15]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[26]));
+	.padio(md[15]));
 // synopsys translate_off
-defparam \address[26]~I .operation_mode = "input";
+defparam \md[15]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_E1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[27]~I (
+// Location: PIN_74,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[16]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[27]));
+	.padio(md[16]));
 // synopsys translate_off
-defparam \address[27]~I .operation_mode = "input";
+defparam \md[16]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_E15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[28]~I (
+// Location: PIN_13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[17]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[28]));
+	.padio(md[17]));
 // synopsys translate_off
-defparam \address[28]~I .operation_mode = "input";
+defparam \md[17]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_N2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[29]~I (
+// Location: PIN_86,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[18]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[29]));
+	.padio(md[18]));
 // synopsys translate_off
-defparam \address[29]~I .operation_mode = "input";
+defparam \md[18]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_P4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[30]~I (
+// Location: PIN_6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[19]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[30]));
+	.padio(md[19]));
 // synopsys translate_off
-defparam \address[30]~I .operation_mode = "input";
+defparam \md[19]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_D13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[31]~I (
+// Location: PIN_73,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[20]~I (
 	.datain(gnd),
 	.oe(gnd),
 	.combout(),
-	.padio(address[31]));
+	.padio(md[20]));
 // synopsys translate_off
-defparam \address[31]~I .operation_mode = "input";
+defparam \md[20]~I .operation_mode = "input";
 // synopsys translate_on
 
-// Location: PIN_M16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[0]~I (
-	.datain(\readData[0]$latch~combout ),
+// Location: PIN_55,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[21]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[21]));
+// synopsys translate_off
+defparam \md[21]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_32,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[22]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[22]));
+// synopsys translate_off
+defparam \md[22]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_103,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[23]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[23]));
+// synopsys translate_off
+defparam \md[23]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_88,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[24]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[24]));
+// synopsys translate_off
+defparam \md[24]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_41,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[25]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[25]));
+// synopsys translate_off
+defparam \md[25]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_69,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[26]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[26]));
+// synopsys translate_off
+defparam \md[26]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_22,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[27]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[27]));
+// synopsys translate_off
+defparam \md[27]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_78,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[28]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[28]));
+// synopsys translate_off
+defparam \md[28]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_89,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[29]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[29]));
+// synopsys translate_off
+defparam \md[29]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_108,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[30]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[30]));
+// synopsys translate_off
+defparam \md[30]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_95,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
+maxv_io \md[31]~I (
+	.datain(gnd),
+	.oe(gnd),
+	.combout(),
+	.padio(md[31]));
+// synopsys translate_off
+defparam \md[31]~I .operation_mode = "input";
+// synopsys translate_on
+
+// Location: PIN_97,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[0]~I (
+	.datain(gnd),
 	.oe(vcc),
 	.combout(),
-	.padio(readData[0]));
+	.padio(pru[0]));
 // synopsys translate_off
-defparam \readData[0]~I .operation_mode = "output";
+defparam \pru[0]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_M9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[1]~I (
-	.datain(\readData[1]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[1]));
-// synopsys translate_off
-defparam \readData[1]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_A9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[2]~I (
-	.datain(\readData[2]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[2]));
-// synopsys translate_off
-defparam \readData[2]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_C9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[3]~I (
-	.datain(\readData[3]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[3]));
-// synopsys translate_off
-defparam \readData[3]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_P11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[4]~I (
-	.datain(\readData[4]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[4]));
-// synopsys translate_off
-defparam \readData[4]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_R14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[5]~I (
-	.datain(\readData[5]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[5]));
-// synopsys translate_off
-defparam \readData[5]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_G15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[6]~I (
-	.datain(\readData[6]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[6]));
-// synopsys translate_off
-defparam \readData[6]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_E13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[7]~I (
-	.datain(\readData[7]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[7]));
-// synopsys translate_off
-defparam \readData[7]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_E16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[8]~I (
-	.datain(\readData[8]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[8]));
-// synopsys translate_off
-defparam \readData[8]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_B6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[9]~I (
-	.datain(\readData[9]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[9]));
-// synopsys translate_off
-defparam \readData[9]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_N13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[10]~I (
-	.datain(\readData[10]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[10]));
-// synopsys translate_off
-defparam \readData[10]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_B11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[11]~I (
-	.datain(\readData[11]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[11]));
-// synopsys translate_off
-defparam \readData[11]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_A11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[12]~I (
-	.datain(\readData[12]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[12]));
-// synopsys translate_off
-defparam \readData[12]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_D12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[13]~I (
-	.datain(\readData[13]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[13]));
-// synopsys translate_off
-defparam \readData[13]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_N5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[14]~I (
-	.datain(\readData[14]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[14]));
-// synopsys translate_off
-defparam \readData[14]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_T13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[15]~I (
-	.datain(\readData[15]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[15]));
-// synopsys translate_off
-defparam \readData[15]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_B12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[16]~I (
-	.datain(\readData[16]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[16]));
-// synopsys translate_off
-defparam \readData[16]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_C4,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[17]~I (
-	.datain(\readData[17]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[17]));
-// synopsys translate_off
-defparam \readData[17]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_B10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[18]~I (
-	.datain(\readData[18]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[18]));
-// synopsys translate_off
-defparam \readData[18]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_J15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[19]~I (
-	.datain(\readData[19]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[19]));
-// synopsys translate_off
-defparam \readData[19]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_C6,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[20]~I (
-	.datain(\readData[20]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[20]));
-// synopsys translate_off
-defparam \readData[20]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_K16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[21]~I (
-	.datain(\readData[21]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[21]));
-// synopsys translate_off
-defparam \readData[21]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_F16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[22]~I (
-	.datain(\readData[22]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[22]));
-// synopsys translate_off
-defparam \readData[22]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_C5,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[23]~I (
-	.datain(\readData[23]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[23]));
-// synopsys translate_off
-defparam \readData[23]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_T10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[24]~I (
-	.datain(\readData[24]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[24]));
-// synopsys translate_off
-defparam \readData[24]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_T15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[25]~I (
-	.datain(\readData[25]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[25]));
-// synopsys translate_off
-defparam \readData[25]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_R8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[26]~I (
-	.datain(\readData[26]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[26]));
-// synopsys translate_off
-defparam \readData[26]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_J12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[27]~I (
-	.datain(\readData[27]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[27]));
-// synopsys translate_off
-defparam \readData[27]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_C10,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[28]~I (
-	.datain(\readData[28]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[28]));
-// synopsys translate_off
-defparam \readData[28]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_A7,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[29]~I (
-	.datain(\readData[29]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[29]));
-// synopsys translate_off
-defparam \readData[29]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_G16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[30]~I (
-	.datain(\readData[30]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[30]));
-// synopsys translate_off
-defparam \readData[30]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_T9,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
-maxv_io \readData[31]~I (
-	.datain(\readData[31]$latch~combout ),
-	.oe(vcc),
-	.combout(),
-	.padio(readData[31]));
-// synopsys translate_off
-defparam \readData[31]~I .operation_mode = "output";
-// synopsys translate_on
-
-// Location: PIN_C3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[0]~I (
+// Location: PIN_94,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[1]~I (
 	.datain(gnd),
-	.oe(gnd),
+	.oe(vcc),
 	.combout(),
-	.padio(address[0]));
+	.padio(pru[1]));
 // synopsys translate_off
-defparam \address[0]~I .operation_mode = "input";
+defparam \pru[1]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_P15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[1]~I (
+// Location: PIN_44,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[2]~I (
 	.datain(gnd),
-	.oe(gnd),
+	.oe(vcc),
 	.combout(),
-	.padio(address[1]));
+	.padio(pru[2]));
 // synopsys translate_off
-defparam \address[1]~I .operation_mode = "input";
+defparam \pru[2]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_P8,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[2]~I (
+// Location: PIN_122,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[3]~I (
 	.datain(gnd),
-	.oe(gnd),
+	.oe(vcc),
 	.combout(),
-	.padio(address[2]));
+	.padio(pru[3]));
 // synopsys translate_off
-defparam \address[2]~I .operation_mode = "input";
+defparam \pru[3]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_B1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[3]~I (
+// Location: PIN_91,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[4]~I (
 	.datain(gnd),
-	.oe(gnd),
+	.oe(vcc),
 	.combout(),
-	.padio(address[3]));
+	.padio(pru[4]));
 // synopsys translate_off
-defparam \address[3]~I .operation_mode = "input";
+defparam \pru[4]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_N15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[4]~I (
+// Location: PIN_2,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[5]~I (
 	.datain(gnd),
-	.oe(gnd),
+	.oe(vcc),
 	.combout(),
-	.padio(address[4]));
+	.padio(pru[5]));
 // synopsys translate_off
-defparam \address[4]~I .operation_mode = "input";
+defparam \pru[5]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_N1,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[5]~I (
+// Location: PIN_12,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[6]~I (
 	.datain(gnd),
-	.oe(gnd),
+	.oe(vcc),
 	.combout(),
-	.padio(address[5]));
+	.padio(pru[6]));
 // synopsys translate_off
-defparam \address[5]~I .operation_mode = "input";
+defparam \pru[6]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_M15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[6]~I (
+// Location: PIN_11,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[7]~I (
 	.datain(gnd),
-	.oe(gnd),
+	.oe(vcc),
 	.combout(),
-	.padio(address[6]));
+	.padio(pru[7]));
 // synopsys translate_off
-defparam \address[6]~I .operation_mode = "input";
+defparam \pru[7]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_A13,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[7]~I (
+// Location: PIN_130,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[8]~I (
 	.datain(gnd),
-	.oe(gnd),
+	.oe(vcc),
 	.combout(),
-	.padio(address[7]));
+	.padio(pru[8]));
 // synopsys translate_off
-defparam \address[7]~I .operation_mode = "input";
+defparam \pru[8]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_J16,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[8]~I (
+// Location: PIN_37,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[9]~I (
 	.datain(gnd),
-	.oe(gnd),
+	.oe(vcc),
 	.combout(),
-	.padio(address[8]));
+	.padio(pru[9]));
 // synopsys translate_off
-defparam \address[8]~I .operation_mode = "input";
+defparam \pru[9]~I .operation_mode = "output";
 // synopsys translate_on
 
-// Location: PIN_L15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
-maxv_io \address[9]~I (
+// Location: PIN_120,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[10]~I (
 	.datain(gnd),
-	.oe(gnd),
+	.oe(vcc),
 	.combout(),
-	.padio(address[9]));
+	.padio(pru[10]));
 // synopsys translate_off
-defparam \address[9]~I .operation_mode = "input";
+defparam \pru[10]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_15,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[11]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[11]));
+// synopsys translate_off
+defparam \pru[11]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_76,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[12]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[12]));
+// synopsys translate_off
+defparam \pru[12]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_142,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[13]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[13]));
+// synopsys translate_off
+defparam \pru[13]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_20,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[14]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[14]));
+// synopsys translate_off
+defparam \pru[14]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_21,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[15]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[15]));
+// synopsys translate_off
+defparam \pru[15]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_107,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[16]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[16]));
+// synopsys translate_off
+defparam \pru[16]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_23,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[17]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[17]));
+// synopsys translate_off
+defparam \pru[17]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_24,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[18]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[18]));
+// synopsys translate_off
+defparam \pru[18]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_105,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[19]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[19]));
+// synopsys translate_off
+defparam \pru[19]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_28,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[20]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[20]));
+// synopsys translate_off
+defparam \pru[20]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_29,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[21]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[21]));
+// synopsys translate_off
+defparam \pru[21]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_85,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[22]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[22]));
+// synopsys translate_off
+defparam \pru[22]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_104,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[23]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[23]));
+// synopsys translate_off
+defparam \pru[23]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_50,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[24]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[24]));
+// synopsys translate_off
+defparam \pru[24]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_117,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[25]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[25]));
+// synopsys translate_off
+defparam \pru[25]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_3,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[26]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[26]));
+// synopsys translate_off
+defparam \pru[26]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_140,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[27]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[27]));
+// synopsys translate_off
+defparam \pru[27]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_14,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[28]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[28]));
+// synopsys translate_off
+defparam \pru[28]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_79,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[29]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[29]));
+// synopsys translate_off
+defparam \pru[29]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_121,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[30]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[30]));
+// synopsys translate_off
+defparam \pru[30]~I .operation_mode = "output";
+// synopsys translate_on
+
+// Location: PIN_63,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 16mA
+maxv_io \pru[31]~I (
+	.datain(gnd),
+	.oe(vcc),
+	.combout(),
+	.padio(pru[31]));
+// synopsys translate_off
+defparam \pru[31]~I .operation_mode = "output";
 // synopsys translate_on
 
 endmodule

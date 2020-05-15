@@ -1,9 +1,9 @@
-Analysis & Synthesis Status : Successful - Thu May 14 20:07:35 2020
+Analysis & Synthesis Status : Successful - Fri May 15 18:44:22 2020
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : DATAPATH
-Top-level Entity Name : DATAMEMORY
+Top-level Entity Name : DATAPATH
 Family : MAX V
-Total logic elements : 33
-Total pins : 98
+Total logic elements : 0
+Total pins : 65
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
