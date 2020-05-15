@@ -12,29 +12,29 @@
 # 
 # vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:20:45 on May 12,2020
+# Start time: 19:02:07 on May 14,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH" C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v 
 # -- Compiling module DATAMEMORY
 # 
 # Top level modules:
 # 	DATAMEMORY
-# End time: 20:20:45 on May 12,2020, Elapsed time: 0:00:00
+# End time: 19:02:07 on May 14,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
-# Start time: 20:20:45 on May 12,2020
+# Start time: 19:02:07 on May 14,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH" C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v 
 # -- Compiling module DATAMEMORY_TB
 # 
 # Top level modules:
 # 	DATAMEMORY_TB
-# End time: 20:20:45 on May 12,2020, Elapsed time: 0:00:00
+# End time: 19:02:07 on May 14,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs="+acc"  DATAMEMORY_TB
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L maxv_ver -L rtl_work -L work -voptargs=""+acc"" DATAMEMORY_TB 
-# Start time: 20:20:45 on May 12,2020
+# Start time: 19:02:07 on May 14,2020
 # Loading work.DATAMEMORY_TB
 # Loading work.DATAMEMORY
 # 
@@ -44,8 +44,8 @@
 # view signals
 # .main_pane.objects.interior.cs.body.tree
 # run -all
-# ** Note: $stop    : C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v(28)
+# ** Note: $stop    : C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v(25)
 #    Time: 30 ns  Iteration: 0  Instance: /DATAMEMORY_TB
-# Break in Module DATAMEMORY_TB at C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v line 28
-# End time: 20:21:33 on May 12,2020, Elapsed time: 0:00:48
+# Break in Module DATAMEMORY_TB at C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v line 25
+# End time: 19:02:29 on May 14,2020, Elapsed time: 0:00:22
 # Errors: 0, Warnings: 0

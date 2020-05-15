@@ -7,23 +7,20 @@ reg memWrite;
 wire [31:0]readData;
 
 DATAMEMORY DUV(.address(address),
-	.writeData(writeData),.memRead(memRead),
-	.memWrite(memWrite),.readData(readData));
+	.memWrite(memWrite),
+	.memRead(memRead),
+	.readData(readData));
 	
 initial
 begin
-	$readmemb("datamemoryTest.txt",DUV.memoria);
+	$readmemb("datamemoryTest.txt",DUV.mem);
 	memRead = 1'b1;
+	memWrite = 1'b0;
 	address = 32'd0;
 	#10;
-	memRead = 1'b0;
-	memWrite = 1'b1;
 	address = 32'd1;
-	writeData = 32'd10;
 	#10;
-	memWrite = 1'b0;
-	memRead = 1'b1;
-	address = 32'd1;
+	address = 32'd2;
 	#10;
 	$stop;
 end

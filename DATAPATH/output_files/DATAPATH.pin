@@ -62,147 +62,147 @@ CHIP  "DATAPATH"  ASSIGNED TO AN: 5M240ZT144C4
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
-md[14]                       : 1         : input  : 3.3-V LVTTL       :         : 1         : N              
-pru[5]                       : 2         : output : 3.3-V LVTTL       :         : 1         : N              
-pru[26]                      : 3         : output : 3.3-V LVTTL       :         : 1         : N              
+address[15]                  : 1         : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 2         :        :                   :         : 1         :                
+address[16]                  : 3         : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 4         :        :                   :         : 1         :                
 GND*                         : 5         :        :                   :         : 1         :                
-md[19]                       : 6         : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 7         :        :                   :         : 1         :                
+GND*                         : 6         :        :                   :         : 1         :                
+address[6]                   : 7         : input  : 3.3-V LVTTL       :         : 1         : N              
 GND                          : 8         : gnd    :                   :         :           :                
 VCCIO1                       : 9         : power  :                   : 3.3V    : 1         :                
 GND                          : 10        : gnd    :                   :         :           :                
-pru[7]                       : 11        : output : 3.3-V LVTTL       :         : 1         : N              
-pru[6]                       : 12        : output : 3.3-V LVTTL       :         : 1         : N              
-md[17]                       : 13        : input  : 3.3-V LVTTL       :         : 1         : N              
-pru[28]                      : 14        : output : 3.3-V LVTTL       :         : 1         : N              
-pru[11]                      : 15        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 16        :        :                   :         : 1         :                
+readData[5]                  : 11        : output : 3.3-V LVTTL       :         : 1         : N              
+readData[0]                  : 12        : output : 3.3-V LVTTL       :         : 1         : N              
+address[18]                  : 13        : input  : 3.3-V LVTTL       :         : 1         : N              
+readData[28]                 : 14        : output : 3.3-V LVTTL       :         : 1         : N              
+readData[11]                 : 15        : output : 3.3-V LVTTL       :         : 1         : N              
+readData[3]                  : 16        : output : 3.3-V LVTTL       :         : 1         : N              
 GND                          : 17        : gnd    :                   :         :           :                
-GND*                         : 18        :        :                   :         : 1         :                
+readData[13]                 : 18        : output : 3.3-V LVTTL       :         : 1         : N              
 VCCINT                       : 19        : power  :                   : 1.8V    :           :                
-pru[14]                      : 20        : output : 3.3-V LVTTL       :         : 1         : N              
-pru[15]                      : 21        : output : 3.3-V LVTTL       :         : 1         : N              
-md[27]                       : 22        : input  : 3.3-V LVTTL       :         : 1         : N              
-pru[17]                      : 23        : output : 3.3-V LVTTL       :         : 1         : N              
-pru[18]                      : 24        : output : 3.3-V LVTTL       :         : 1         : N              
+readData[14]                 : 20        : output : 3.3-V LVTTL       :         : 1         : N              
+readData[15]                 : 21        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 22        :        :                   :         : 1         :                
+readData[17]                 : 23        : output : 3.3-V LVTTL       :         : 1         : N              
+readData[18]                 : 24        : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : 25        : power  :                   : 3.3V    : 1         :                
 GND                          : 26        : gnd    :                   :         :           :                
-GND*                         : 27        :        :                   :         : 1         :                
-pru[20]                      : 28        : output : 3.3-V LVTTL       :         : 1         : N              
-pru[21]                      : 29        : output : 3.3-V LVTTL       :         : 1         : N              
+address[26]                  : 27        : input  : 3.3-V LVTTL       :         : 1         : N              
+readData[20]                 : 28        : output : 3.3-V LVTTL       :         : 1         : N              
+readData[21]                 : 29        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 30        :        :                   :         : 1         :                
-GND*                         : 31        :        :                   :         : 1         :                
-md[22]                       : 32        : input  : 3.3-V LVTTL       :         : 1         : N              
+readData[23]                 : 31        : output : 3.3-V LVTTL       :         : 1         : N              
+address[24]                  : 32        : input  : 3.3-V LVTTL       :         : 1         : N              
 TMS                          : 33        : input  :                   :         : 1         :                
 TDI                          : 34        : input  :                   :         : 1         :                
 TCK                          : 35        : input  :                   :         : 1         :                
 TDO                          : 36        : output :                   :         : 1         :                
-pru[9]                       : 37        : output : 3.3-V LVTTL       :         : 1         : N              
+readData[25]                 : 37        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 38        :        :                   :         : 1         :                
 GND*                         : 39        :        :                   :         : 1         :                
 GND*                         : 40        :        :                   :         : 1         :                
-md[25]                       : 41        : input  : 3.3-V LVTTL       :         : 1         : N              
+address[27]                  : 41        : input  : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 42        :        :                   :         : 1         :                
 GND*                         : 43        :        :                   :         : 1         :                
-pru[2]                       : 44        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 45        :        :                   :         : 1         :                
+readData[1]                  : 44        : output : 3.3-V LVTTL       :         : 1         : N              
+readData[24]                 : 45        : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : 46        : power  :                   : 3.3V    : 1         :                
 GND                          : 47        : gnd    :                   :         :           :                
 GND*                         : 48        :        :                   :         : 1         :                
 GND*                         : 49        :        :                   :         : 1         :                
-pru[24]                      : 50        : output : 3.3-V LVTTL       :         : 1         : N              
-md[3]                        : 51        : input  : 3.3-V LVTTL       :         : 1         : N              
-md[15]                       : 52        : input  : 3.3-V LVTTL       :         : 1         : N              
+readData[29]                 : 50        : output : 3.3-V LVTTL       :         : 1         : N              
+address[4]                   : 51        : input  : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : 52        :        :                   :         : 1         :                
 GND*                         : 53        :        :                   :         : 1         :                
 GND                          : 54        : gnd    :                   :         :           :                
-md[21]                       : 55        : input  : 3.3-V LVTTL       :         : 1         : N              
+memWrite                     : 55        : input  : 3.3-V LVTTL       :         : 1         : N              
 VCCINT                       : 56        : power  :                   : 1.8V    :           :                
 GND*                         : 57        :        :                   :         : 1         :                
 GND*                         : 58        :        :                   :         : 1         :                
 GND*                         : 59        :        :                   :         : 1         :                
-md[8]                        : 60        : input  : 3.3-V LVTTL       :         : 1         : N              
-md[7]                        : 61        : input  : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : 62        :        :                   :         : 1         :                
-pru[31]                      : 63        : output : 3.3-V LVTTL       :         : 1         : N              
+address[9]                   : 60        : input  : 3.3-V LVTTL       :         : 1         : N              
+address[8]                   : 61        : input  : 3.3-V LVTTL       :         : 1         : N              
+readData[2]                  : 62        : output : 3.3-V LVTTL       :         : 1         : N              
+readData[31]                 : 63        : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : 64        : power  :                   : 3.3V    : 1         :                
 GND                          : 65        : gnd    :                   :         :           :                
 GND*                         : 66        :        :                   :         : 1         :                
 GND*                         : 67        :        :                   :         : 1         :                
-md[1]                        : 68        : input  : 3.3-V LVTTL       :         : 1         : N              
-md[26]                       : 69        : input  : 3.3-V LVTTL       :         : 1         : N              
-md[0]                        : 70        : input  : 3.3-V LVTTL       :         : 1         : N              
+address[2]                   : 68        : input  : 3.3-V LVTTL       :         : 1         : N              
+address[28]                  : 69        : input  : 3.3-V LVTTL       :         : 1         : N              
+readData[19]                 : 70        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : 71        :        :                   :         : 1         :                
 GND*                         : 72        :        :                   :         : 1         :                
-md[20]                       : 73        : input  : 3.3-V LVTTL       :         : 2         : N              
-md[16]                       : 74        : input  : 3.3-V LVTTL       :         : 2         : N              
-md[12]                       : 75        : input  : 3.3-V LVTTL       :         : 2         : N              
-pru[12]                      : 76        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 73        :        :                   :         : 2         :                
+address[17]                  : 74        : input  : 3.3-V LVTTL       :         : 2         : N              
+address[13]                  : 75        : input  : 3.3-V LVTTL       :         : 2         : N              
+address[22]                  : 76        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 77        :        :                   :         : 2         :                
-md[28]                       : 78        : input  : 3.3-V LVTTL       :         : 2         : N              
-pru[29]                      : 79        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 80        :        :                   :         : 2         :                
+GND*                         : 78        :        :                   :         : 2         :                
+GND*                         : 79        :        :                   :         : 2         :                
+address[21]                  : 80        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 81        :        :                   :         : 2         :                
 VCCIO2                       : 82        : power  :                   : 3.3V    : 2         :                
 GND                          : 83        : gnd    :                   :         :           :                
 GND*                         : 84        :        :                   :         : 2         :                
-pru[22]                      : 85        : output : 3.3-V LVTTL       :         : 2         : N              
-md[18]                       : 86        : input  : 3.3-V LVTTL       :         : 2         : N              
-md[11]                       : 87        : input  : 3.3-V LVTTL       :         : 2         : N              
-md[24]                       : 88        : input  : 3.3-V LVTTL       :         : 2         : N              
-md[29]                       : 89        : input  : 3.3-V LVTTL       :         : 2         : N              
+readData[26]                 : 85        : output : 3.3-V LVTTL       :         : 2         : N              
+readData[12]                 : 86        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 87        :        :                   :         : 2         :                
+address[25]                  : 88        : input  : 3.3-V LVTTL       :         : 2         : N              
+address[12]                  : 89        : input  : 3.3-V LVTTL       :         : 2         : N              
 VCCINT                       : 90        : power  :                   : 1.8V    :           :                
-pru[4]                       : 91        : output : 3.3-V LVTTL       :         : 2         : N              
+address[30]                  : 91        : input  : 3.3-V LVTTL       :         : 2         : N              
 GND                          : 92        : gnd    :                   :         :           :                
-md[9]                        : 93        : input  : 3.3-V LVTTL       :         : 2         : N              
-pru[1]                       : 94        : output : 3.3-V LVTTL       :         : 2         : N              
-md[31]                       : 95        : input  : 3.3-V LVTTL       :         : 2         : N              
-md[10]                       : 96        : input  : 3.3-V LVTTL       :         : 2         : N              
-pru[0]                       : 97        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 98        :        :                   :         : 2         :                
+address[10]                  : 93        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 94        :        :                   :         : 2         :                
+address[31]                  : 95        : input  : 3.3-V LVTTL       :         : 2         : N              
+address[11]                  : 96        : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 97        :        :                   :         : 2         :                
+readData[6]                  : 98        : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : 99        : gnd    :                   :         :           :                
 VCCIO2                       : 100       : power  :                   : 3.3V    : 2         :                
 GND*                         : 101       :        :                   :         : 2         :                
-md[5]                        : 102       : input  : 3.3-V LVTTL       :         : 2         : N              
-md[23]                       : 103       : input  : 3.3-V LVTTL       :         : 2         : N              
-pru[23]                      : 104       : output : 3.3-V LVTTL       :         : 2         : N              
-pru[19]                      : 105       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 102       :        :                   :         : 2         :                
+readData[22]                 : 103       : output : 3.3-V LVTTL       :         : 2         : N              
+readData[4]                  : 104       : output : 3.3-V LVTTL       :         : 2         : N              
+address[1]                   : 105       : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 106       :        :                   :         : 2         :                
-pru[16]                      : 107       : output : 3.3-V LVTTL       :         : 2         : N              
-md[30]                       : 108       : input  : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 109       :        :                   :         : 2         :                
+readData[16]                 : 107       : output : 3.3-V LVTTL       :         : 2         : N              
+address[23]                  : 108       : input  : 3.3-V LVTTL       :         : 2         : N              
+readData[10]                 : 109       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 110       :        :                   :         : 2         :                
-clk                          : 111       : input  : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 112       :        :                   :         : 2         :                
+address[0]                   : 111       : input  : 3.3-V LVTTL       :         : 2         : N              
+memRead                      : 112       : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 113       :        :                   :         : 2         :                
 GND*                         : 114       :        :                   :         : 2         :                
 GND                          : 115       : gnd    :                   :         :           :                
 VCCIO2                       : 116       : power  :                   : 3.3V    : 2         :                
-pru[25]                      : 117       : output : 3.3-V LVTTL       :         : 2         : N              
-md[6]                        : 118       : input  : 3.3-V LVTTL       :         : 2         : N              
+address[20]                  : 117       : input  : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 118       :        :                   :         : 2         :                
 GND*                         : 119       :        :                   :         : 2         :                
-pru[10]                      : 120       : output : 3.3-V LVTTL       :         : 2         : N              
-pru[30]                      : 121       : output : 3.3-V LVTTL       :         : 2         : N              
-pru[3]                       : 122       : output : 3.3-V LVTTL       :         : 2         : N              
+readData[9]                  : 120       : output : 3.3-V LVTTL       :         : 2         : N              
+readData[30]                 : 121       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : 122       :        :                   :         : 2         :                
 GND*                         : 123       :        :                   :         : 2         :                
 GND*                         : 124       :        :                   :         : 2         :                
 GND*                         : 125       :        :                   :         : 2         :                
 VCCINT                       : 126       : power  :                   : 1.8V    :           :                
-md[2]                        : 127       : input  : 3.3-V LVTTL       :         : 2         : N              
+address[3]                   : 127       : input  : 3.3-V LVTTL       :         : 2         : N              
 GND                          : 128       : gnd    :                   :         :           :                
-md[4]                        : 129       : input  : 3.3-V LVTTL       :         : 2         : N              
-pru[8]                       : 130       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 131       :        :                   :         : 2         :                
-md[13]                       : 132       : input  : 3.3-V LVTTL       :         : 2         : N              
+address[5]                   : 129       : input  : 3.3-V LVTTL       :         : 2         : N              
+readData[8]                  : 130       : output : 3.3-V LVTTL       :         : 2         : N              
+address[29]                  : 131       : input  : 3.3-V LVTTL       :         : 2         : N              
+address[14]                  : 132       : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 133       :        :                   :         : 2         :                
 GND*                         : 134       :        :                   :         : 2         :                
 GND                          : 135       : gnd    :                   :         :           :                
 VCCIO2                       : 136       : power  :                   : 3.3V    : 2         :                
 GND                          : 137       : gnd    :                   :         :           :                
 GND*                         : 138       :        :                   :         : 2         :                
-GND*                         : 139       :        :                   :         : 2         :                
-pru[27]                      : 140       : output : 3.3-V LVTTL       :         : 2         : N              
+readData[7]                  : 139       : output : 3.3-V LVTTL       :         : 2         : N              
+readData[27]                 : 140       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 141       :        :                   :         : 2         :                
-pru[13]                      : 142       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : 143       :        :                   :         : 2         :                
+address[7]                   : 142       : input  : 3.3-V LVTTL       :         : 2         : N              
+address[19]                  : 143       : input  : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : 144       :        :                   :         : 2         :                

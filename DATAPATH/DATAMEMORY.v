@@ -1,22 +1,25 @@
 module DATAMEMORY(
-	input [31:0]address,//viene de aluResult
-	input [31:0]writeData,//viene de readData2
-	input memRead,
+	input [31:0]address,
 	input memWrite,
-	output reg [31:0]readData
+	input memRead,
+	output reg [31:0] readData
 );
 
-reg [31:0]memoria[0:2048];
+reg [31:0] mem [0:1023];
 
-initial
-begin
-	if(memRead)//lee datos 
+
+always @(address)
 	begin
-		readData = memoria[address];
+		if(memWrite && (memRead == 0))
+		begin//se escribe
+			readData = mem[address];
+		end
+		else
+		begin//solo se lee
+			readData = mem[address];
+		end
 	end
-	else if(memWrite)//escribe en memoria solo si memRead es 0
-	begin
-		memoria[address] = writeData;
-	end
-end
+
+
+	
 endmodule

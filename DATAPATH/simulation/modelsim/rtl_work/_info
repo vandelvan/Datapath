@@ -9,13 +9,13 @@ z2
 cModel Technology
 Z0 dC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/simulation/modelsim
 vDATAMEMORY
-Z1 !s110 1589332845
+Z1 !s110 1589500927
 !i10b 1
-!s100 SnN1jcQB;jgGcVYR<]?^V1
-IJak:9Ddd1=4WB@W?7UG]V1
+!s100 z0]=G?9aT_ADW3@IZ3<;11
+IgE4WQAfO4O0mWPKN<`<So3
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1589332724
+w1589500587
 8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v
 FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v
 L0 1
@@ -23,7 +23,7 @@ Z3 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z4 !s108 1589332845.000000
+Z4 !s108 1589500927.000000
 !s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v|
 !i113 1
@@ -34,11 +34,11 @@ n@d@a@t@a@m@e@m@o@r@y
 vDATAMEMORY_TB
 R1
 !i10b 1
-!s100 2IV^E6[dbRf`5g<UkZ4ba2
-IXnE5b74o?^1?fd13K9RaE2
+!s100 ;T8SoAa0_?d@O;2aZgGNk3
+Ij0CEI8R5]hinXD>@Ek>ab0
 R2
 R0
-w1589332205
+w1589500918
 8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v
 FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v
 L0 2
