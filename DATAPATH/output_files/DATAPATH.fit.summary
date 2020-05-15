@@ -1,11 +1,11 @@
-Fitter Status : Successful - Thu May 14 18:56:45 2020
+Fitter Status : Successful - Thu May 14 20:08:07 2020
 Quartus Prime Version : 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 Revision Name : DATAPATH
 Top-level Entity Name : DATAMEMORY
 Family : MAX V
-Device : 5M240ZT144C4
+Device : 5M570ZF256C4
 Timing Models : Final
-Total logic elements : 0 / 240 ( 0 % )
-Total pins : 66 / 114 ( 58 % )
+Total logic elements : 33 / 570 ( 6 % )
+Total pins : 98 / 159 ( 62 % )
 Total virtual pins : 0
 UFM blocks : 0 / 1 ( 0 % )
