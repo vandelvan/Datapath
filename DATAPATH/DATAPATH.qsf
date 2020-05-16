@@ -69,6 +69,9 @@ set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ADDER_TB -section_id ADDE
 set_global_assignment -name EDA_TEST_BENCH_NAME DATAMEMORY_TB -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id DATAMEMORY_TB
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME DATAMEMORY_TB -section_id DATAMEMORY_TB
+set_global_assignment -name EDA_TEST_BENCH_NAME ALU_TB -section_id eda_simulation
+set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id ALU_TB
+set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME ALU_TB -section_id ALU_TB
 set_global_assignment -name VERILOG_FILE UC_tb.v
 set_global_assignment -name VERILOG_FILE UC.v
 set_global_assignment -name VERILOG_FILE SIGNEXT_TB.v
@@ -87,6 +90,7 @@ set_global_assignment -name VERILOG_FILE DATAPATH.v
 set_global_assignment -name VERILOG_FILE DATAMEMORY_TB.v
 set_global_assignment -name VERILOG_FILE DATAMEMORY.v
 set_global_assignment -name VERILOG_FILE CAND.v
+set_global_assignment -name VERILOG_FILE ALU_TB.v
 set_global_assignment -name VERILOG_FILE ALUCONTROL_tb.v
 set_global_assignment -name VERILOG_FILE ALUCONTROL.v
 set_global_assignment -name VERILOG_FILE ALU.v
@@ -100,3 +104,4 @@ set_global_assignment -name EDA_TEST_BENCH_FILE ALUCONTROL_tb.v -section_id ALUC
 set_global_assignment -name EDA_TEST_BENCH_FILE SHIFTLEFT2_TB.v -section_id SHIFTLEFT2_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE ADDER_TB.v -section_id ADDER_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE DATAMEMORY_TB.v -section_id DATAMEMORY_TB
+set_global_assignment -name EDA_TEST_BENCH_FILE ALU_TB.v -section_id ALU_TB
