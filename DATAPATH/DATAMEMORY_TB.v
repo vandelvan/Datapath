@@ -12,21 +12,23 @@ DATAMEMORY DUV(.writeData(writeData),.address(address),
 	
 initial
 begin
-	$readmemb("datamemoryTest.txt",DUV.mem);
-	memRead = 1'b1;
-	address = 32'd0;
-	#10;
-	memRead = 1'b0;
-	memWrite = 1'b1;
-	address = 32'd1;
-	writeData = 32'd100;
-	#10;
-	memRead = 1'b1;
-	memWrite = 1'b0;
-	address = 32'd1;
-	#10;
-	address = 32'd2;
-	#10;
+	$readmemb("datamemoryTest.txt",DUV.mem2);
+	memRead=0;
+	memWrite=1;
+	address=32'd4;
+	writeData=32'd0;
+	#5;
+	address=32'd1;
+	writeData=32'd1;
+	#5;
+	memRead=1;
+	memWrite=0;
+	address=32'd0;
+	writeData=32'd0;
+	#5;
+	address=32'd1;
+	writeData=32'd1;
+	#5;
 	$stop;
 end
 

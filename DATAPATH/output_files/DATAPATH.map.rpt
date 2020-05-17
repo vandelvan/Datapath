@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DATAPATH
-Sat May 16 16:42:52 2020
+Sat May 16 19:45:35 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -15,9 +15,8 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
   9. Port Connectivity Checks: "UC:p12"
- 10. Port Connectivity Checks: "ALUCONTROL:p11"
- 11. Analysis & Synthesis Messages
- 12. Analysis & Synthesis Suppressed Messages
+ 10. Analysis & Synthesis Messages
+ 11. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -43,7 +42,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat May 16 16:42:52 2020       ;
+; Analysis & Synthesis Status ; Successful - Sat May 16 19:45:35 2020       ;
 ; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name               ; DATAPATH                                    ;
 ; Top-level Entity Name       ; DATAPATH                                    ;
@@ -130,7 +129,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -141,29 +140,29 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
-; UC.v                             ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v         ;         ;
-; SIGNEXT.v                        ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SIGNEXT.v    ;         ;
-; SHIFTLEFT2.v                     ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SHIFTLEFT2.v ;         ;
-; REGISTERS.v                      ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v  ;         ;
-; PC.v                             ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/PC.v         ;         ;
-; MUX5.v                           ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX5.v       ;         ;
-; MUX3.v                           ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX3.v       ;         ;
-; MUX2.v                           ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX2.v       ;         ;
-; MUX1.v                           ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX1.v       ;         ;
-; INST_MEM.v                       ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/INST_MEM.v   ;         ;
-; DATAPATH.v                       ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v   ;         ;
-; DATAMEMORY.v                     ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v ;         ;
-; CAND.v                           ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/CAND.v       ;         ;
-; ALUCONTROL.v                     ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL.v ;         ;
-; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALU.v        ;         ;
-; ADDER.v                          ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADDER.v      ;         ;
-; ADD.v                            ; yes             ; User Verilog HDL File  ; C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADD.v        ;         ;
-+----------------------------------+-----------------+------------------------+---------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                  ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                    ; Library ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
+; UC.v                             ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/UC.v         ;         ;
+; SIGNEXT.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v    ;         ;
+; SHIFTLEFT2.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT2.v ;         ;
+; REGISTERS.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v  ;         ;
+; PC.v                             ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/PC.v         ;         ;
+; MUX5.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v       ;         ;
+; MUX3.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v       ;         ;
+; MUX2.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v       ;         ;
+; MUX1.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v       ;         ;
+; INST_MEM.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/INST_MEM.v   ;         ;
+; DATAPATH.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v   ;         ;
+; DATAMEMORY.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v ;         ;
+; CAND.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/CAND.v       ;         ;
+; ALUCONTROL.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL.v ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/ALU.v        ;         ;
+; ADDER.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/ADDER.v      ;         ;
+; ADD.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/ADD.v        ;         ;
++----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -221,23 +220,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "UC:p12"                                                                                                                   ;
-+-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; Port  ; Type   ; Severity ; Details                                                                                                                  ;
-+-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-; aluOp ; Output ; Warning  ; Output or bidir port (4 bits) is wider than the port expression (2 bits) it drives; bit(s) "aluOp[3..2]" have no fanouts ;
-; jump  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                 ;
-+-------+--------+----------+--------------------------------------------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALUCONTROL:p11"                                                                                                                               ;
-+-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; Port  ; Type  ; Severity ; Details                                                                                                                                       ;
-+-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
-; aluop ; Input ; Warning  ; Input port expression (2 bits) is smaller than the input port (4 bits) it drives.  Extra input bit(s) "aluop[3..2]" will be connected to GND. ;
-+-------+-------+----------+-----------------------------------------------------------------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "UC:p12"                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                  ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
+; jump ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -246,224 +235,221 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sat May 16 16:42:38 2020
+    Info: Processing started: Sat May 16 19:45:17 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DATAPATH -c DATAPATH
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Info (12021): Found 1 design units, including 1 entities, in source file uc_tb.v
-    Info (12023): Found entity 1: UC_tb File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC_tb.v Line: 2
+    Info (12023): Found entity 1: UC_tb File: C:/Users/Gustavo/Datapath/DATAPATH/UC_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file uc.v
-    Info (12023): Found entity 1: UC File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 1
+    Info (12023): Found entity 1: UC File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file signext_tb.v
-    Info (12023): Found entity 1: SIGNEXT_TB File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SIGNEXT_TB.v Line: 4
+    Info (12023): Found entity 1: SIGNEXT_TB File: C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT_TB.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file signext.v
-    Info (12023): Found entity 1: SIGNEXT File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SIGNEXT.v Line: 1
+    Info (12023): Found entity 1: SIGNEXT File: C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file shiftleft2_tb.v
-    Info (12023): Found entity 1: SHIFTLEFT2_TB File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SHIFTLEFT2_TB.v Line: 2
+    Info (12023): Found entity 1: SHIFTLEFT2_TB File: C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT2_TB.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file shiftleft2.v
-    Info (12023): Found entity 1: SHIFTLEFT2 File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SHIFTLEFT2.v Line: 1
+    Info (12023): Found entity 1: SHIFTLEFT2 File: C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file registers.v
-    Info (12023): Found entity 1: REGISTERS File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v Line: 1
+    Info (12023): Found entity 1: REGISTERS File: C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file pc.v
-    Info (12023): Found entity 1: PC File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/PC.v Line: 2
+    Info (12023): Found entity 1: PC File: C:/Users/Gustavo/Datapath/DATAPATH/PC.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file mux5.v
-    Info (12023): Found entity 1: MUX5 File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX5.v Line: 1
+    Info (12023): Found entity 1: MUX5 File: C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux3.v
-    Info (12023): Found entity 1: MUX3 File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX3.v Line: 1
+    Info (12023): Found entity 1: MUX3 File: C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.v
-    Info (12023): Found entity 1: MUX2 File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX2.v Line: 1
+    Info (12023): Found entity 1: MUX2 File: C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file mux1.v
-    Info (12023): Found entity 1: MUX1 File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX1.v Line: 1
+    Info (12023): Found entity 1: MUX1 File: C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file inst_mem.v
-    Info (12023): Found entity 1: INST_MEM File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/INST_MEM.v Line: 2
+    Info (12023): Found entity 1: INST_MEM File: C:/Users/Gustavo/Datapath/DATAPATH/INST_MEM.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file datapath_tb.v
-    Info (12023): Found entity 1: DATAPATH_TB File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH_TB.v Line: 4
+    Info (12023): Found entity 1: DATAPATH_TB File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v Line: 4
 Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
-    Info (12023): Found entity 1: DATAPATH File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 1
+    Info (12023): Found entity 1: DATAPATH File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file datamemory_tb.v
-    Info (12023): Found entity 1: DATAMEMORY_TB File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY_TB.v Line: 2
+    Info (12023): Found entity 1: DATAMEMORY_TB File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY_TB.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file datamemory.v
-    Info (12023): Found entity 1: DATAMEMORY File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 1
+    Info (12023): Found entity 1: DATAMEMORY File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file cand.v
-    Info (12023): Found entity 1: CAND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/CAND.v Line: 1
+    Info (12023): Found entity 1: CAND File: C:/Users/Gustavo/Datapath/DATAPATH/CAND.v Line: 1
 Warning (12019): Can't analyze file -- file ALU_TB.v is missing
 Info (12021): Found 1 design units, including 1 entities, in source file alucontrol_tb.v
-    Info (12023): Found entity 1: ALUCONTROL_tb File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL_tb.v Line: 2
+    Info (12023): Found entity 1: ALUCONTROL_tb File: C:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL_tb.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file alucontrol.v
-    Info (12023): Found entity 1: ALUCONTROL File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL.v Line: 1
+    Info (12023): Found entity 1: ALUCONTROL File: C:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALU.v Line: 1
+    Info (12023): Found entity 1: ALU File: C:/Users/Gustavo/Datapath/DATAPATH/ALU.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file adder_tb.v
-    Info (12023): Found entity 1: ADDER_TB File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADDER_TB.v Line: 2
+    Info (12023): Found entity 1: ADDER_TB File: C:/Users/Gustavo/Datapath/DATAPATH/ADDER_TB.v Line: 2
 Info (12021): Found 1 design units, including 1 entities, in source file adder.v
-    Info (12023): Found entity 1: ADDER File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADDER.v Line: 1
+    Info (12023): Found entity 1: ADDER File: C:/Users/Gustavo/Datapath/DATAPATH/ADDER.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file add.v
-    Info (12023): Found entity 1: ADD File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADD.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at DATAPATH.v(36): created implicit net for "zf" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 36
+    Info (12023): Found entity 1: ADD File: C:/Users/Gustavo/Datapath/DATAPATH/ADD.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at DATAPATH.v(36): created implicit net for "zf" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 36
 Info (12127): Elaborating entity "DATAPATH" for the top level hierarchy
-Info (12128): Elaborating entity "PC" for hierarchy "PC:p1" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 33
-Info (12128): Elaborating entity "ADD" for hierarchy "ADD:p2" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 34
-Info (12128): Elaborating entity "INST_MEM" for hierarchy "INST_MEM:p3" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 35
-Warning (10858): Verilog HDL warning at INST_MEM.v(6): object MR used but never assigned File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/INST_MEM.v Line: 6
-Warning (10030): Net "MR" at INST_MEM.v(6) has no driver or initial value, using a default initial value '0' File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/INST_MEM.v Line: 6
-Info (12128): Elaborating entity "CAND" for hierarchy "CAND:p4" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 36
-Info (12128): Elaborating entity "MUX5" for hierarchy "MUX5:p5" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 38
-Info (12128): Elaborating entity "MUX1" for hierarchy "MUX1:p6" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 40
-Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:p7" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 41
-Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(13): variable "enable" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v Line: 13
-Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(15): variable "wd" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v Line: 15
-Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(15): variable "wr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v Line: 15
-Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(17): variable "rr2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v Line: 17
-Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(22): variable "rr2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v Line: 22
-Info (12128): Elaborating entity "MUX2" for hierarchy "MUX2:p8" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 42
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:p9" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 43
-Info (12128): Elaborating entity "SIGNEXT" for hierarchy "SIGNEXT:p10" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 44
-Info (12128): Elaborating entity "ALUCONTROL" for hierarchy "ALUCONTROL:p11" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 45
-Info (12128): Elaborating entity "UC" for hierarchy "UC:p12" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 46
-Warning (10270): Verilog HDL Case Statement warning at UC.v(16): incomplete case statement has no default case item File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "regDst", which holds its previous value in one or more paths through the always construct File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "aluSrc", which holds its previous value in one or more paths through the always construct File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "jump", which holds its previous value in one or more paths through the always construct File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "memtoReg", which holds its previous value in one or more paths through the always construct File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "regWrite", which holds its previous value in one or more paths through the always construct File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "memRead", which holds its previous value in one or more paths through the always construct File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "memWrite", which holds its previous value in one or more paths through the always construct File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "branch", which holds its previous value in one or more paths through the always construct File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "aluOp", which holds its previous value in one or more paths through the always construct File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "aluOp[0]" at UC.v(16) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "aluOp[1]" at UC.v(16) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "aluOp[2]" at UC.v(16) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "aluOp[3]" at UC.v(16) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "branch" at UC.v(16) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "memWrite" at UC.v(16) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "memRead" at UC.v(16) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "regWrite" at UC.v(16) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "memtoReg" at UC.v(16) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "jump" at UC.v(16) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "aluSrc" at UC.v(16) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "regDst" at UC.v(16) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v Line: 16
-Info (12128): Elaborating entity "MUX3" for hierarchy "MUX3:p13" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 47
-Info (12128): Elaborating entity "SHIFTLEFT2" for hierarchy "SHIFTLEFT2:p14" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 48
-Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:p15" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 49
-Info (12128): Elaborating entity "DATAMEMORY" for hierarchy "DATAMEMORY:p16" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 50
-Warning (10235): Verilog HDL Always Construct warning at DATAMEMORY.v(12): variable "memWrite" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 12
-Warning (10235): Verilog HDL Always Construct warning at DATAMEMORY.v(14): variable "writeData" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 14
-Warning (10235): Verilog HDL Always Construct warning at DATAMEMORY.v(19): variable "memRead" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Warning (10240): Verilog HDL Always Construct warning at DATAMEMORY.v(10): inferring latch(es) for variable "readData", which holds its previous value in one or more paths through the always construct File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 10
-Info (10041): Inferred latch for "readData[0]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[1]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[2]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[3]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[4]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[5]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[6]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[7]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[8]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[9]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[10]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[11]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[12]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[13]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[14]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[15]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[16]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[17]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[18]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[19]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[20]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[21]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[22]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[23]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[24]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[25]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[26]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[27]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[28]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[29]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[30]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[31]" at DATAMEMORY.v(19) File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "PC" for hierarchy "PC:p1" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 33
+Info (12128): Elaborating entity "ADD" for hierarchy "ADD:p2" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 34
+Info (12128): Elaborating entity "INST_MEM" for hierarchy "INST_MEM:p3" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 35
+Warning (10858): Verilog HDL warning at INST_MEM.v(6): object MR used but never assigned File: C:/Users/Gustavo/Datapath/DATAPATH/INST_MEM.v Line: 6
+Warning (10030): Net "MR" at INST_MEM.v(6) has no driver or initial value, using a default initial value '0' File: C:/Users/Gustavo/Datapath/DATAPATH/INST_MEM.v Line: 6
+Info (12128): Elaborating entity "CAND" for hierarchy "CAND:p4" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 36
+Info (12128): Elaborating entity "MUX5" for hierarchy "MUX5:p5" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 37
+Info (12128): Elaborating entity "MUX1" for hierarchy "MUX1:p6" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 38
+Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:p7" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 39
+Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(13): variable "enable" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v Line: 13
+Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(15): variable "wd" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v Line: 15
+Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(15): variable "wr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v Line: 15
+Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(17): variable "rr2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v Line: 17
+Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(22): variable "rr2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v Line: 22
+Info (12128): Elaborating entity "MUX2" for hierarchy "MUX2:p8" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 40
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:p9" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 41
+Info (12128): Elaborating entity "SIGNEXT" for hierarchy "SIGNEXT:p10" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 42
+Info (12128): Elaborating entity "ALUCONTROL" for hierarchy "ALUCONTROL:p11" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 43
+Info (12128): Elaborating entity "UC" for hierarchy "UC:p12" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 44
+Warning (10270): Verilog HDL Case Statement warning at UC.v(16): incomplete case statement has no default case item File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "regDst", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "aluSrc", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "jump", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "memtoReg", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "regWrite", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "memRead", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "memWrite", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "branch", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "aluOp", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (10041): Inferred latch for "aluOp[0]" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (10041): Inferred latch for "aluOp[1]" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (10041): Inferred latch for "aluOp[2]" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (10041): Inferred latch for "aluOp[3]" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (10041): Inferred latch for "branch" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (10041): Inferred latch for "memWrite" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (10041): Inferred latch for "memRead" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (10041): Inferred latch for "regWrite" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (10041): Inferred latch for "memtoReg" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (10041): Inferred latch for "jump" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (10041): Inferred latch for "aluSrc" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (10041): Inferred latch for "regDst" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
+Info (12128): Elaborating entity "MUX3" for hierarchy "MUX3:p13" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 46
+Info (12128): Elaborating entity "SHIFTLEFT2" for hierarchy "SHIFTLEFT2:p14" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 48
+Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:p15" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 49
+Info (12128): Elaborating entity "DATAMEMORY" for hierarchy "DATAMEMORY:p16" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 50
+Warning (10240): Verilog HDL Always Construct warning at DATAMEMORY.v(12): inferring latch(es) for variable "readData", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 12
+Info (10041): Inferred latch for "readData[0]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[1]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[2]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[3]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[4]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[5]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[6]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[7]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[8]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[9]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[10]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[11]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[12]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[13]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[14]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[15]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[16]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[17]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[18]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[19]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[20]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[21]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[22]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[23]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[24]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[25]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[26]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[27]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[28]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[29]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[30]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[31]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "pru[0]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[1]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[2]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[3]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[4]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[5]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[6]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[7]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[8]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[9]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[10]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[11]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[12]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[13]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[14]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[15]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[16]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[17]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[18]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[19]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[20]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[21]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[22]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[23]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[24]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[25]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[26]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[27]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[28]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[29]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[30]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "pru[31]" is stuck at GND File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 5
-Warning (21074): Design contains 33 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "clk" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 2
-    Warning (15610): No output dependent on input pin "md[0]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[1]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[2]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[3]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[4]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[5]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[6]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[7]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[8]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[9]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[10]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[11]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[12]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[13]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[14]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[15]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[16]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[17]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[18]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[19]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[20]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[21]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[22]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[23]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[24]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[25]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[26]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[27]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[28]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[29]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[30]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (15610): No output dependent on input pin "md[31]" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[0]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[1]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[2]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[3]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[4]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[5]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[6]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[7]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[8]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[9]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[10]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[11]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[12]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[13]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[14]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[15]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[16]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[17]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[18]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[19]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[20]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[21]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[22]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[23]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[24]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[25]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[26]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[27]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[28]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[29]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[30]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pru[31]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "prum[0]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[1]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[2]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[3]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[4]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[5]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[6]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[7]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[8]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[9]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[10]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[11]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[12]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[13]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[14]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[15]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[16]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[17]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[18]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[19]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[20]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[21]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[22]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[23]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[24]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[25]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[26]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[27]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[28]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[29]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[30]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "prum[31]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
+Warning (21074): Design contains 1 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "clk" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 2
 Info (21057): Implemented 65 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 33 input pins
-    Info (21059): Implemented 32 output pins
-Info (144001): Generated suppressed messages file C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/output_files/DATAPATH.map.smsg
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 92 warnings
-    Info: Peak virtual memory: 4706 megabytes
-    Info: Processing ended: Sat May 16 16:42:52 2020
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:22
+    Info (21058): Implemented 1 input pins
+    Info (21059): Implemented 64 output pins
+Info (144001): Generated suppressed messages file C:/Users/Gustavo/Datapath/DATAPATH/output_files/DATAPATH.map.smsg
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 89 warnings
+    Info: Peak virtual memory: 4711 megabytes
+    Info: Processing ended: Sat May 16 19:45:35 2020
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:36
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/output_files/DATAPATH.map.smsg.
+The suppressed messages can be found in C:/Users/Gustavo/Datapath/DATAPATH/output_files/DATAPATH.map.smsg.
 
 

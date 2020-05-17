@@ -4,21 +4,21 @@ module DATAMEMORY(
 	output reg [31:0] readData
 );
 
-reg [31:0] mem [0:1023];
+reg [31:0] mem2 [0:1023];
 
 
-always @(address) 
+always @*
 	begin
 		if(memWrite)
 		begin//se escribe y lee
-			mem[address]=writeData;
-			readData=mem[address];//no borrar ni modificar
-			readData=mem[address];//ni esta, por alguna razon evitan que el registro se convierta en RAM
+			mem2[address]=writeData;
+			readData=32'd0;
+
 		end
-		else
+
 		if(memRead)
 		begin//solo se lee
-			readData=mem[address];
+			readData=mem2[address];
 		end
 	end
 

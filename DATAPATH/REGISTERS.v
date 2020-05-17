@@ -5,7 +5,7 @@ module REGISTERS(
 	output reg [31:0] rd1,rd2
 );
 
-reg [31:0] mem [0:1023];
+reg [31:0] mem [0:31];
 
 
 always @(rr1) //No le hace caso a wr, para evitar errores
