@@ -8,7 +8,7 @@ module REGISTERS(
 reg [31:0] mem [0:31];
 
 
-always @(rr1) //No le hace caso a wr, para evitar errores
+always @(rr1,rr2) //No le hace caso a wr, para evitar errores
 	begin
 		if(enable)
 		begin//se lee y escribe

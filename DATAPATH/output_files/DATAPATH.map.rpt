@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DATAPATH
-Sat May 16 19:45:35 2020
+Sun May 17 16:21:06 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Sat May 16 19:45:35 2020       ;
+; Analysis & Synthesis Status ; Successful - Sun May 17 16:21:06 2020       ;
 ; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name               ; DATAPATH                                    ;
 ; Top-level Entity Name       ; DATAPATH                                    ;
@@ -235,7 +235,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Sat May 16 19:45:17 2020
+    Info: Processing started: Sun May 17 16:20:47 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DATAPATH -c DATAPATH
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -302,8 +302,6 @@ Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:p7" File: 
 Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(13): variable "enable" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v Line: 13
 Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(15): variable "wd" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v Line: 15
 Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(15): variable "wr" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v Line: 15
-Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(17): variable "rr2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v Line: 17
-Warning (10235): Verilog HDL Always Construct warning at REGISTERS.v(22): variable "rr2" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v Line: 22
 Info (12128): Elaborating entity "MUX2" for hierarchy "MUX2:p8" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 40
 Info (12128): Elaborating entity "ALU" for hierarchy "ALU:p9" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 41
 Info (12128): Elaborating entity "SIGNEXT" for hierarchy "SIGNEXT:p10" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 42
@@ -331,11 +329,14 @@ Info (10041): Inferred latch for "memtoReg" at UC.v(16) File: C:/Users/Gustavo/D
 Info (10041): Inferred latch for "jump" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
 Info (10041): Inferred latch for "aluSrc" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
 Info (10041): Inferred latch for "regDst" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (12128): Elaborating entity "MUX3" for hierarchy "MUX3:p13" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 46
-Info (12128): Elaborating entity "SHIFTLEFT2" for hierarchy "SHIFTLEFT2:p14" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 48
-Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:p15" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 49
-Info (12128): Elaborating entity "DATAMEMORY" for hierarchy "DATAMEMORY:p16" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 50
-Warning (10240): Verilog HDL Always Construct warning at DATAMEMORY.v(12): inferring latch(es) for variable "readData", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 12
+Info (12128): Elaborating entity "MUX3" for hierarchy "MUX3:p13" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 45
+Info (12128): Elaborating entity "SHIFTLEFT2" for hierarchy "SHIFTLEFT2:p14" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 46
+Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:p15" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 47
+Info (12128): Elaborating entity "DATAMEMORY" for hierarchy "DATAMEMORY:p16" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 48
+Warning (10235): Verilog HDL Always Construct warning at DATAMEMORY.v(13): variable "memWrite" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 13
+Warning (10235): Verilog HDL Always Construct warning at DATAMEMORY.v(15): variable "writeData" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 15
+Warning (10235): Verilog HDL Always Construct warning at DATAMEMORY.v(19): variable "memRead" is read inside the Always Construct but isn't in the Always Construct's Event Control File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Warning (10240): Verilog HDL Always Construct warning at DATAMEMORY.v(11): inferring latch(es) for variable "readData", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 11
 Info (10041): Inferred latch for "readData[0]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
 Info (10041): Inferred latch for "readData[1]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
 Info (10041): Inferred latch for "readData[2]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
@@ -440,11 +441,11 @@ Info (21057): Implemented 65 device resources after synthesis - the final resour
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 64 output pins
 Info (144001): Generated suppressed messages file C:/Users/Gustavo/Datapath/DATAPATH/output_files/DATAPATH.map.smsg
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 89 warnings
-    Info: Peak virtual memory: 4711 megabytes
-    Info: Processing ended: Sat May 16 19:45:35 2020
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:36
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 90 warnings
+    Info: Peak virtual memory: 4712 megabytes
+    Info: Processing ended: Sun May 17 16:21:06 2020
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:35
 
 
 +------------------------------------------+

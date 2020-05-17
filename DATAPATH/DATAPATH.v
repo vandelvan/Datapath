@@ -42,10 +42,8 @@ ALU p9(.a(s1),.b(s2_fin),.sel(sel),.zf(zf),.res(datos_esc));
 SIGNEXT p10(.datoin(datos[15:0]),.datoout(sign));
 ALUCONTROL p11(.opf(datos[5:0]),.aluop(aluOp),.ops(sel));
 UC p12(.opcode(datos[31:26]),.regDst(regDst),.branch(branch),.memRead(memRead),.memtoReg(memtoReg),.aluOp(aluOp),.memWrite(memWrite),.aluSrc(aluSrc),.regWrite(regWrite));
-
 MUX3 p13(.memtoReg(memtoReg),.regs(datos_esc),.md(readData),.final_esc(final_esc),.prum(prum));
-
 SHIFTLEFT2 p14(.entrada(sign),.salida(direccionASumar));
 ADDER p15(.op1(counta),.op2(direccionASumar),.aluResult(aluResult));
-DATAMEMORY p16(.writeData(s2),.address(datos_esc),.memWrite(memWrite),.memRead(memRead),.readData(readData));
+DATAMEMORY p16(.writeData(s2),.address(datos_esc[9:0]),.memWrite(memWrite),.memRead(memRead),.readData(readData));
 endmodule

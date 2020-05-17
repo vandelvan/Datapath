@@ -1,5 +1,6 @@
 module DATAMEMORY(
-	input [31:0] writeData,address,
+	input [31:0] writeData,
+	input [9:0]address,
 	input memWrite,memRead,
 	output reg [31:0] readData
 );
@@ -7,12 +8,11 @@ module DATAMEMORY(
 reg [31:0] mem2 [0:1023];
 
 
-always @*
+always @(address)
 	begin
 		if(memWrite)
 		begin//se escribe y lee
 			mem2[address]=writeData;
-			readData=32'd0;
 
 		end
 

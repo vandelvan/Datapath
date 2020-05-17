@@ -89,10 +89,10 @@ begin
 		end
 	6'b101011://instruccion sw
 		begin
-			regDst = 1'bx;
+			regDst = 1'b0;
 			aluSrc = 1'b1;
 			jump=1'b0;
-			memtoReg = 1'bx;
+			memtoReg = 1'b0;
 			regWrite = 1'b0;
 			memRead = 1'b0;
 			memWrite = 1'b1;
