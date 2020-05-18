@@ -105,3 +105,8 @@ set_global_assignment -name EDA_TEST_BENCH_FILE SHIFTLEFT2_TB.v -section_id SHIF
 set_global_assignment -name EDA_TEST_BENCH_FILE ADDER_TB.v -section_id ADDER_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE DATAMEMORY_TB.v -section_id DATAMEMORY_TB
 set_global_assignment -name EDA_TEST_BENCH_FILE ALU_TB.v -section_id ALU_TB
+set_global_assignment -name VERILOG_FILE BUFFER0.v
+set_global_assignment -name VERILOG_FILE BUFFER01.v
+set_global_assignment -name VERILOG_FILE BUFFER1.v
+set_global_assignment -name VERILOG_FILE BUFFER2.v
+set_global_assignment -name VERILOG_FILE BUFFER3.v

@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DATAPATH
-Mon May 18 12:31:19 2020
+Mon May 18 16:23:26 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -42,7 +42,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Mon May 18 12:31:19 2020       ;
+; Analysis & Synthesis Status ; Successful - Mon May 18 16:23:26 2020       ;
 ; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name               ; DATAPATH                                    ;
 ; Top-level Entity Name       ; DATAPATH                                    ;
@@ -235,7 +235,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon May 18 12:31:05 2020
+    Info: Processing started: Mon May 18 16:23:11 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DATAPATH -c DATAPATH
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -288,6 +288,15 @@ Info (12021): Found 1 design units, including 1 entities, in source file adder.v
     Info (12023): Found entity 1: ADDER File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADDER.v Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file add.v
     Info (12023): Found entity 1: ADD File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADD.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file buffer0.v
+    Info (12023): Found entity 1: BUFFER0 File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER0.v Line: 1
+Warning (12019): Can't analyze file -- file BUFFER01.v is missing
+Info (12021): Found 1 design units, including 1 entities, in source file buffer1.v
+    Info (12023): Found entity 1: BUFFER1 File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file buffer2.v
+    Info (12023): Found entity 1: BUFFER2 File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file buffer3.v
+    Info (12023): Found entity 1: BUFFER3 File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER3.v Line: 1
 Warning (10236): Verilog HDL Implicit Net warning at DATAPATH.v(36): created implicit net for "zf" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 36
 Info (12127): Elaborating entity "DATAPATH" for the top level hierarchy
 Info (12128): Elaborating entity "PC" for hierarchy "PC:p1" File: C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v Line: 33
@@ -441,11 +450,11 @@ Info (21057): Implemented 65 device resources after synthesis - the final resour
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 64 output pins
 Info (144001): Generated suppressed messages file C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/output_files/DATAPATH.map.smsg
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 90 warnings
-    Info: Peak virtual memory: 4710 megabytes
-    Info: Processing ended: Mon May 18 12:31:19 2020
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:22
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 91 warnings
+    Info: Peak virtual memory: 4704 megabytes
+    Info: Processing ended: Mon May 18 16:23:26 2020
+    Info: Elapsed time: 00:00:15
+    Info: Total CPU time (on all processors): 00:00:23
 
 
 +------------------------------------------+

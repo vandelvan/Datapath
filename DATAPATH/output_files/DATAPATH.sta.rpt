@@ -1,5 +1,5 @@
 Timing Analyzer report for DATAPATH
-Mon May 18 12:31:25 2020
+Mon May 18 16:23:32 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -153,7 +153,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Mon May 18 12:31:24 2020
+    Info: Processing started: Mon May 18 16:23:31 2020
 Info: Command: quartus_sta DATAPATH -c DATAPATH
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -178,7 +178,7 @@ Info (332101): Design is fully constrained for setup requirements
 Info (332101): Design is fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
     Info: Peak virtual memory: 4650 megabytes
-    Info: Processing ended: Mon May 18 12:31:25 2020
+    Info: Processing ended: Mon May 18 16:23:32 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

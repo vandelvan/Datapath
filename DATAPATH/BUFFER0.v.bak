@@ -1,0 +1,5 @@
+module BUFFER0(
+	input [31:0]insSiguienteI,insActualI,
+	output reg [31:0]insSiguienteO,insActualO
+);
+endmodule

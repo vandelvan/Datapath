@@ -1,0 +1,54 @@
+module BUFFER1(
+	input clk, 
+	input regDstI,
+	input jumpI,
+	input branchI,
+	input memReadI,
+	input memtoRegI,
+	input [3:0]aluOpI,
+	input memWriteI,
+	input aluSrcI,
+	input regWriteI,
+	input [31:0]instruccionSiguienteI,
+	input [31:0]readData1I,
+	input [31:0]readData2I,
+	input [31:0]signExtendI,
+	input [4:0]rtI,
+	input [4:0]rdI,
+	output reg regDstO,
+	output reg jumpO,
+	output reg branchO,
+	output reg memReadO,
+	output reg memtoRegO,
+	output reg [3:0]aluOpO,
+	output reg memWriteO,
+	output reg aluSrcO,
+	output reg regWriteO,
+	output reg [31:0]instruccionSiguienteO,
+	output reg [31:0]readData1O,
+	output reg [31:0]readData2O,
+	output reg [31:0]signExtendO,
+	output reg [4:0]rtO,
+	output reg [4:0]rdO
+);
+
+always @(posedge clk)
+begin
+	regDstO =regDstI;
+	jumpO = jumpI;
+	branchO =branchI;
+	memReadO =memReadI;
+	memtoRegO = memtoRegI;
+	aluOpO =aluOpI;
+	memWriteO =memWriteI;
+	aluSrcO =aluSrcI;
+	regWriteO =regWriteI;
+	instruccionSiguienteO=instruccionSiguienteI;
+	readData1O=readData1I;
+	readData2O=readData2I;
+	signExtendO=signExtendI;
+	rtO=rtI;
+	rdO=rdI;
+end
+
+endmodule
