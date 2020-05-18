@@ -2,7 +2,7 @@ module MUX3(
 	input memtoReg,
 	input[31:0] regs,md,
 	output reg [31:0]final_esc,
-	output reg [31:0]prum
+	output reg [31:0]prum//para debug
 );
 
 always @*

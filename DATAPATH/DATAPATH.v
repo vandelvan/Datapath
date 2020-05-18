@@ -1,7 +1,7 @@
 module DATAPATH(
 	input clk,
-	output [31:0]pru,
-	output [31:0]prum
+	output [31:0]pru,//para debug
+	output [31:0]prum//para debug
 );
 
 wire [31:0]count;//direccion a leer

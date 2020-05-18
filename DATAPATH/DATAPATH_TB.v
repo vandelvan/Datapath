@@ -12,6 +12,7 @@ module DATAPATH_TB();
     initial begin
 		  $readmemb("TestF1_BReg.mem",DUV.p7.mem);
 		  $readmemb("badmemory.mem",DUV.p3.MR);
+		  $readmemb("datamemoryTest.mem",DUV.p16.mem2);
         #60;
         $stop;
 
