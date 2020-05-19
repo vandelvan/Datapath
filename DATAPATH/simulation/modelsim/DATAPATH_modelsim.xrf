@@ -100,3 +100,4 @@ instance = comp, \prum[28]~I , prum[28], DATAPATH, 1
 instance = comp, \prum[29]~I , prum[29], DATAPATH, 1
 instance = comp, \prum[30]~I , prum[30], DATAPATH, 1
 instance = comp, \prum[31]~I , prum[31], DATAPATH, 1
+instance = comp, \jumpSalida~I , jumpSalida, DATAPATH, 1

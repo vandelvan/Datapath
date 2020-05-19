@@ -1,5 +1,5 @@
 module MUX3(
-	input memtoReg,
+	input memToReg,
 	input[31:0] regs,md,
 	output reg [31:0]final_esc,
 	output reg [31:0]prum//para debug
@@ -7,7 +7,7 @@ module MUX3(
 
 always @*
 begin 
-	if(memtoReg)
+	if(memToReg)
 	begin
 		final_esc=md;//readData de dataMemory 
 		prum=final_esc;
