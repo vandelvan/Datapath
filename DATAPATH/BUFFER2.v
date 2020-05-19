@@ -3,7 +3,7 @@ module BUFFER2(
 	input jumpI,
 	input branchI,
 	input memReadI,
-	input memtoRegI,
+	input memToRegI,
 	input memWriteI,
 	input regWriteI,
 	input [31:0]siguienteInstruccionI,
@@ -14,7 +14,7 @@ module BUFFER2(
 	output reg jumpO,
 	output reg branchO,
 	output reg memReadO,
-	output reg memtoRegO,
+	output reg memToRegO,
 	output reg memWriteO,
 	output reg regWriteO,
 	output reg [31:0]siguienteInstruccionO,
@@ -29,7 +29,7 @@ begin
 	jumpO = jumpI;
 	branchO = branchI;
 	memReadO = memReadI;
-	memtoRegO = memtoRegI;
+	memToRegO = memToRegI;
 	memWriteO =memWriteI;
 	regWriteO =regWriteI;
 	siguienteInstruccionO=siguienteInstruccionI;

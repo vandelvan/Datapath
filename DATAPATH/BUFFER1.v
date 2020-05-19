@@ -4,7 +4,7 @@ module BUFFER1(
 	input jumpI,
 	input branchI,
 	input memReadI,
-	input memtoRegI,
+	input memToRegI,
 	input [3:0]aluOpI,
 	input memWriteI,
 	input aluSrcI,
@@ -19,7 +19,7 @@ module BUFFER1(
 	output reg jumpO,
 	output reg branchO,
 	output reg memReadO,
-	output reg memtoRegO,
+	output reg memToRegO,
 	output reg [3:0]aluOpO,
 	output reg memWriteO,
 	output reg aluSrcO,
@@ -38,7 +38,7 @@ begin
 	jumpO = jumpI;
 	branchO =branchI;
 	memReadO =memReadI;
-	memtoRegO = memtoRegI;
+	memToRegO = memToRegI;
 	aluOpO =aluOpI;
 	memWriteO =memWriteI;
 	aluSrcO =aluSrcI;

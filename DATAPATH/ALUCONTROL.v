@@ -1,12 +1,12 @@
 module ALUCONTROL(
 	input [5:0] opf,//func
-	input [3:0] aluop,
+	input [3:0] aluOp,
 	output reg [3:0] ops//selector de la alu
 );
 
 always @*
 begin
-	case(aluop)
+	case(aluOp)
 		4'b0000://instrucciones sw y lw,addi, no importa el func
 			ops = 4'b0010;//suma
 		4'b0001://branchEqual, no importa func

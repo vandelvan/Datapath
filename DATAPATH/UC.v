@@ -4,7 +4,7 @@ module UC(
 	output reg jump,//a MUX4
 	output reg branch,//a CAND
 	output reg memRead,//a dataMemory
-	output reg memtoReg,//a MUX3
+	output reg memToReg,//a MUX3
 	output reg [3:0]aluOp,//a aluControl
 	output reg memWrite,//a dataMemory
 	output reg aluSrc,// a MUX2
@@ -19,7 +19,7 @@ begin
 			regDst = 1'b1;
 			aluSrc = 1'b0;
 			jump=1'b0;
-			memtoReg = 1'b0;
+			memToReg = 1'b0;
 			regWrite = 1'b1;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -31,7 +31,7 @@ begin
 			regDst = 1'b0;
 			aluSrc = 1'b1;
 			jump=1'b0;
-			memtoReg = 1'b0;
+			memToReg = 1'b0;
 			regWrite = 1'b1;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -43,7 +43,7 @@ begin
 			regDst = 1'b1;
 			aluSrc = 1'b0;
 			jump=1'b0;
-			memtoReg = 1'b0;
+			memToReg = 1'b0;
 			regWrite = 1'b1;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -55,7 +55,7 @@ begin
 			regDst = 1'b0;
 			aluSrc = 1'b1;
 			jump=1'b0;
-			memtoReg = 1'b1;
+			memToReg = 1'b1;
 			regWrite = 1'b1;
 			memRead = 1'b1;
 			memWrite = 1'b0;
@@ -68,7 +68,7 @@ begin
 			regDst = 1'b0;
 			aluSrc = 1'b1;
 			jump=1'b0;
-			memtoReg = 1'b0;
+			memToReg = 1'b0;
 			regWrite = 1'b1;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -80,7 +80,7 @@ begin
 			regDst = 1'b0;
 			aluSrc = 1'b1;
 			jump=1'b0;
-			memtoReg = 1'b0;
+			memToReg = 1'b0;
 			regWrite = 1'b1;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -92,7 +92,7 @@ begin
 			regDst = 1'b0;
 			aluSrc = 1'b1;
 			jump=1'b0;
-			memtoReg = 1'b0;
+			memToReg = 1'b0;
 			regWrite = 1'b0;
 			memRead = 1'b0;
 			memWrite = 1'b1;
@@ -104,7 +104,7 @@ begin
 			regDst = 1'b0;
 			aluSrc = 1'b1;
 			jump=1'b0;
-			memtoReg = 1'b0;
+			memToReg = 1'b0;
 			regWrite = 1'b1;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -116,7 +116,7 @@ begin
 			regDst = 1'b0;
 			aluSrc = 1'b1;
 			jump=1'b0;
-			memtoReg = 1'b0;
+			memToReg = 1'b0;
 			regWrite = 1'b1;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -128,7 +128,7 @@ begin
 			regDst = 1'b0;
 			aluSrc = 1'b1;
 			jump=1'b0;
-			memtoReg = 1'b0;
+			memToReg = 1'b0;
 			regWrite = 1'b1;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -140,7 +140,7 @@ begin
 			regDst = 1'b0;
 			aluSrc = 1'b1;
 			jump=1'b0;
-			memtoReg = 1'b0;
+			memToReg = 1'b0;
 			regWrite = 1'b1;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -152,7 +152,7 @@ begin
 			regDst = 1'b0;
 			aluSrc = 1'b1;
 			jump=1'b0;
-			memtoReg = 1'b0;
+			memToReg = 1'b0;
 			regWrite = 1'b1;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -164,7 +164,7 @@ begin
 			regDst = 1'bx;
 			aluSrc = 1'b0;
 			jump=1'b0;
-			memtoReg = 1'bx;
+			memToReg = 1'bx;
 			regWrite = 1'b0;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -176,7 +176,7 @@ begin
 			regDst = 1'bx;
 			aluSrc = 1'b0;
 			jump=1'b0;
-			memtoReg = 1'bx;
+			memToReg = 1'bx;
 			regWrite = 1'b0;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -188,7 +188,7 @@ begin
 			regDst = 1'bx;
 			aluSrc = 1'b0;
 			jump=1'b0;
-			memtoReg = 1'bx;
+			memToReg = 1'bx;
 			regWrite = 1'b0;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -200,7 +200,7 @@ begin
 			regDst = 1'bx;
 			aluSrc = 1'b0;
 			jump=1'b0;
-			memtoReg = 1'bx;
+			memToReg = 1'bx;
 			regWrite = 1'b0;
 			memRead = 1'b0;
 			memWrite = 1'b0;
@@ -213,7 +213,7 @@ begin
 			regDst = 1'bx;
 			aluSrc = 1'bx;
 			jump=1'b1;
-			memtoReg = 1'bx;
+			memToReg = 1'bx;
 			regWrite = 1'bx;
 			memRead = 1'bx;
 			memWrite = 1'bx;
