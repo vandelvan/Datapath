@@ -7,10 +7,10 @@ module DATAPATH(
 
 
 wire [31:0]salidaPc;//PC(pc) - ADD(pc) & INST_MEM(dir) 
-wire [31:0]salidaAdd;//ADD(sal) - MUX5(add1) & BUFFER0(intSiguienteI)
-wire [31:0]salidaInst_Mem;//INST_MEM(datos)-BUFFER0(insActualI)
+wire [31:0]salidaAdd;//ADD(sal) - MUX5(add1) & BUFFER0(insSiguienteI)
+wire [31:0]salidaInst_Mem;//INST_MEM(datos) - BUFFER0(insActualI)
 wire [31:0]insSiguiente;//BUFFER0(insSiguienteO) - BUFFER1(instruccionSiguienteI)
-wire [31:0]insActual;//BUFFER0(insActualO) - UC & REGISTRERS & SIGNEXTEND & BUFFER1
+wire [31:0]insActual;//BUFFER0(insActualO) - UC(opcode) & REGISTRERS(rr1,rr2) & SIGNEXTEND(datoIn) & BUFFER1(rtI,rdI)
 wire jump1;//UC(jump) - BUFFER1(jumpI)
 wire regDst1;//UC(regDst) - BUFFER1(regDstI)
 wire branch1;//UC(branch) - BUFFER1(branchI)
@@ -48,7 +48,7 @@ wire jump3;//BUFFER2(jumpO) - BUFFER3(jumpI)
 wire branch3;//BUFFER2(branchO) - CAND(br)
 wire memRead3;//BUFFER2(memReadO) - DATAMEMORY(memReadI)
 wire memToReg3;//BUFFER2(memToRegO) - BUFFER3(memToRegI)
-wire memWrite3;//BUFFER2(memWriteO) - DATAMEMORY(memWrite)
+wire memWrite3;//BUFFER2(memWriteO) - DATAMEMORY(memWriteI)
 wire regWrite3;//BUFFER2(regWriteO) - BUFFER3(regWriteI)
 wire [31:0]instruccionAlterada;//BUFFER2(siguienteInstruccionO) - MUX5(aluResult)
 wire [31:0]direccionDato;//BUFFER2(aluResultO) - DATAMEMORY(address) & BUFFER3(aluResultI)

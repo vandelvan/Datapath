@@ -1,5 +1,5 @@
 Analysis & Synthesis report for DATAPATH
-Tue May 19 17:52:08 2020
+Tue May 19 22:31:04 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -46,7 +46,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Tue May 19 17:52:08 2020       ;
+; Analysis & Synthesis Status ; Successful - Tue May 19 22:31:04 2020       ;
 ; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name               ; DATAPATH                                    ;
 ; Top-level Entity Name       ; DATAPATH                                    ;
@@ -412,7 +412,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Tue May 19 17:51:51 2020
+    Info: Processing started: Tue May 19 22:30:50 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DATAPATH -c DATAPATH
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -1110,10 +1110,10 @@ Info (21057): Implemented 66 device resources after synthesis - the final resour
     Info (21059): Implemented 65 output pins
 Info (144001): Generated suppressed messages file C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/output_files/DATAPATH.map.smsg
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 568 warnings
-    Info: Peak virtual memory: 4713 megabytes
-    Info: Processing ended: Tue May 19 17:52:08 2020
-    Info: Elapsed time: 00:00:17
-    Info: Total CPU time (on all processors): 00:00:23
+    Info: Peak virtual memory: 4707 megabytes
+    Info: Processing ended: Tue May 19 22:31:04 2020
+    Info: Elapsed time: 00:00:14
+    Info: Total CPU time (on all processors): 00:00:21
 
 
 +------------------------------------------+

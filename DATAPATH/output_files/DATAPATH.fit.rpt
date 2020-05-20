@@ -1,5 +1,5 @@
 Fitter report for DATAPATH
-Tue May 19 17:52:14 2020
+Tue May 19 22:31:07 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -49,7 +49,7 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Tue May 19 17:52:14 2020       ;
+; Fitter Status         ; Successful - Tue May 19 22:31:07 2020       ;
 ; Quartus Prime Version ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
 ; Revision Name         ; DATAPATH                                    ;
 ; Top-level Entity Name ; DATAPATH                                    ;
@@ -681,9 +681,9 @@ Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/output_files/DATAPATH.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 7 warnings
-    Info: Peak virtual memory: 5066 megabytes
-    Info: Processing ended: Tue May 19 17:52:14 2020
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 5036 megabytes
+    Info: Processing ended: Tue May 19 22:31:07 2020
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:02
 
 
