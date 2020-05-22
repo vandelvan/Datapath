@@ -5,7 +5,7 @@ module DATAPATH(
 	output [31:0]direccionASaltar,//debbug
 	output selMux5db//debbug
 
-);
+); //Listo
 
 
 wire [31:0]salidaPc;//PC(pc) - ADD(pc) & INST_MEM(dir) 
