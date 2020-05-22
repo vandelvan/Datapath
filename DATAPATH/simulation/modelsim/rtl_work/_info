@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/Users/Gustavo/Datapath/DATAPATH/simulation/modelsim
 vADD
-Z1 !s110 1590176503
+Z1 !s110 1590178016
 !i10b 1
 !s100 HIbk3OmG]A3UIGoea=W`d2
 IoBAbK69nac;CfgVLBFW^e1
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1590176503.000000
+Z5 !s108 1590178015.000000
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/ADD.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/ADD.v|
 !i113 1
@@ -32,7 +32,7 @@ Z7 !s92 -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH
 Z8 tCvgOpt 0
 n@a@d@d
 vADDER
-R1
+Z9 !s110 1590178015
 !i10b 1
 !s100 kW6^i:eYJ5NOJj:CWRj=J3
 InEaQVOPM<1z@gVod`i3?03
@@ -55,7 +55,7 @@ R7
 R8
 n@a@d@d@e@r
 vALU
-R1
+R9
 !i10b 1
 !s100 `PX7^6DR[bNVMKH3Z9a7;2
 I4AC1[9mUmJkK3]4W??ZSC0
@@ -78,7 +78,7 @@ R7
 R8
 n@a@l@u
 vALUCONTROL
-R1
+R9
 !i10b 1
 !s100 M=Z6nS5CA2fY?Y^;C=DkK2
 IJoelb4K]5F3Xg;OZJ`QOJ3
@@ -101,7 +101,7 @@ R7
 R8
 n@a@l@u@c@o@n@t@r@o@l
 vBUFFER0
-Z9 !s110 1590176504
+R1
 !i10b 1
 !s100 IR3Q<]5IPRI:UW8Z]FDYi3
 Ii=_MEX]L1MJjaQ]]mPz3=3
@@ -115,7 +115,7 @@ R4
 r1
 !s85 0
 31
-Z10 !s108 1590176504.000000
+Z10 !s108 1590178016.000000
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/BUFFER0.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/BUFFER0.v|
 !i113 1
@@ -124,7 +124,7 @@ R7
 R8
 n@b@u@f@f@e@r0
 vBUFFER1
-R9
+R1
 !i10b 1
 !s100 V>c60h;X9I>_@QQD67:Wh1
 I@lbW>]d1O_EXnD3HoQ51f2
@@ -147,7 +147,7 @@ R7
 R8
 n@b@u@f@f@e@r1
 vBUFFER2
-R9
+R1
 !i10b 1
 !s100 06XiSED?cW0m;mS^g1F_n3
 If=bBjDo9Z=@IZ6J3biK:b2
@@ -170,7 +170,7 @@ R7
 R8
 n@b@u@f@f@e@r2
 vBUFFER3
-R9
+R1
 !i10b 1
 !s100 4_9I`^OX5`N6zCWTmUTA52
 IhlPP7kEdDC5EmjKTA<Oc02
@@ -193,7 +193,7 @@ R7
 R8
 n@b@u@f@f@e@r3
 vCAND
-R1
+R9
 !i10b 1
 !s100 7RAC1>HHbHd5fH:jiHDP21
 I9k4BLiY2LU^?keOYV2gh;2
@@ -216,7 +216,7 @@ R7
 R8
 n@c@a@n@d
 vDATAMEMORY
-R1
+R9
 !i10b 1
 !s100 12gNFbTd4z37`=g`?QBS]3
 I2lNJOYhgzUm`zaCg3[R;62
@@ -239,13 +239,13 @@ R7
 R8
 n@d@a@t@a@m@e@m@o@r@y
 vDATAPATH
-R1
+R9
 !i10b 1
 !s100 :>hEXI1HPoPNW;[9^AR450
 I3Mc6HV4PbcEM=DQf]W6d[0
 R2
 R0
-w1590175520
+w1590177386
 8C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v
 FC:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v
 L0 1
@@ -262,13 +262,13 @@ R7
 R8
 n@d@a@t@a@p@a@t@h
 vDATAPATH_TB
-R9
+R1
 !i10b 1
-!s100 aFMBcdIAj@gBYN4G@:<=N1
-I3XHfM2>mkgEbFgOdVRiZY3
+!s100 R7W8XmE>VCz1fbi:hD40h2
+ISPS7G?HgdNMEN4CgM^YF@1
 R2
 R0
-w1590175231
+w1590178001
 8C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v
 FC:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v
 L0 4
@@ -285,7 +285,7 @@ R7
 R8
 n@d@a@t@a@p@a@t@h_@t@b
 vINST_MEM
-R1
+R9
 !i10b 1
 !s100 M;m>60<`][8gVA2]WJ6Zm2
 I9HL<ACljL[6Y6O10P1VT=0
@@ -308,7 +308,7 @@ R7
 R8
 n@i@n@s@t_@m@e@m
 vMUX1
-R1
+R9
 !i10b 1
 !s100 mGgfjTR7i6_3mgUHE^0gT0
 IR:XIjF;VfP]oS9gXXm??X0
@@ -331,7 +331,7 @@ R7
 R8
 n@m@u@x1
 vMUX2
-R1
+R9
 !i10b 1
 !s100 Lm:7nbJcMcN1SYoS9>j^D1
 IK:gjXEa57X:aIjC3_T02X0
@@ -345,7 +345,7 @@ R4
 r1
 !s85 0
 31
-R5
+Z11 !s108 1590178014.000000
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v|
 !i113 1
@@ -354,7 +354,7 @@ R7
 R8
 n@m@u@x2
 vMUX3
-R1
+Z12 !s110 1590178014
 !i10b 1
 !s100 l:D0mgSe;QAYoHT]9e4lI3
 IE4f]0UGY1^Nm@SD6>>bmP1
@@ -368,7 +368,7 @@ R4
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v|
 !i113 1
@@ -377,7 +377,7 @@ R7
 R8
 n@m@u@x3
 vMUX4
-R9
+R1
 !i10b 1
 !s100 8j6ClNKJRI@CPjz@`>9a`2
 IA8S:c5FgUTj<OC;ECf>Ml1
@@ -400,7 +400,7 @@ R7
 R8
 n@m@u@x4
 vMUX5
-R1
+R12
 !i10b 1
 !s100 @F9:AC?`T`YN]O:FRJGLH2
 IXkY8XBPeF8Q;]BgfIZTlh3
@@ -414,7 +414,7 @@ R4
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v|
 !i113 1
@@ -423,7 +423,7 @@ R7
 R8
 n@m@u@x5
 vPC
-R1
+R12
 !i10b 1
 !s100 9iS1:Z[Acz=3V[;?`P14I1
 Iij4XPDnCddKJ^cQ=jBkH33
@@ -437,7 +437,7 @@ R4
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/PC.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/PC.v|
 !i113 1
@@ -446,7 +446,7 @@ R7
 R8
 n@p@c
 vREGISTERS
-R1
+R12
 !i10b 1
 !s100 D_gRml`EbhAdkKD^=VJ453
 IKYg0QVOXhmkRJD5mTY1b33
@@ -460,7 +460,7 @@ R4
 r1
 !s85 0
 31
-R5
+R11
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v|
 !i113 1
@@ -469,7 +469,7 @@ R7
 R8
 n@r@e@g@i@s@t@e@r@s
 vSHIFTLEFT1
-R9
+R1
 !i10b 1
 !s100 iBHB`4CfNU;BiI=8aH[dH0
 IYAZBbQcYaeKjWID:[gJ7H0
@@ -492,7 +492,7 @@ R7
 R8
 n@s@h@i@f@t@l@e@f@t1
 vSHIFTLEFT2
-Z11 !s110 1590176502
+R12
 !i10b 1
 !s100 eZ38Rmj:naJ@MJ9bJD0Y>1
 IR=@dd09`968i>gc:k6SnX2
@@ -506,7 +506,7 @@ R4
 r1
 !s85 0
 31
-Z12 !s108 1590176502.000000
+R11
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT2.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT2.v|
 !i113 1
@@ -515,7 +515,7 @@ R7
 R8
 n@s@h@i@f@t@l@e@f@t2
 vSIGNEXT
-R11
+R12
 !i10b 1
 !s100 [2kF1a[;JTP`aB5Bb;U2^1
 I`Z06eiOEIF4gb0O8mNIcE3
@@ -529,7 +529,7 @@ R4
 r1
 !s85 0
 31
-R12
+R11
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v|
 !i113 1
@@ -538,7 +538,7 @@ R7
 R8
 n@s@i@g@n@e@x@t
 vUC
-R11
+R12
 !i10b 1
 !s100 6[lKF`Jg22018Hhll:RQi1
 Id?F]lCef;S[E49E][P]a00
@@ -552,7 +552,7 @@ R4
 r1
 !s85 0
 31
-R12
+R11
 !s107 C:/Users/Gustavo/Datapath/DATAPATH/UC.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/UC.v|
 !i113 1

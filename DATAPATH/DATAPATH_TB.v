@@ -17,7 +17,7 @@ initial
 begin
 	clk = 1'b1;
 	$readmemb("TestF1_BReg.mem",DUV.p7.mem);
-	$readmemb("TestF2_MemInst.mem",DUV.p3.MR);
+	$readmemb("TestF3_MemInst.mem",DUV.p3.MR);
 	$readmemb("datamemoryTest.mem",DUV.p16.mem2);
    #60;
    $stop;
