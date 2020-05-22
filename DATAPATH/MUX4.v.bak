@@ -1,0 +1,19 @@
+module MUX5(
+	input [31:0] mx5,//vienen del mux 5
+	input [31:0] shift,//viene del shift left jump
+	input jump,//señal jump
+	output reg [31:0] pc
+);
+
+always @*
+	begin
+		if(jump)
+		begin
+			pc=mx5;
+		end
+		else
+		begin
+			pc=shift;
+		end
+	end
+endmodule

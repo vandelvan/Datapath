@@ -1,6 +1,6 @@
 module DATAMEMORY(
 	input [31:0] writeData,
-	input [9:0]address,
+	input [31:0]address,
 	input memWrite,memRead,
 	output reg [31:0] readData
 );

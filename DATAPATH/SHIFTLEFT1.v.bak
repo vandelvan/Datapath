@@ -1,0 +1,11 @@
+module SHIFTLEFT1(
+	input [25:0]entrada,
+	output reg [27:0]salida
+);
+
+always @*
+begin
+	salida = entrada << 2;
+end
+
+endmodule

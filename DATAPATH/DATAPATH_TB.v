@@ -7,9 +7,9 @@ wire [31:0]pruebaInstruccion;
 wire [31:0]pruebaDatoSalida;
 wire [31:0]direccionASaltar;
 wire selMux5db;
-wire jumpSalida;
+
     
-DATAPATH DUV(.selMux5db(selMux5db),.direccionASaltar(direccionASaltar),.clk(clk),.pruebaInstruccion(pruebaInstruccion),.pruebaDatoSalida(pruebaDatoSalida),.jumpSalida(jumpSalida));
+DATAPATH DUV(.selMux5db(selMux5db),.direccionASaltar(direccionASaltar),.clk(clk),.pruebaInstruccion(pruebaInstruccion),.pruebaDatoSalida(pruebaDatoSalida));
 
 
 
@@ -17,7 +17,7 @@ initial
 begin
 	clk = 1'b1;
 	$readmemb("TestF1_BReg.mem",DUV.p7.mem);
-	$readmemb("badmemory.mem",DUV.p3.MR);
+	$readmemb("TestF2_MemInst.mem",DUV.p3.MR);
 	$readmemb("datamemoryTest.mem",DUV.p16.mem2);
    #60;
    $stop;

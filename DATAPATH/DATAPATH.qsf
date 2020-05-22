@@ -110,3 +110,5 @@ set_global_assignment -name VERILOG_FILE BUFFER01.v
 set_global_assignment -name VERILOG_FILE BUFFER1.v
 set_global_assignment -name VERILOG_FILE BUFFER2.v
 set_global_assignment -name VERILOG_FILE BUFFER3.v
+set_global_assignment -name VERILOG_FILE MUX4.v
+set_global_assignment -name VERILOG_FILE SHIFTLEFT1.v

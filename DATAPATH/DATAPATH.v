@@ -3,16 +3,16 @@ module DATAPATH(
 	output [31:0]pruebaInstruccion,//para debug INST_MEM(d)
 	output [31:0]pruebaDatoSalida,//para debug
 	output [31:0]direccionASaltar,//debbug
-	output selMux5db,//debbug
-	output jumpSalida//servira para la fase 3
+	output selMux5db//debbug
+
 );
 
 
 wire [31:0]salidaPc;//PC(pc) - ADD(pc) & INST_MEM(dir) 
 wire [31:0]salidaAdd;//ADD(sal) - MUX5(add1) & BUFFER0(insSiguienteI)
 wire [31:0]salidaInst_Mem;//INST_MEM(datos) - BUFFER0(insActualI)
-wire [31:0]insSiguiente;//BUFFER0(insSiguienteO) - BUFFER1(instruccionSiguienteI)
-wire [31:0]insActual;//BUFFER0(insActualO) - UC(opcode) & REGISTRERS(rr1,rr2) & SIGNEXTEND(datoIn) & BUFFER1(rtI,rdI)
+wire [31:0]insSiguiente;//BUFFER0(insSiguienteO) - BUFFER1(instruccionSiguienteI) & SHIFTLEF1(pc)
+wire [31:0]insActual;//BUFFER0(insActualO) - UC(opcode) & REGISTRERS(rr1,rr2) & SIGNEXTEND(datoIn) & BUFFER1(rtI,rdI) & SHIFTLEF1(entrada)
 wire jump1;//UC(jump) - BUFFER1(jumpI)
 wire regDst1;//UC(regDst) - BUFFER1(regDstI)
 wire branch1;//UC(branch) - BUFFER1(branchI)
@@ -46,7 +46,7 @@ wire [4:0]salidaMux1;//MUX1(finalrd) - BUFFER2(writeRegistrerI)
 wire [31:0]salidaAdder;//ADDER(aluResult) - BUFFER2(siguienteInstruccionI)
 wire zf;//ALU(zf) - BUFFER2(zfI)
 wire [31:0]salidaAlu;//ALU(res) - BUFFER2(aluResultI)
-wire jump3;//BUFFER2(jumpO) - BUFFER3(jumpI)
+wire jump3;//BUFFER2(jumpO) - MUX4(jump)
 wire branch3;//BUFFER2(branchO) - CAND(br)
 wire memRead3;//BUFFER2(memReadO) - DATAMEMORY(memReadI)
 wire memToReg3;//BUFFER2(memToRegO) - BUFFER3(memToRegI)
@@ -56,7 +56,7 @@ wire [31:0]instruccionAlterada;//BUFFER2(siguienteInstruccionO) - MUX5(aluResult
 wire [31:0]direccionDato;//BUFFER2(aluResultO) - DATAMEMORY(address) & BUFFER3(aluResultI)
 wire zf2;//BUFFER2(zfO) - CAND(zf)
 wire [31:0]escribirEnDatos;//BUFFER2(readData2O) - DATAMEMORY(writeData)
-wire [31:0]direccionEscribirRegistro;//BUFFER2(writeRegistrerO) - BUFFER3(writeRegistrerI)
+wire [4:0]direccionEscribirRegistro;//BUFFER2(writeRegistrerO) - BUFFER3(writeRegistrerI)
 wire salidaCand;//CAND(compand) - MUX5(compand)
 wire [31:0]datoDeDatamemory;//DATAMEMORY(readData) - BUFFER3(readDataI)
 wire [31:0]guardarEnRegistro;//BUFFER3(readDataO) - MUX3(md)
@@ -65,9 +65,16 @@ wire memToReg4;//BUFFER3(memToRegO) - MUX3(memToReg)
 wire [31:0]aluResultSaleBuffer3;//BUFFER3(aluResultO) - MUX3(regs)
 wire [31:0]salidaMux3;//MUX3(final_esc) - REGISTRERS(wd)
 wire [4:0]writeRegistrer4;//BUFFER3(writeRegistrerO) - REGISTRERS(wr)
-wire [31:0]salidaMux5;//MUX5(pc) - PC(ent)
+wire [31:0]salidaMux5;//MUX5(pc) - MUX4(mx5)
+wire [31:0]salidaMux4;//MUX4(pc) - PC(ent)
+wire [31:0]jumpDirB1;//SHIFTLEFT1(salida) - BUFFER1(jumpDirI)
+wire [31:0]jumpDirB2;//BUFFER1(jumpDirO) - BUFFER2(jumpDir0)
+wire [31:0]jumpDirF; //BUFFER2(jumpDirO - MUX4(shift)
 
-PC p1(.clk(clk),.ent(salidaMux5),.pc(salidaPc));
+
+MUX4 p21(.jump(jump3),.mx5(salidaMux5),.pc(salidaMux4),.shift(jumpDirF));
+
+PC p1(.clk(clk),.ent(salidaMux4),.pc(salidaPc));
 
 ADD p2(.pc(salidaPc),.sal(salidaAdd));
 
@@ -77,11 +84,13 @@ BUFFER0 p17(.clk(clk),.insSiguienteI(salidaAdd),.insActualI(salidaInst_Mem),.ins
 
 REGISTERS p7(.rr1(insActual[25:21]),.rr2(insActual[20:16]),.wr(writeRegistrer4),.wd(salidaMux3),.enable(regWrite4),.rd1(readData1),.rd2(readData2));
 
+SHIFTLEFT1 p22(.entrada(insActual[25:0]),.pc(insSiguiente[31:28]),.salida(jumpDirB1));
+
 UC p12(.opcode(insActual[31:26]),.jump(jump1),.regDst(regDst1),.branch(branch1),.memRead(memRead1),.memToReg(memToReg1),.aluOp(aluOp1),.memWrite(memWrite1),.aluSrc(aluSrc1),.regWrite(regWrite1));
 
 SIGNEXT p10(.datoIn(insActual[15:0]),.datoOut(numeroExtendido));
 
-BUFFER1 p18(.clk(clk),.regDstI(regDst1),.jumpI(jump1),.branchI(branch1),.memReadI(memRead1),.memToRegI(memToReg1),.aluOpI(aluOp1),.memWriteI(memWrite1),	.aluSrcI(aluSrc1),.regWriteI(regWrite1),.instruccionSiguienteI(insSiguiente),.readData1I(readData1),.readData2I(readData2),.signExtendI(numeroExtendido),.rtI(insActual[20:16]),.rdI(insActual[15:11]),.regDstO(regDst2),.jumpO(jump2),.branchO(branch2),.memReadO(memRead2),.memToRegO(memToReg2),.aluOpO(aluOp2),.memWriteO(memWrite2),.aluSrcO(aluSrc2),.regWriteO(regWrite2),.instruccionSiguienteO(insSiguiente2),.readData1O(readData12),.readData2O(readData22),.signExtendO(numeroExtendido2),.rtO(rt),.rdO(rd));
+BUFFER1 p18(.clk(clk),.jumpDirI(jumpDirB1),.jumpDirO(jumpDirB2),.regDstI(regDst1),.jumpI(jump1),.branchI(branch1),.memReadI(memRead1),.memToRegI(memToReg1),.aluOpI(aluOp1),.memWriteI(memWrite1),	.aluSrcI(aluSrc1),.regWriteI(regWrite1),.instruccionSiguienteI(insSiguiente),.readData1I(readData1),.readData2I(readData2),.signExtendI(numeroExtendido),.rtI(insActual[20:16]),.rdI(insActual[15:11]),.regDstO(regDst2),.jumpO(jump2),.branchO(branch2),.memReadO(memRead2),.memToRegO(memToReg2),.aluOpO(aluOp2),.memWriteO(memWrite2),.aluSrcO(aluSrc2),.regWriteO(regWrite2),.instruccionSiguienteO(insSiguiente2),.readData1O(readData12),.readData2O(readData22),.signExtendO(numeroExtendido2),.rtO(rt),.rdO(rd));
 
 MUX1 p6(.rd(rd),.rt(rt),.regDst(regDst2),.finalrd(salidaMux1));
 
@@ -99,12 +108,12 @@ MUX5 p5(.compand(salidaCand),.add1(salidaAdd),.aluResult(instruccionAlterada),.p
 
 MUX3 p13(.memToReg(memToReg4),.regs(aluResultSaleBuffer3),.md(guardarEnRegistro),.final_esc(salidaMux3),.prum(pruebaDatoSalida));
 
-BUFFER2 p19(.selMux5db(selMux5db),.direccionASaltar(direccionASaltar),.clk(clk),.jumpI(jump2),.branchI(branch2),.memReadI(memRead2),.memToRegI(memToReg2),.memWriteI(memWrite2),.regWriteI(regWrite2),.siguienteInstruccionI(salidaAdder),.zfI(zf),.aluResultI(salidaAlu),.readData2I(readData22),.writeRegistrerI(salidaMux1),.jumpO(jump3),.branchO(branch3),.memReadO(memRead3),.memToRegO(memToReg3),.memWriteO(memWrite3),.regWriteO(regWrite3),.siguienteInstruccionO(instruccionAlterada),.zfO(zf2),.aluResultO(direccionDato),.readData2O(escribirEnDatos),.writeRegistrerO(direccionEscribirRegistro));
+BUFFER2 p19(.jumpDirI(jumpDirB2),.jumpDirO(jumpDirF),.selMux5db(selMux5db),.direccionASaltar(direccionASaltar),.clk(clk),.jumpI(jump2),.branchI(branch2),.memReadI(memRead2),.memToRegI(memToReg2),.memWriteI(memWrite2),.regWriteI(regWrite2),.siguienteInstruccionI(salidaAdder),.zfI(zf),.aluResultI(salidaAlu),.readData2I(readData22),.writeRegistrerI(salidaMux1),.jumpO(jump3),.branchO(branch3),.memReadO(memRead3),.memToRegO(memToReg3),.memWriteO(memWrite3),.regWriteO(regWrite3),.siguienteInstruccionO(instruccionAlterada),.zfO(zf2),.aluResultO(direccionDato),.readData2O(escribirEnDatos),.writeRegistrerO(direccionEscribirRegistro));
 
 CAND p4(.br(branch3),.zf(zf2),.compand(salidaCand));
 
 DATAMEMORY p16(.writeData(escribirEnDatos),.address(direccionDato),.memWrite(memWrite3),.memRead(memRead3),.readData(datoDeDatamemory));
 
-BUFFER3 p20(.clk(clk),.jumpI(jump3),.memToRegI(memToReg3),.regWriteI(regWrite3),.readDataI(datoDeDatamemory),.aluResultI(direccionDato),.writeRegistrerI(direccionEscribirRegistro),.jumpO(jumpSalida),.memToRegO(memToReg4),.regWriteO(regWrite4),.readDataO(guardarEnRegistro),.aluResultO(aluResultSaleBuffer3),.writeRegistrerO(writeRegistrer4));
+BUFFER3 p20(.clk(clk),.memToRegI(memToReg3),.regWriteI(regWrite3),.readDataI(datoDeDatamemory),.aluResultI(direccionDato),.writeRegistrerI(direccionEscribirRegistro),.memToRegO(memToReg4),.regWriteO(regWrite4),.readDataO(guardarEnRegistro),.aluResultO(aluResultSaleBuffer3),.writeRegistrerO(writeRegistrer4));
 	 
 endmodule

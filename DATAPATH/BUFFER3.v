@@ -1,12 +1,10 @@
 module BUFFER3(
 	input clk,
-	input jumpI,
 	input memToRegI,
 	input regWriteI,
 	input [31:0]readDataI,
 	input [31:0]aluResultI,
 	input [4:0]writeRegistrerI,
-	output reg jumpO,
 	output reg memToRegO,
 	output reg regWriteO,
 	output reg [31:0]readDataO,
@@ -16,7 +14,6 @@ module BUFFER3(
 
 always @(posedge clk)
 begin
-	jumpO=jumpI;
 	memToRegO=memToRegI;
 	regWriteO=regWriteI;
 	readDataO=readDataI;

@@ -1,5 +1,5 @@
 Timing Analyzer report for DATAPATH
-Thu May 21 20:11:03 2020
+Fri May 22 14:10:28 2020
 Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 
 
@@ -68,7 +68,7 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 2           ;
+; Number detected on machine ; 4           ;
 ; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
@@ -93,7 +93,7 @@ refer to the applicable agreement for further details.
 +------------+-----------------+------------+------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note ;
 +------------+-----------------+------------+------+
-; 136.61 MHz ; 136.61 MHz      ; clk        ;      ;
+; 136.46 MHz ; 136.46 MHz      ; clk        ;      ;
 +------------+-----------------+------------+------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -103,7 +103,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; clk   ; -6.320 ; -277.662      ;
+; clk   ; -6.328 ; -283.024      ;
 +-------+--------+---------------+
 
 
@@ -142,26 +142,26 @@ No paths to report.
 +--------+--------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                            ; To Node                       ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+--------------------------------------+-------------------------------+--------------+-------------+--------------+------------+------------+
-; -6.320 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.060      ;
-; -6.320 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.060      ;
-; -6.320 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[29] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.060      ;
-; -6.320 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.060      ;
-; -6.320 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.060      ;
-; -6.272 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.012      ;
-; -6.272 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.012      ;
-; -6.272 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.012      ;
-; -6.272 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.012      ;
-; -6.272 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.012      ;
-; -5.711 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.451      ;
-; -5.711 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.451      ;
-; -5.711 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.451      ;
-; -5.711 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.451      ;
-; -5.711 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.451      ;
-; -5.663 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.403      ;
-; -5.663 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.403      ;
-; -5.663 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.403      ;
-; -5.663 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.403      ;
-; -5.663 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.403      ;
+; -6.328 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.068      ;
+; -6.328 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.068      ;
+; -6.328 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[29] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.068      ;
+; -6.328 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.068      ;
+; -6.328 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.068      ;
+; -6.280 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.020      ;
+; -6.280 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.020      ;
+; -6.280 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.020      ;
+; -6.280 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.020      ;
+; -6.280 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 7.020      ;
+; -5.719 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[17] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.459      ;
+; -5.719 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[18] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.459      ;
+; -5.719 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[19] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.459      ;
+; -5.719 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[20] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.459      ;
+; -5.719 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[21] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.459      ;
+; -5.671 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[12] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.411      ;
+; -5.671 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[13] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.411      ;
+; -5.671 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[14] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.411      ;
+; -5.671 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[15] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.411      ;
+; -5.671 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[16] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.411      ;
 ; -5.285 ; BUFFER0:p17|insSiguienteO[5]         ; BUFFER0:p17|insSiguienteO[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.025      ;
 ; -5.285 ; BUFFER0:p17|insSiguienteO[5]         ; BUFFER0:p17|insSiguienteO[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.025      ;
 ; -5.285 ; BUFFER0:p17|insSiguienteO[5]         ; BUFFER0:p17|insSiguienteO[29] ; clk          ; clk         ; 1.000        ; 0.000      ; 6.025      ;
@@ -172,11 +172,11 @@ No paths to report.
 ; -5.237 ; BUFFER0:p17|insSiguienteO[5]         ; BUFFER0:p17|insSiguienteO[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.977      ;
 ; -5.237 ; BUFFER0:p17|insSiguienteO[5]         ; BUFFER0:p17|insSiguienteO[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.977      ;
 ; -5.237 ; BUFFER0:p17|insSiguienteO[5]         ; BUFFER0:p17|insSiguienteO[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.977      ;
-; -5.102 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.842      ;
-; -5.102 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.842      ;
-; -5.102 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.842      ;
-; -5.102 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.842      ;
-; -5.102 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.842      ;
+; -5.110 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[7]  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.850      ;
+; -5.110 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[8]  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.850      ;
+; -5.110 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[9]  ; clk          ; clk         ; 1.000        ; 0.000      ; 5.850      ;
+; -5.110 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[10] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.850      ;
+; -5.110 ; BUFFER1:p18|instruccionSiguienteO[2] ; BUFFER0:p17|insSiguienteO[11] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.850      ;
 ; -5.064 ; BUFFER0:p17|insSiguienteO[8]         ; BUFFER0:p17|insSiguienteO[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.804      ;
 ; -5.064 ; BUFFER0:p17|insSiguienteO[8]         ; BUFFER0:p17|insSiguienteO[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.804      ;
 ; -5.064 ; BUFFER0:p17|insSiguienteO[8]         ; BUFFER0:p17|insSiguienteO[29] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.804      ;
@@ -212,21 +212,21 @@ No paths to report.
 ; -4.863 ; BUFFER0:p17|insSiguienteO[3]         ; BUFFER0:p17|insSiguienteO[29] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.603      ;
 ; -4.863 ; BUFFER0:p17|insSiguienteO[3]         ; BUFFER0:p17|insSiguienteO[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.603      ;
 ; -4.863 ; BUFFER0:p17|insSiguienteO[3]         ; BUFFER0:p17|insSiguienteO[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.603      ;
-; -4.827 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.567      ;
-; -4.827 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.567      ;
-; -4.827 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[29] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.567      ;
-; -4.827 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.567      ;
-; -4.827 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.567      ;
 ; -4.815 ; BUFFER0:p17|insSiguienteO[3]         ; BUFFER0:p17|insSiguienteO[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.555      ;
 ; -4.815 ; BUFFER0:p17|insSiguienteO[3]         ; BUFFER0:p17|insSiguienteO[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.555      ;
 ; -4.815 ; BUFFER0:p17|insSiguienteO[3]         ; BUFFER0:p17|insSiguienteO[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.555      ;
 ; -4.815 ; BUFFER0:p17|insSiguienteO[3]         ; BUFFER0:p17|insSiguienteO[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.555      ;
 ; -4.815 ; BUFFER0:p17|insSiguienteO[3]         ; BUFFER0:p17|insSiguienteO[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.555      ;
-; -4.779 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.519      ;
-; -4.779 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.519      ;
-; -4.779 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.519      ;
-; -4.779 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.519      ;
-; -4.779 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.519      ;
+; -4.815 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.555      ;
+; -4.815 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.555      ;
+; -4.815 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[29] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.555      ;
+; -4.815 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[30] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.555      ;
+; -4.815 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[31] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.555      ;
+; -4.767 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[22] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.507      ;
+; -4.767 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[23] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.507      ;
+; -4.767 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[24] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.507      ;
+; -4.767 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[25] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.507      ;
+; -4.767 ; BUFFER0:p17|insSiguienteO[10]        ; BUFFER0:p17|insSiguienteO[26] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.507      ;
 ; -4.739 ; BUFFER0:p17|insSiguienteO[4]         ; BUFFER0:p17|insSiguienteO[27] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.479      ;
 ; -4.739 ; BUFFER0:p17|insSiguienteO[4]         ; BUFFER0:p17|insSiguienteO[28] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.479      ;
 ; -4.739 ; BUFFER0:p17|insSiguienteO[4]         ; BUFFER0:p17|insSiguienteO[29] ; clk          ; clk         ; 1.000        ; 0.000      ; 5.479      ;
@@ -250,36 +250,37 @@ No paths to report.
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack ; From Node                             ; To Node                               ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
-; 1.719 ; BUFFER1:p18|instruccionSiguienteO[26] ; BUFFER2:p19|direccionASaltar[26]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.793      ;
+; 1.719 ; BUFFER1:p18|instruccionSiguienteO[9]  ; BUFFER2:p19|direccionASaltar[9]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.793      ;
+; 1.719 ; BUFFER1:p18|instruccionSiguienteO[20] ; BUFFER2:p19|direccionASaltar[20]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.793      ;
+; 1.719 ; BUFFER1:p18|instruccionSiguienteO[23] ; BUFFER2:p19|direccionASaltar[23]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.793      ;
+; 1.719 ; BUFFER1:p18|instruccionSiguienteO[28] ; BUFFER2:p19|direccionASaltar[28]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.793      ;
+; 1.720 ; BUFFER1:p18|instruccionSiguienteO[3]  ; BUFFER2:p19|direccionASaltar[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[4]  ; BUFFER2:p19|direccionASaltar[4]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
-; 1.720 ; BUFFER1:p18|instruccionSiguienteO[5]  ; BUFFER2:p19|direccionASaltar[5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
-; 1.720 ; BUFFER1:p18|instruccionSiguienteO[6]  ; BUFFER2:p19|direccionASaltar[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[8]  ; BUFFER2:p19|direccionASaltar[8]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
-; 1.720 ; BUFFER1:p18|instruccionSiguienteO[9]  ; BUFFER2:p19|direccionASaltar[9]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[10] ; BUFFER2:p19|direccionASaltar[10]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[11] ; BUFFER2:p19|direccionASaltar[11]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[12] ; BUFFER2:p19|direccionASaltar[12]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[13] ; BUFFER2:p19|direccionASaltar[13]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
+; 1.720 ; BUFFER1:p18|instruccionSiguienteO[14] ; BUFFER2:p19|direccionASaltar[14]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
+; 1.720 ; BUFFER1:p18|instruccionSiguienteO[15] ; BUFFER2:p19|direccionASaltar[15]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
+; 1.720 ; BUFFER1:p18|instruccionSiguienteO[16] ; BUFFER2:p19|direccionASaltar[16]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[17] ; BUFFER2:p19|direccionASaltar[17]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[18] ; BUFFER2:p19|direccionASaltar[18]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
-; 1.720 ; BUFFER1:p18|instruccionSiguienteO[19] ; BUFFER2:p19|direccionASaltar[19]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
-; 1.720 ; BUFFER1:p18|instruccionSiguienteO[20] ; BUFFER2:p19|direccionASaltar[20]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[21] ; BUFFER2:p19|direccionASaltar[21]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[22] ; BUFFER2:p19|direccionASaltar[22]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
-; 1.720 ; BUFFER1:p18|instruccionSiguienteO[23] ; BUFFER2:p19|direccionASaltar[23]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[24] ; BUFFER2:p19|direccionASaltar[24]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
-; 1.720 ; BUFFER1:p18|instruccionSiguienteO[25] ; BUFFER2:p19|direccionASaltar[25]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
-; 1.720 ; BUFFER1:p18|instruccionSiguienteO[27] ; BUFFER2:p19|direccionASaltar[27]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
-; 1.720 ; BUFFER1:p18|instruccionSiguienteO[28] ; BUFFER2:p19|direccionASaltar[28]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
+; 1.720 ; BUFFER1:p18|instruccionSiguienteO[26] ; BUFFER2:p19|direccionASaltar[26]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[29] ; BUFFER2:p19|direccionASaltar[29]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
 ; 1.720 ; BUFFER1:p18|instruccionSiguienteO[30] ; BUFFER2:p19|direccionASaltar[30]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
-; 1.720 ; BUFFER1:p18|instruccionSiguienteO[31] ; BUFFER2:p19|direccionASaltar[31]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.794      ;
-; 1.721 ; BUFFER1:p18|instruccionSiguienteO[3]  ; BUFFER2:p19|direccionASaltar[3]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.795      ;
+; 1.721 ; BUFFER1:p18|instruccionSiguienteO[5]  ; BUFFER2:p19|direccionASaltar[5]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.795      ;
+; 1.721 ; BUFFER1:p18|instruccionSiguienteO[6]  ; BUFFER2:p19|direccionASaltar[6]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.795      ;
 ; 1.721 ; BUFFER1:p18|instruccionSiguienteO[7]  ; BUFFER2:p19|direccionASaltar[7]       ; clk          ; clk         ; 0.000        ; 0.000      ; 1.795      ;
-; 1.721 ; BUFFER1:p18|instruccionSiguienteO[14] ; BUFFER2:p19|direccionASaltar[14]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.795      ;
-; 1.721 ; BUFFER1:p18|instruccionSiguienteO[15] ; BUFFER2:p19|direccionASaltar[15]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.795      ;
-; 1.721 ; BUFFER1:p18|instruccionSiguienteO[16] ; BUFFER2:p19|direccionASaltar[16]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.795      ;
+; 1.721 ; BUFFER1:p18|instruccionSiguienteO[25] ; BUFFER2:p19|direccionASaltar[25]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.795      ;
+; 1.721 ; BUFFER1:p18|instruccionSiguienteO[27] ; BUFFER2:p19|direccionASaltar[27]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.795      ;
+; 1.721 ; BUFFER1:p18|instruccionSiguienteO[31] ; BUFFER2:p19|direccionASaltar[31]      ; clk          ; clk         ; 0.000        ; 0.000      ; 1.795      ;
+; 1.990 ; BUFFER1:p18|instruccionSiguienteO[19] ; BUFFER2:p19|direccionASaltar[19]      ; clk          ; clk         ; 0.000        ; 0.000      ; 2.064      ;
 ; 2.010 ; BUFFER0:p17|insSiguienteO[31]         ; BUFFER0:p17|insSiguienteO[31]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.084      ;
+; 2.430 ; BUFFER0:p17|insSiguienteO[25]         ; BUFFER1:p18|instruccionSiguienteO[25] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.504      ;
 ; 2.446 ; BUFFER1:p18|instruccionSiguienteO[2]  ; BUFFER1:p18|instruccionSiguienteO[2]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.520      ;
 ; 2.804 ; BUFFER0:p17|insSiguienteO[9]          ; BUFFER0:p17|insSiguienteO[9]          ; clk          ; clk         ; 0.000        ; 0.000      ; 2.878      ;
 ; 2.812 ; BUFFER0:p17|insSiguienteO[12]         ; BUFFER0:p17|insSiguienteO[12]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.886      ;
@@ -294,17 +295,10 @@ No paths to report.
 ; 2.823 ; BUFFER0:p17|insSiguienteO[21]         ; BUFFER0:p17|insSiguienteO[21]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.897      ;
 ; 2.823 ; BUFFER0:p17|insSiguienteO[23]         ; BUFFER0:p17|insSiguienteO[23]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.897      ;
 ; 2.824 ; BUFFER0:p17|insSiguienteO[24]         ; BUFFER0:p17|insSiguienteO[24]         ; clk          ; clk         ; 0.000        ; 0.000      ; 2.898      ;
-; 2.845 ; BUFFER1:p18|instruccionSiguienteO[2]  ; BUFFER2:p19|direccionASaltar[2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 2.919      ;
-; 2.852 ; BUFFER0:p17|insSiguienteO[15]         ; BUFFER1:p18|instruccionSiguienteO[15] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.926      ;
-; 2.853 ; BUFFER0:p17|insSiguienteO[14]         ; BUFFER1:p18|instruccionSiguienteO[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.927      ;
-; 2.877 ; BUFFER0:p17|insSiguienteO[18]         ; BUFFER1:p18|instruccionSiguienteO[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.951      ;
-; 2.905 ; BUFFER0:p17|insSiguienteO[10]         ; BUFFER1:p18|instruccionSiguienteO[10] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.979      ;
-; 2.915 ; BUFFER0:p17|insSiguienteO[13]         ; BUFFER1:p18|instruccionSiguienteO[13] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.989      ;
-; 2.916 ; BUFFER0:p17|insSiguienteO[24]         ; BUFFER1:p18|instruccionSiguienteO[24] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.990      ;
-; 2.923 ; BUFFER0:p17|insSiguienteO[23]         ; BUFFER1:p18|instruccionSiguienteO[23] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.997      ;
+; 2.892 ; BUFFER0:p17|insSiguienteO[11]         ; BUFFER1:p18|instruccionSiguienteO[11] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.966      ;
+; 2.924 ; BUFFER0:p17|insSiguienteO[3]          ; BUFFER1:p18|instruccionSiguienteO[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 2.998      ;
+; 2.924 ; BUFFER0:p17|insSiguienteO[14]         ; BUFFER1:p18|instruccionSiguienteO[14] ; clk          ; clk         ; 0.000        ; 0.000      ; 2.998      ;
 ; 2.928 ; BUFFER0:p17|insSiguienteO[7]          ; BUFFER0:p17|insSiguienteO[7]          ; clk          ; clk         ; 0.000        ; 0.000      ; 3.002      ;
-; 2.929 ; BUFFER0:p17|insSiguienteO[28]         ; BUFFER1:p18|instruccionSiguienteO[28] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.003      ;
-; 2.931 ; BUFFER0:p17|insSiguienteO[27]         ; BUFFER1:p18|instruccionSiguienteO[27] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.005      ;
 ; 2.938 ; BUFFER0:p17|insSiguienteO[15]         ; BUFFER0:p17|insSiguienteO[15]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.012      ;
 ; 2.938 ; BUFFER0:p17|insSiguienteO[20]         ; BUFFER0:p17|insSiguienteO[20]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.012      ;
 ; 2.938 ; BUFFER0:p17|insSiguienteO[25]         ; BUFFER0:p17|insSiguienteO[25]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.012      ;
@@ -315,15 +309,18 @@ No paths to report.
 ; 2.949 ; BUFFER0:p17|insSiguienteO[18]         ; BUFFER0:p17|insSiguienteO[18]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.023      ;
 ; 2.949 ; BUFFER0:p17|insSiguienteO[26]         ; BUFFER0:p17|insSiguienteO[26]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.023      ;
 ; 2.949 ; BUFFER0:p17|insSiguienteO[28]         ; BUFFER0:p17|insSiguienteO[28]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.023      ;
-; 3.052 ; BUFFER0:p17|insSiguienteO[3]          ; BUFFER1:p18|instruccionSiguienteO[3]  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.126      ;
-; 3.117 ; BUFFER0:p17|insSiguienteO[29]         ; BUFFER1:p18|instruccionSiguienteO[29] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.191      ;
-; 3.123 ; BUFFER0:p17|insSiguienteO[6]          ; BUFFER1:p18|instruccionSiguienteO[6]  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.197      ;
+; 3.004 ; BUFFER0:p17|insSiguienteO[30]         ; BUFFER1:p18|instruccionSiguienteO[30] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.078      ;
+; 3.027 ; BUFFER0:p17|insSiguienteO[22]         ; BUFFER1:p18|instruccionSiguienteO[22] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.101      ;
+; 3.096 ; BUFFER0:p17|insSiguienteO[5]          ; BUFFER1:p18|instruccionSiguienteO[5]  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.170      ;
+; 3.115 ; BUFFER1:p18|instruccionSiguienteO[2]  ; BUFFER2:p19|direccionASaltar[2]       ; clk          ; clk         ; 0.000        ; 0.000      ; 3.189      ;
+; 3.138 ; BUFFER0:p17|insSiguienteO[12]         ; BUFFER1:p18|instruccionSiguienteO[12] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.212      ;
+; 3.151 ; BUFFER0:p17|insSiguienteO[16]         ; BUFFER1:p18|instruccionSiguienteO[16] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.225      ;
+; 3.198 ; BUFFER0:p17|insSiguienteO[18]         ; BUFFER1:p18|instruccionSiguienteO[18] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.272      ;
 ; 3.238 ; BUFFER0:p17|insSiguienteO[8]          ; BUFFER0:p17|insSiguienteO[8]          ; clk          ; clk         ; 0.000        ; 0.000      ; 3.312      ;
+; 3.239 ; BUFFER0:p17|insSiguienteO[10]         ; BUFFER0:p17|insSiguienteO[10]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.313      ;
 ; 3.245 ; BUFFER0:p17|insSiguienteO[6]          ; BUFFER0:p17|insSiguienteO[6]          ; clk          ; clk         ; 0.000        ; 0.000      ; 3.319      ;
-; 3.251 ; BUFFER0:p17|insSiguienteO[10]         ; BUFFER0:p17|insSiguienteO[10]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.325      ;
+; 3.331 ; BUFFER0:p17|insSiguienteO[24]         ; BUFFER1:p18|instruccionSiguienteO[24] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.405      ;
 ; 3.351 ; BUFFER0:p17|insSiguienteO[5]          ; BUFFER0:p17|insSiguienteO[5]          ; clk          ; clk         ; 0.000        ; 0.000      ; 3.425      ;
-; 3.365 ; BUFFER0:p17|insSiguienteO[9]          ; BUFFER1:p18|instruccionSiguienteO[9]  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.439      ;
-; 3.514 ; BUFFER0:p17|insSiguienteO[20]         ; BUFFER1:p18|instruccionSiguienteO[20] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.588      ;
 ; 3.525 ; BUFFER0:p17|insSiguienteO[9]          ; BUFFER0:p17|insSiguienteO[10]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.599      ;
 ; 3.533 ; BUFFER0:p17|insSiguienteO[12]         ; BUFFER0:p17|insSiguienteO[13]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.607      ;
 ; 3.533 ; BUFFER0:p17|insSiguienteO[22]         ; BUFFER0:p17|insSiguienteO[23]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.607      ;
@@ -340,16 +337,19 @@ No paths to report.
 ; 3.646 ; BUFFER0:p17|insSiguienteO[22]         ; BUFFER0:p17|insSiguienteO[24]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.720      ;
 ; 3.647 ; BUFFER0:p17|insSiguienteO[19]         ; BUFFER0:p17|insSiguienteO[21]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.721      ;
 ; 3.647 ; BUFFER0:p17|insSiguienteO[29]         ; BUFFER0:p17|insSiguienteO[31]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.721      ;
+; 3.652 ; BUFFER0:p17|insSiguienteO[23]         ; BUFFER1:p18|instruccionSiguienteO[23] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.726      ;
 ; 3.656 ; BUFFER0:p17|insSiguienteO[3]          ; BUFFER0:p17|insSiguienteO[5]          ; clk          ; clk         ; 0.000        ; 0.000      ; 3.730      ;
 ; 3.656 ; BUFFER0:p17|insSiguienteO[13]         ; BUFFER0:p17|insSiguienteO[15]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.730      ;
 ; 3.657 ; BUFFER0:p17|insSiguienteO[4]          ; BUFFER0:p17|insSiguienteO[6]          ; clk          ; clk         ; 0.000        ; 0.000      ; 3.731      ;
 ; 3.657 ; BUFFER0:p17|insSiguienteO[14]         ; BUFFER0:p17|insSiguienteO[16]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.731      ;
 ; 3.657 ; BUFFER0:p17|insSiguienteO[23]         ; BUFFER0:p17|insSiguienteO[25]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.731      ;
 ; 3.658 ; BUFFER0:p17|insSiguienteO[24]         ; BUFFER0:p17|insSiguienteO[26]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.732      ;
-; 3.671 ; BUFFER0:p17|insSiguienteO[31]         ; BUFFER1:p18|instruccionSiguienteO[31] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.745      ;
-; 3.680 ; BUFFER0:p17|insSiguienteO[30]         ; BUFFER1:p18|instruccionSiguienteO[30] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.754      ;
-; 3.682 ; BUFFER0:p17|insSiguienteO[4]          ; BUFFER1:p18|instruccionSiguienteO[4]  ; clk          ; clk         ; 0.000        ; 0.000      ; 3.756      ;
-; 3.695 ; BUFFER0:p17|insSiguienteO[19]         ; BUFFER1:p18|instruccionSiguienteO[19] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.769      ;
+; 3.718 ; BUFFER0:p17|insSiguienteO[29]         ; BUFFER1:p18|instruccionSiguienteO[29] ; clk          ; clk         ; 0.000        ; 0.000      ; 3.792      ;
+; 3.759 ; BUFFER0:p17|insSiguienteO[12]         ; BUFFER0:p17|insSiguienteO[15]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.833      ;
+; 3.759 ; BUFFER0:p17|insSiguienteO[22]         ; BUFFER0:p17|insSiguienteO[25]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.833      ;
+; 3.769 ; BUFFER0:p17|insSiguienteO[3]          ; BUFFER0:p17|insSiguienteO[6]          ; clk          ; clk         ; 0.000        ; 0.000      ; 3.843      ;
+; 3.769 ; BUFFER0:p17|insSiguienteO[13]         ; BUFFER0:p17|insSiguienteO[16]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.843      ;
+; 3.770 ; BUFFER0:p17|insSiguienteO[23]         ; BUFFER0:p17|insSiguienteO[26]         ; clk          ; clk         ; 0.000        ; 0.000      ; 3.844      ;
 +-------+---------------------------------------+---------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -490,7 +490,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Thu May 21 20:11:01 2020
+    Info: Processing started: Fri May 22 14:10:27 2020
 Info: Command: quartus_sta DATAPATH -c DATAPATH
 Info: qsta_default_script.tcl version: #2
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
@@ -504,10 +504,10 @@ Info (332105): Deriving Clocks
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -6.320
+Info (332146): Worst-case setup slack is -6.328
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -6.320            -277.662 clk 
+    Info (332119):    -6.328            -283.024 clk 
 Info (332146): Worst-case hold slack is 1.719
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
@@ -522,9 +522,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus Prime Timing Analyzer was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 4653 megabytes
-    Info: Processing ended: Thu May 21 20:11:03 2020
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 4660 megabytes
+    Info: Processing ended: Fri May 22 14:10:28 2020
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

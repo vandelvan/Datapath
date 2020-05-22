@@ -13,6 +13,7 @@ module BUFFER1(
 	input [31:0]readData1I,
 	input [31:0]readData2I,
 	input [31:0]signExtendI,
+	input [31:0]jumpDirI,
 	input [4:0]rtI,
 	input [4:0]rdI,
 	output reg regDstO,
@@ -27,6 +28,7 @@ module BUFFER1(
 	output reg [31:0]instruccionSiguienteO,
 	output reg [31:0]readData1O,
 	output reg [31:0]readData2O,
+	output reg [31:0]jumpDirO,
 	output reg [31:0]signExtendO,
 	output reg [4:0]rtO,
 	output reg [4:0]rdO
@@ -35,6 +37,7 @@ module BUFFER1(
 always @(posedge clk)
 begin
 	regDstO =regDstI;
+	jumpDirO=jumpDirI;
 	jumpO = jumpI;
 	branchO =branchI;
 	memReadO =memReadI;
