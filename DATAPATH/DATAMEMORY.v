@@ -8,7 +8,7 @@ module DATAMEMORY(
 reg [31:0] mem2 [0:1023];
 
 
-always @(address)
+always @*
 	begin
 		if(memWrite)
 		begin//se escribe y lee

@@ -22,6 +22,10 @@ vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datap
 vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALU.v}
 vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADDER.v}
 vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADD.v}
+vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER0.v}
+vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER1.v}
+vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER2.v}
+vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER3.v}
 
 vlog -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH {C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH_TB.v}
 

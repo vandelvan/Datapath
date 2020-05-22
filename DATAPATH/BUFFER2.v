@@ -13,11 +13,13 @@ module BUFFER2(
 	input [4:0]writeRegistrerI,
 	output reg jumpO,
 	output reg branchO,
+	output reg selMux5db,
 	output reg memReadO,
 	output reg memToRegO,
 	output reg memWriteO,
 	output reg regWriteO,
 	output reg [31:0]siguienteInstruccionO,
+	output reg [31:0]direccionASaltar,
 	output reg zfO,
 	output reg [31:0]aluResultO,
 	output reg [31:0]readData2O,
@@ -37,5 +39,7 @@ begin
 	aluResultO=aluResultI;
 	readData2O=readData2I;
 	writeRegistrerO=writeRegistrerI;
+	selMux5db = branchI;
+	direccionASaltar = siguienteInstruccionI;
 end
 endmodule

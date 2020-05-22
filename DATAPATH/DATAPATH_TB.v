@@ -2,20 +2,28 @@
 `timescale 1ns/1ns
 
 module DATAPATH_TB();
-    wire [31:0]pru;
-    wire [31:0]prum;
-    reg clk=0;
-    DATAPATH DUV(.clk(clk),.pru(pru),.prum(prum));
+reg clk;
+wire [31:0]pruebaInstruccion;
+wire [31:0]pruebaDatoSalida;
+wire [31:0]direccionASaltar;
+wire selMux5db;
+wire jumpSalida;
+    
+DATAPATH DUV(.selMux5db(selMux5db),.direccionASaltar(direccionASaltar),.clk(clk),.pruebaInstruccion(pruebaInstruccion),.pruebaDatoSalida(pruebaDatoSalida),.jumpSalida(jumpSalida));
 
-    always #1 clk=!clk;
 
-    initial begin
-		  $readmemb("TestF1_BReg.mem",DUV.p7.mem);
-		  $readmemb("badmemory.mem",DUV.p3.MR);
-		  $readmemb("datamemoryTest.mem",DUV.p16.mem2);
-        #60;
-        $stop;
 
-        end
+initial 
+begin
+	clk = 1'b1;
+	$readmemb("TestF1_BReg.mem",DUV.p7.mem);
+	$readmemb("badmemory.mem",DUV.p3.MR);
+	$readmemb("datamemoryTest.mem",DUV.p16.mem2);
+   #60;
+   $stop;
+end
+
+
+always #1 clk =! clk;
 
 endmodule

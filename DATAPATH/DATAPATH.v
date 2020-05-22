@@ -1,7 +1,9 @@
 module DATAPATH(
 	input clk,
-	output [31:0]pru,//para debug INST_MEM(d)
-	output [31:0]prum,//para debug 
+	output [31:0]pruebaInstruccion,//para debug INST_MEM(d)
+	output [31:0]pruebaDatoSalida,//para debug
+	output [31:0]direccionASaltar,//debbug
+	output selMux5db,//debbug
 	output jumpSalida//servira para la fase 3
 );
 
@@ -69,7 +71,7 @@ PC p1(.clk(clk),.ent(salidaMux5),.pc(salidaPc));
 
 ADD p2(.pc(salidaPc),.sal(salidaAdd));
 
-INST_MEM p3(.dir(salidaPc),.datos(salidaInst_Mem),.d(pru));
+INST_MEM p3(.dir(salidaPc),.datos(salidaInst_Mem),.d(pruebaInstruccion));
 
 BUFFER0 p17(.clk(clk),.insSiguienteI(salidaAdd),.insActualI(salidaInst_Mem),.insSiguienteO(insSiguiente),.insActualO(insActual));
 
@@ -95,9 +97,9 @@ ALU p9(.a(readData12),.b(salidaMux2),.sel(salidaAluControl),.zf(zf),.res(salidaA
 
 MUX5 p5(.compand(salidaCand),.add1(salidaAdd),.aluResult(instruccionAlterada),.pc(salidaMux5));
 
-MUX3 p13(.memToReg(memToReg4),.regs(aluResultSaleBuffer3),.md(guardarEnRegistro),.final_esc(salidaMux3),.prum(prum));
+MUX3 p13(.memToReg(memToReg4),.regs(aluResultSaleBuffer3),.md(guardarEnRegistro),.final_esc(salidaMux3),.prum(pruebaDatoSalida));
 
-BUFFER2 p19(.clk(clk),.jumpI(jump2),.branchI(branch2),.memReadI(memRead2),.memToRegI(memToReg2),.memWriteI(memWrite2),.regWriteI(regWrite2),.siguienteInstruccionI(salidaAdder),.zfI(zf),.aluResultI(salidaAlu),.readData2I(readData22),.writeRegistrerI(salidaMux1),.jumpO(jump3),.branchO(branch3),.memReadO(memRead3),.memToRegO(memToReg3),.memWriteO(memWrite3),.regWriteO(regWrite3),.siguienteInstruccionO(instruccionAlterada),.zfO(zf2),.aluResultO(direccionDato),.readData2O(escribirEnDatos),.writeRegistrerO(direccionEscribirRegistro));
+BUFFER2 p19(.selMux5db(selMux5db),.direccionASaltar(direccionASaltar),.clk(clk),.jumpI(jump2),.branchI(branch2),.memReadI(memRead2),.memToRegI(memToReg2),.memWriteI(memWrite2),.regWriteI(regWrite2),.siguienteInstruccionI(salidaAdder),.zfI(zf),.aluResultI(salidaAlu),.readData2I(readData22),.writeRegistrerI(salidaMux1),.jumpO(jump3),.branchO(branch3),.memReadO(memRead3),.memToRegO(memToReg3),.memWriteO(memWrite3),.regWriteO(regWrite3),.siguienteInstruccionO(instruccionAlterada),.zfO(zf2),.aluResultO(direccionDato),.readData2O(escribirEnDatos),.writeRegistrerO(direccionEscribirRegistro));
 
 CAND p4(.br(branch3),.zf(zf2),.compand(salidaCand));
 

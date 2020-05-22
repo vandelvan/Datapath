@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/simulation/modelsim
 vADD
-Z1 !s110 1589823099
+Z1 !s110 1590109886
 !i10b 1
 !s100 HIbk3OmG]A3UIGoea=W`d2
 I8OGM>K^5@CL[M=c:]nLBN3
@@ -23,7 +23,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1589823099.000000
+Z5 !s108 1590109886.000000
 !s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADD.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADD.v|
 !i113 1
@@ -55,7 +55,7 @@ R7
 R8
 n@a@d@d@e@r
 vALU
-Z9 !s110 1589823098
+Z9 !s110 1590109885
 !i10b 1
 !s100 `PX7^6DR[bNVMKH3Z9a7;2
 I1ZfR;^dbgS?74>f?Q]^1@0
@@ -69,7 +69,7 @@ R4
 r1
 !s85 0
 31
-Z11 !s108 1589823098.000000
+Z11 !s108 1590109885.000000
 !s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALU.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALU.v|
 !i113 1
@@ -80,11 +80,11 @@ n@a@l@u
 vALUCONTROL
 R9
 !i10b 1
-!s100 dhhm=Nj90P[^]fGn<X1i<0
-I2M82G3bd5;bm8NO`P_^o`3
+!s100 M=Z6nS5CA2fY?Y^;C=DkK2
+IESD09bbFhGZfi0UQ[m>VJ2
 R2
 R0
-w1589655348
+w1589848441
 8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL.v
 FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL.v
 L0 1
@@ -100,6 +100,98 @@ R6
 R7
 R8
 n@a@l@u@c@o@n@t@r@o@l
+vBUFFER0
+R1
+!i10b 1
+!s100 IR3Q<]5IPRI:UW8Z]FDYi3
+IC?F7h:IOKMgjgV=ZYYVkz1
+R2
+R0
+w1589831759
+8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER0.v
+FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER0.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER0.v|
+!i113 1
+R6
+R7
+R8
+n@b@u@f@f@e@r0
+vBUFFER1
+R1
+!i10b 1
+!s100 ;GME8mmo2VAZ0L0Y2YEbV1
+IalH;>]nCM1m=]Gb7]0cL=0
+R2
+R0
+w1589844965
+8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER1.v
+FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER1.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER1.v|
+!i113 1
+R6
+R7
+R8
+n@b@u@f@f@e@r1
+vBUFFER2
+R1
+!i10b 1
+!s100 [?^QPPd]9lmU5WHMkznEE2
+IWZC^hloH`IZdgAgjFlj[S3
+R2
+R0
+w1590109721
+8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER2.v
+FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER2.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER2.v|
+!i113 1
+R6
+R7
+R8
+n@b@u@f@f@e@r2
+vBUFFER3
+R1
+!i10b 1
+!s100 lXPO565e9Q51QV=VJY@Kh1
+I265bSQ?:LQ`5UGVHHJ>`F3
+R2
+R0
+w1590109418
+8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER3.v
+FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER3.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER3.v|
+!i113 1
+R6
+R7
+R8
+n@b@u@f@f@e@r3
 vCAND
 R9
 !i10b 1
@@ -126,11 +218,11 @@ n@c@a@n@d
 vDATAMEMORY
 R9
 !i10b 1
-!s100 ?gjzMGa>H9@FJ2z=lhBhD1
-IWKCS?eSJnAF:jUX7P7:]m0
+!s100 fDHiekll<`4J=XLGRVLZd3
+I`m?XBjPEVCRTb=1JNKm[h1
 R2
 R0
-w1589822928
+w1590105972
 8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v
 FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v
 L0 1
@@ -149,11 +241,11 @@ n@d@a@t@a@m@e@m@o@r@y
 vDATAPATH
 R9
 !i10b 1
-!s100 eZNg]C=fijm=__oO891^l0
-INBmC;3DD>GXUPlg:1eoNh1
+!s100 `^hWi1ilW@[o:lABEQfIh2
+I5SmIRibMF5_TGb7dVSU<n0
 R2
 R0
-w1589823063
+w1590109837
 8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v
 FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v
 L0 1
@@ -172,11 +264,11 @@ n@d@a@t@a@p@a@t@h
 vDATAPATH_TB
 R1
 !i10b 1
-!s100 :Vjhf06_J6dfZlV^6k^K=0
-I;Cc_nfTdBkmJWJ[7G;aKP2
+!s100 <2nTHgXdC5ebJ<D^ojkb>2
+ICX><5kahcK43faS^9a]MU0
 R2
 R0
-w1589822980
+w1590109786
 8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH_TB.v
 FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH_TB.v
 L0 4
@@ -218,11 +310,11 @@ n@i@n@s@t_@m@e@m
 vMUX1
 R9
 !i10b 1
-!s100 zJO=9`6]17KFijzzQlXOQ2
-IdB?=8FcKZhO?;KYPQhLTG1
+!s100 mGgfjTR7i6_3mgUHE^0gT0
+I=QHdSiPD;NaM<WzVn^I7a1
 R2
 R0
-R3
+w1589848326
 8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX1.v
 FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX1.v
 L0 1
@@ -241,11 +333,11 @@ n@m@u@x1
 vMUX2
 R9
 !i10b 1
-!s100 bH9Ge?lXhWcjDFk>E0l@:1
-INXZGa;kLKC5nInob]^a3J3
+!s100 Lm:7nbJcMcN1SYoS9>j^D1
+IglE6b5WKI;J>J<N:O5GE:3
 R2
 R0
-R3
+w1589848482
 8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX2.v
 FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX2.v
 L0 1
@@ -264,11 +356,11 @@ n@m@u@x2
 vMUX3
 R9
 !i10b 1
-!s100 SJBM`jRI0[gPZNTT8RzNG1
-IiIhFIf4;K[k?j5AV2?2f_3
+!s100 l:D0mgSe;QAYoHT]9e4lI3
+IM>=HaX`JEPIQd6:d_EH1A2
 R2
 R0
-w1589820676
+w1589925553
 8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX3.v
 FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX3.v
 L0 1
@@ -285,7 +377,7 @@ R7
 R8
 n@m@u@x3
 vMUX5
-R9
+Z12 !s110 1590109884
 !i10b 1
 !s100 @F9:AC?`T`YN]O:FRJGLH2
 I`;jiVzi1H^[@e1QmmW`Z[0
@@ -299,7 +391,7 @@ R4
 r1
 !s85 0
 31
-R11
+Z13 !s108 1590109884.000000
 !s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX5.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX5.v|
 !i113 1
@@ -308,7 +400,7 @@ R7
 R8
 n@m@u@x5
 vPC
-Z12 !s110 1589823097
+R12
 !i10b 1
 !s100 9iS1:Z[Acz=3V[;?`P14I1
 ImS8ab^K`<ZbWY>ZdJfkQ^2
@@ -322,7 +414,7 @@ R4
 r1
 !s85 0
 31
-Z13 !s108 1589823097.000000
+R13
 !s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/PC.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/PC.v|
 !i113 1
@@ -333,11 +425,11 @@ n@p@c
 vREGISTERS
 R12
 !i10b 1
-!s100 SKkH^zml@B@Pf:>XEG7Te1
-INjI?[8jNEL2m5BKgML:?;1
+!s100 D_gRml`EbhAdkKD^=VJ453
+ILTBVP0ff[nHVPLVcnKK<;0
 R2
 R0
-R10
+w1590105956
 8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v
 FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v
 L0 1
@@ -379,11 +471,11 @@ n@s@h@i@f@t@l@e@f@t2
 vSIGNEXT
 R12
 !i10b 1
-!s100 G7J1J5akD:8QW_IG3>mLP3
-IB9HjXkeQ_WX[PI]iQ6`^D2
+!s100 [2kF1a[;JTP`aB5Bb;U2^1
+IdMmje;2lHAQj9zenJo=<=0
 R2
 R0
-R3
+w1589845494
 8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SIGNEXT.v
 FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SIGNEXT.v
 L0 1
@@ -402,11 +494,11 @@ n@s@i@g@n@e@x@t
 vUC
 R12
 !i10b 1
-!s100 ?NmEea7AG7OC`Ca[?[]FT0
-I<P?F9;H2fH6GkQJdY^7O80
+!s100 6[lKF`Jg22018Hhll:RQi1
+INNWjn=njGboRQ=cm3HlVF1
 R2
 R0
-R10
+w1589844799
 8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v
 FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v
 L0 1
