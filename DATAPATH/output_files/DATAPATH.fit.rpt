@@ -1,5 +1,5 @@
 Fitter report for DATAPATH
-Mon May 25 07:10:32 2020
+Mon May 25 07:15:34 2020
 Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
@@ -57,7 +57,7 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------+
 ; Fitter Summary                                                      ;
 +-----------------------+---------------------------------------------+
-; Fitter Status         ; Successful - Mon May 25 07:10:32 2020       ;
+; Fitter Status         ; Successful - Mon May 25 07:15:34 2020       ;
 ; Quartus Prime Version ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name         ; DATAPATH                                    ;
 ; Top-level Entity Name ; DATAPATH                                    ;
@@ -131,7 +131,7 @@ https://fpgasoftware.intel.com/eula.
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.2%      ;
+;     Processor 2            ;   0.4%      ;
 +----------------------------+-------------+
 
 
@@ -994,14 +994,14 @@ Info (170195): Router estimated average interconnect usage is 2% of the availabl
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:00
-Info (11888): Total time spent on timing analysis during the Fitter is 0.13 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.17 seconds.
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:00
 Warning (169174): The Reserve All Unused Pins setting has not been specified, and will default to 'As output driving ground'.
 Info (144001): Generated suppressed messages file /home/jorozco/Documentos/semArq/Datapath/DATAPATH/output_files/DATAPATH.fit.smsg
 Info: Quartus Prime Fitter was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 1088 megabytes
-    Info: Processing ended: Mon May 25 07:10:32 2020
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 1097 megabytes
+    Info: Processing ended: Mon May 25 07:15:34 2020
+    Info: Elapsed time: 00:00:03
     Info: Total CPU time (on all processors): 00:00:03
 
 
