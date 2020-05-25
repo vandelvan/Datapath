@@ -1,8 +1,9 @@
+//Memoria de instrucciones
 module REGISTERS(
-	input [4:0] rr1,rr2,wr,
-	input [31:0] wd,
-	input enable,
-	output reg [31:0] rd1,rd2
+	input [4:0] rr1,rr2,wr,	//read register 1,2, write register - direcciones a leer/escribir
+	input [31:0] wd,	//write data - Dato a escribir en la memoria
+	input enable,	//Bit que indica si se escribira o no
+	output reg [31:0] rd1,rd2	//read data 1,2 - salida de datos a leer
 );
 
 reg [31:0] mem [0:31];
@@ -10,9 +11,12 @@ reg [31:0] mem [0:31];
 
 always @* 
 	begin
-		if(enable)
+		if(enable)	//si la escritura esta habilitada
 		begin//se lee y escribe
-			mem[wr]=wd;
+			if(wr != 5'b00000)	//Si no es el registro $zero
+			begin
+				mem[wr]=wd;	//Se guarda el dato a guardar en la posicion write register
+			end
 			rd1=mem[rr1];
 			rd2=mem[rr2];
 		end

@@ -72,48 +72,239 @@ wire [31:0]jumpDirB2;//BUFFER1(jumpDirO) - BUFFER2(jumpDir0)
 wire [31:0]jumpDirF; //BUFFER2(jumpDirO - MUX4(shift)
 
 
-MUX4 p21(.jump(jump3),.mx5(salidaMux5),.pc(salidaMux4),.shift(jumpDirF));
+MUX4 p21
+(
+	.jump(jump3),
+	.mx5(salidaMux5),
+	.pc(salidaMux4),
+	.shift(jumpDirF)
+);
 
-PC p1(.clk(clk),.ent(salidaMux4),.pc(salidaPc));
+PC p1
+(
+	.clk(clk),
+	.ent(salidaMux4),
+	.pc(salidaPc)
+);
 
-ADD p2(.pc(salidaPc),.sal(salidaAdd));
+ADD p2
+(
+	.pc(salidaPc),
+	.sal(salidaAdd)
+);
 
-INST_MEM p3(.dir(salidaPc),.datos(salidaInst_Mem),.d(pruebaInstruccion));
+INST_MEM p3
+(
+	.dir(salidaPc),
+	.datos(salidaInst_Mem),
+	.d(pruebaInstruccion)
+);
 
-BUFFER0 p17(.clk(clk),.insSiguienteI(salidaAdd),.insActualI(salidaInst_Mem),.insSiguienteO(insSiguiente),.insActualO(insActual));
+BUFFER0 p17
+(
+	.clk(clk),
+	.insSiguienteI(salidaAdd),
+	.insActualI(salidaInst_Mem),
+	.insSiguienteO(insSiguiente),
+	.insActualO(insActual)
+);
 
-REGISTERS p7(.rr1(insActual[25:21]),.rr2(insActual[20:16]),.wr(writeRegistrer4),.wd(salidaMux3),.enable(regWrite4),.rd1(readData1),.rd2(readData2));
+REGISTERS p7
+(
+	.rr1(insActual[25:21]),
+	.rr2(insActual[20:16]),
+	.wr(writeRegistrer4),
+	.wd(salidaMux3),
+	.enable(regWrite4),
+	.rd1(readData1),
+	.rd2(readData2)
+);
 
-SHIFTLEFT1 p22(.entrada(insActual[25:0]),.pc(insSiguiente[31:28]),.salida(jumpDirB1));
+SHIFTLEFT1 p22
+(
+	.entrada(insActual[25:0]),
+	.pc(insSiguiente[31:28]),
+	.salida(jumpDirB1)
+);
 
-UC p12(.opcode(insActual[31:26]),.jump(jump1),.regDst(regDst1),.branch(branch1),.memRead(memRead1),.memToReg(memToReg1),.aluOp(aluOp1),.memWrite(memWrite1),.aluSrc(aluSrc1),.regWrite(regWrite1));
+UC p12
+(
+	.opcode(insActual[31:26]),
+	.jump(jump1),
+	.regDst(regDst1),
+	.branch(branch1),
+	.memRead(memRead1),
+	.memToReg(memToReg1),
+	.aluOp(aluOp1),
+	.memWrite(memWrite1),
+	.aluSrc(aluSrc1),
+	.regWrite(regWrite1)
+);
 
-SIGNEXT p10(.datoIn(insActual[15:0]),.datoOut(numeroExtendido));
+SIGNEXT p10
+(
+	.datoIn(insActual[15:0]),
+	.datoOut(numeroExtendido)
+);
 
-BUFFER1 p18(.clk(clk),.jumpDirI(jumpDirB1),.jumpDirO(jumpDirB2),.regDstI(regDst1),.jumpI(jump1),.branchI(branch1),.memReadI(memRead1),.memToRegI(memToReg1),.aluOpI(aluOp1),.memWriteI(memWrite1),	.aluSrcI(aluSrc1),.regWriteI(regWrite1),.instruccionSiguienteI(insSiguiente),.readData1I(readData1),.readData2I(readData2),.signExtendI(numeroExtendido),.rtI(insActual[20:16]),.rdI(insActual[15:11]),.regDstO(regDst2),.jumpO(jump2),.branchO(branch2),.memReadO(memRead2),.memToRegO(memToReg2),.aluOpO(aluOp2),.memWriteO(memWrite2),.aluSrcO(aluSrc2),.regWriteO(regWrite2),.instruccionSiguienteO(insSiguiente2),.readData1O(readData12),.readData2O(readData22),.signExtendO(numeroExtendido2),.rtO(rt),.rdO(rd));
+BUFFER1 p18
+(
+	.clk(clk),
+	.jumpDirI(jumpDirB1),
+	.jumpDirO(jumpDirB2),
+	.regDstI(regDst1),
+	.jumpI(jump1),
+	.branchI(branch1),
+	.memReadI(memRead1),
+	.memToRegI(memToReg1),
+	.aluOpI(aluOp1),
+	.memWriteI(memWrite1),
+	.aluSrcI(aluSrc1),
+	.regWriteI(regWrite1),
+	.instruccionSiguienteI(insSiguiente),
+	.readData1I(readData1),
+	.readData2I(readData2),
+	.signExtendI(numeroExtendido),
+	.rtI(insActual[20:16]),
+	.rdI(insActual[15:11]),
+	.regDstO(regDst2),
+	.jumpO(jump2),
+	.branchO(branch2),
+	.memReadO(memRead2),
+	.memToRegO(memToReg2),
+	.aluOpO(aluOp2),
+	.memWriteO(memWrite2),
+	.aluSrcO(aluSrc2),
+	.regWriteO(regWrite2),
+	.instruccionSiguienteO(insSiguiente2),
+	.readData1O(readData12),
+	.readData2O(readData22),
+	.signExtendO(numeroExtendido2),
+	.rtO(rt),
+	.rdO(rd)
+);
 
-MUX1 p6(.rd(rd),.rt(rt),.regDst(regDst2),.finalrd(salidaMux1));
+MUX1 p6
+(
+	.rd(rd),
+	.rt(rt),
+	.regDst(regDst2),
+	.finalrd(salidaMux1)
+);
 
-ALUCONTROL p11(.opf(numeroExtendido2[5:0]),.aluOp(aluOp2),.ops(salidaAluControl));
+ALUCONTROL p11
+(
+	.opf(numeroExtendido2[5:0]),
+	.aluOp(aluOp2),
+	.ops(salidaAluControl)
+);
 
-MUX2 p8(.aluSrc(aluSrc2),.regs(readData22),.sign(numeroExtendido2),.finaldata2(salidaMux2));
+MUX2 p8
+(
+	.aluSrc(aluSrc2),
+	.regs(readData22),
+	.sign(numeroExtendido2),
+	.finaldata2(salidaMux2)
+);
 
-ADDER p15(.op1(insSiguiente2),.op2(salidaShiftLeft),.aluResult(salidaAdder));
+ADDER p15
+(
+	.op1(insSiguiente2),
+	.op2(salidaShiftLeft),
+	.aluResult(salidaAdder)
+);
 
-SHIFTLEFT2 p14(.entrada(numeroExtendido2),.salida(salidaShiftLeft));
+SHIFTLEFT2 p14
+(
+	.entrada(numeroExtendido2),
+	.salida(salidaShiftLeft)
+);
 
-ALU p9(.a(readData12),.b(salidaMux2),.sel(salidaAluControl),.zf(zf),.res(salidaAlu));
+ALU p9
+(
+	.a(readData12),
+	.b(salidaMux2),
+	.sel(salidaAluControl),
+	.zf(zf),.res(salidaAlu)
+);
 
-MUX5 p5(.compand(salidaCand),.add1(salidaAdd),.aluResult(instruccionAlterada),.pc(salidaMux5));
+MUX5 p5
+(
+	.compand(salidaCand),
+	.add1(salidaAdd),
+	.aluResult(instruccionAlterada),
+	.pc(salidaMux5)
+);
 
-MUX3 p13(.memToReg(memToReg4),.regs(aluResultSaleBuffer3),.md(guardarEnRegistro),.final_esc(salidaMux3),.prum(pruebaDatoSalida));
+MUX3 p13
+(
+	.memToReg(memToReg4),
+	.regs(aluResultSaleBuffer3),
+	.md(guardarEnRegistro),
+	.final_esc(salidaMux3),
+	.prum(pruebaDatoSalida)
+);
 
-BUFFER2 p19(.jumpDirI(jumpDirB2),.jumpDirO(jumpDirF),.selMux5db(selMux5db),.direccionASaltar(direccionASaltar),.clk(clk),.jumpI(jump2),.branchI(branch2),.memReadI(memRead2),.memToRegI(memToReg2),.memWriteI(memWrite2),.regWriteI(regWrite2),.siguienteInstruccionI(salidaAdder),.zfI(zf),.aluResultI(salidaAlu),.readData2I(readData22),.writeRegistrerI(salidaMux1),.jumpO(jump3),.branchO(branch3),.memReadO(memRead3),.memToRegO(memToReg3),.memWriteO(memWrite3),.regWriteO(regWrite3),.siguienteInstruccionO(instruccionAlterada),.zfO(zf2),.aluResultO(direccionDato),.readData2O(escribirEnDatos),.writeRegistrerO(direccionEscribirRegistro));
+BUFFER2 p19
+(
+	.jumpDirI(jumpDirB2),
+	.jumpDirO(jumpDirF),
+	.selMux5db(selMux5db),
+	.direccionASaltar(direccionASaltar),
+	.clk(clk),
+	.jumpI(jump2),
+	.branchI(branch2),
+	.memReadI(memRead2),
+	.memToRegI(memToReg2),
+	.memWriteI(memWrite2),
+	.regWriteI(regWrite2),
+	.siguienteInstruccionI(salidaAdder),
+	.zfI(zf),
+	.aluResultI(salidaAlu),
+	.readData2I(readData22),
+	.writeRegistrerI(salidaMux1),
+	.jumpO(jump3),
+	.branchO(branch3),
+	.memReadO(memRead3),
+	.memToRegO(memToReg3),
+	.memWriteO(memWrite3),
+	.regWriteO(regWrite3),
+	.siguienteInstruccionO(instruccionAlterada),
+	.zfO(zf2),
+	.aluResultO(direccionDato),
+	.readData2O(escribirEnDatos),
+	.writeRegistrerO(direccionEscribirRegistro)
+);
 
-CAND p4(.br(branch3),.zf(zf2),.compand(salidaCand));
+CAND p4
+(
+	.br(branch3),
+	.zf(zf2),
+	.compand(salidaCand)
+);
 
-DATAMEMORY p16(.writeData(escribirEnDatos),.address(direccionDato),.memWrite(memWrite3),.memRead(memRead3),.readData(datoDeDatamemory));
+DATAMEMORY p16
+(
+	.writeData(escribirEnDatos),
+	.address(direccionDato),
+	.memWrite(memWrite3),
+	.memRead(memRead3),
+	.readData(datoDeDatamemory)
+);
 
-BUFFER3 p20(.clk(clk),.memToRegI(memToReg3),.regWriteI(regWrite3),.readDataI(datoDeDatamemory),.aluResultI(direccionDato),.writeRegistrerI(direccionEscribirRegistro),.memToRegO(memToReg4),.regWriteO(regWrite4),.readDataO(guardarEnRegistro),.aluResultO(aluResultSaleBuffer3),.writeRegistrerO(writeRegistrer4));
+BUFFER3 p20
+(
+	.clk(clk),
+	.memToRegI(memToReg3),
+	.regWriteI(regWrite3),
+	.readDataI(datoDeDatamemory),
+	.aluResultI(direccionDato),
+	.writeRegistrerI(direccionEscribirRegistro),
+	.memToRegO(memToReg4),
+	.regWriteO(regWrite4),
+	.readDataO(guardarEnRegistro),
+	.aluResultO(aluResultSaleBuffer3),
+	.writeRegistrerO(writeRegistrer4)
+);
 	 
 endmodule

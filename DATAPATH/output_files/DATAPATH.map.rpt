@@ -1,6 +1,6 @@
 Analysis & Synthesis report for DATAPATH
-Fri May 22 14:10:21 2020
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Mon May 25 07:10:29 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -24,9 +24,9 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -36,15 +36,16 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +---------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                              ;
 +-----------------------------+---------------------------------------------+
-; Analysis & Synthesis Status ; Successful - Fri May 22 14:10:21 2020       ;
-; Quartus Prime Version       ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Analysis & Synthesis Status ; Successful - Mon May 25 07:10:29 2020       ;
+; Quartus Prime Version       ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name               ; DATAPATH                                    ;
 ; Top-level Entity Name       ; DATAPATH                                    ;
 ; Family                      ; MAX V                                       ;
@@ -141,35 +142,35 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                  ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                    ; Library ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
-; UC.v                             ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/UC.v         ;         ;
-; SIGNEXT.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v    ;         ;
-; SHIFTLEFT2.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT2.v ;         ;
-; REGISTERS.v                      ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v  ;         ;
-; PC.v                             ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/PC.v         ;         ;
-; MUX5.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v       ;         ;
-; MUX3.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v       ;         ;
-; MUX2.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v       ;         ;
-; MUX1.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v       ;         ;
-; INST_MEM.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/INST_MEM.v   ;         ;
-; DATAPATH.v                       ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v   ;         ;
-; DATAMEMORY.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v ;         ;
-; CAND.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/CAND.v       ;         ;
-; ALUCONTROL.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL.v ;         ;
-; ALU.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/ALU.v        ;         ;
-; ADDER.v                          ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/ADDER.v      ;         ;
-; ADD.v                            ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/ADD.v        ;         ;
-; BUFFER0.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/BUFFER0.v    ;         ;
-; BUFFER1.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/BUFFER1.v    ;         ;
-; BUFFER2.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/BUFFER2.v    ;         ;
-; BUFFER3.v                        ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/BUFFER3.v    ;         ;
-; MUX4.v                           ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/MUX4.v       ;         ;
-; SHIFTLEFT1.v                     ; yes             ; User Verilog HDL File  ; C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT1.v ;         ;
-+----------------------------------+-----------------+------------------------+-------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                 ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                   ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
+; UC.v                             ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v         ;         ;
+; SIGNEXT.v                        ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/SIGNEXT.v    ;         ;
+; SHIFTLEFT2.v                     ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/SHIFTLEFT2.v ;         ;
+; REGISTERS.v                      ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/REGISTERS.v  ;         ;
+; PC.v                             ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/PC.v         ;         ;
+; MUX5.v                           ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/MUX5.v       ;         ;
+; MUX3.v                           ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/MUX3.v       ;         ;
+; MUX2.v                           ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/MUX2.v       ;         ;
+; MUX1.v                           ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/MUX1.v       ;         ;
+; INST_MEM.v                       ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/INST_MEM.v   ;         ;
+; DATAPATH.v                       ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v   ;         ;
+; DATAMEMORY.v                     ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v ;         ;
+; CAND.v                           ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/CAND.v       ;         ;
+; ALUCONTROL.v                     ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/ALUCONTROL.v ;         ;
+; ALU.v                            ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/ALU.v        ;         ;
+; ADDER.v                          ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/ADDER.v      ;         ;
+; ADD.v                            ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/ADD.v        ;         ;
+; BUFFER0.v                        ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/BUFFER0.v    ;         ;
+; BUFFER1.v                        ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/BUFFER1.v    ;         ;
+; BUFFER2.v                        ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/BUFFER2.v    ;         ;
+; BUFFER3.v                        ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/BUFFER3.v    ;         ;
+; MUX4.v                           ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/MUX4.v       ;         ;
+; SHIFTLEFT1.v                     ; yes             ; User Verilog HDL File  ; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/SHIFTLEFT1.v ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -331,12 +332,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                            ;                           ; BUFFER3:p20|readDataO[16], BUFFER3:p20|readDataO[15], BUFFER3:p20|readDataO[14],    ;
 ;                            ;                           ; BUFFER3:p20|readDataO[13], BUFFER3:p20|readDataO[12], BUFFER3:p20|readDataO[11],    ;
 ;                            ;                           ; BUFFER3:p20|readDataO[10], BUFFER3:p20|readDataO[9], BUFFER3:p20|readDataO[8],      ;
-;                            ;                           ; BUFFER3:p20|readDataO[7], BUFFER3:p20|aluResultO[6], BUFFER3:p20|aluResultO[7],     ;
-;                            ;                           ; BUFFER3:p20|aluResultO[8], BUFFER3:p20|aluResultO[9], BUFFER3:p20|aluResultO[10],   ;
-;                            ;                           ; BUFFER3:p20|aluResultO[11], BUFFER3:p20|aluResultO[12], BUFFER3:p20|aluResultO[13], ;
-;                            ;                           ; BUFFER3:p20|aluResultO[14], BUFFER3:p20|aluResultO[15], BUFFER3:p20|aluResultO[16], ;
-;                            ;                           ; BUFFER3:p20|aluResultO[17], BUFFER3:p20|aluResultO[18], BUFFER3:p20|aluResultO[19], ;
-;                            ;                           ; BUFFER3:p20|aluResultO[20], BUFFER3:p20|aluResultO[21]                              ;
+;                            ;                           ; BUFFER3:p20|readDataO[7], BUFFER3:p20|aluResultO[7], BUFFER3:p20|aluResultO[8],     ;
+;                            ;                           ; BUFFER3:p20|aluResultO[9], BUFFER3:p20|aluResultO[10], BUFFER3:p20|aluResultO[11],  ;
+;                            ;                           ; BUFFER3:p20|aluResultO[12], BUFFER3:p20|aluResultO[13], BUFFER3:p20|aluResultO[14], ;
+;                            ;                           ; BUFFER3:p20|aluResultO[15], BUFFER3:p20|aluResultO[16], BUFFER3:p20|aluResultO[17], ;
+;                            ;                           ; BUFFER3:p20|aluResultO[18], BUFFER3:p20|aluResultO[19], BUFFER3:p20|aluResultO[20], ;
+;                            ;                           ; BUFFER3:p20|aluResultO[21], BUFFER3:p20|aluResultO[22]                              ;
 ; BUFFER1:p18|jumpDirO[0]    ; Stuck at GND              ; BUFFER2:p19|jumpDirO[0], BUFFER2:p19|jumpDirO[31], BUFFER1:p18|jumpDirO[31],        ;
 ;                            ; due to stuck port data_in ; BUFFER2:p19|jumpDirO[30], BUFFER1:p18|jumpDirO[30], BUFFER2:p19|jumpDirO[29],       ;
 ;                            ;                           ; BUFFER1:p18|jumpDirO[29], BUFFER2:p19|jumpDirO[28], BUFFER1:p18|jumpDirO[28],       ;
@@ -390,7 +391,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                            ;                           ; BUFFER2:p19|aluResultO[24], BUFFER2:p19|aluResultO[25], BUFFER2:p19|aluResultO[26], ;
 ;                            ;                           ; BUFFER2:p19|aluResultO[31], BUFFER1:p18|readData1O[0], BUFFER3:p20|aluResultO[0],   ;
 ;                            ;                           ; BUFFER3:p20|aluResultO[1], BUFFER3:p20|aluResultO[2], BUFFER3:p20|aluResultO[3],    ;
-;                            ;                           ; BUFFER3:p20|aluResultO[4], BUFFER3:p20|aluResultO[5], BUFFER3:p20|aluResultO[22],   ;
+;                            ;                           ; BUFFER3:p20|aluResultO[4], BUFFER3:p20|aluResultO[5], BUFFER3:p20|aluResultO[6],    ;
 ;                            ;                           ; BUFFER3:p20|aluResultO[23], BUFFER3:p20|aluResultO[24], BUFFER3:p20|aluResultO[25], ;
 ;                            ;                           ; BUFFER3:p20|aluResultO[26], BUFFER3:p20|aluResultO[31]                              ;
 ; BUFFER0:p17|insActualO[1]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[1], BUFFER1:p18|jumpDirO[3], BUFFER2:p19|jumpDirO[3],       ;
@@ -408,37 +409,37 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                            ; due to stuck port data_in ; BUFFER2:p19|jumpDirO[13], BUFFER1:p18|regDstO, BUFFER2:p19|writeRegistrerO[0],      ;
 ;                            ;                           ; BUFFER3:p20|writeRegistrerO[0], BUFFER1:p18|readData1O[11],                         ;
 ;                            ;                           ; BUFFER1:p18|readData2O[11]                                                          ;
-; BUFFER0:p17|insActualO[12] ; Stuck at GND              ; BUFFER1:p18|rdO[1], BUFFER1:p18|signExtendO[12], BUFFER1:p18|jumpDirO[14],          ;
-;                            ; due to stuck port data_in ; BUFFER2:p19|jumpDirO[14], BUFFER2:p19|writeRegistrerO[1],                           ;
-;                            ;                           ; BUFFER3:p20|writeRegistrerO[1], BUFFER1:p18|readData1O[12],                         ;
-;                            ;                           ; BUFFER1:p18|readData2O[12]                                                          ;
-; BUFFER0:p17|insActualO[13] ; Stuck at GND              ; BUFFER1:p18|rdO[2], BUFFER1:p18|signExtendO[13], BUFFER1:p18|jumpDirO[15],          ;
-;                            ; due to stuck port data_in ; BUFFER2:p19|jumpDirO[15], BUFFER2:p19|writeRegistrerO[2],                           ;
-;                            ;                           ; BUFFER3:p20|writeRegistrerO[2], BUFFER1:p18|readData1O[13],                         ;
-;                            ;                           ; BUFFER1:p18|readData2O[13]                                                          ;
 ; BUFFER0:p17|insActualO[14] ; Stuck at GND              ; BUFFER1:p18|rdO[3], BUFFER1:p18|signExtendO[14], BUFFER1:p18|jumpDirO[16],          ;
 ;                            ; due to stuck port data_in ; BUFFER2:p19|jumpDirO[16], BUFFER2:p19|writeRegistrerO[3],                           ;
 ;                            ;                           ; BUFFER3:p20|writeRegistrerO[3], BUFFER1:p18|readData1O[14],                         ;
 ;                            ;                           ; BUFFER1:p18|readData2O[14]                                                          ;
+; BUFFER0:p17|insActualO[13] ; Stuck at GND              ; BUFFER1:p18|rdO[2], BUFFER1:p18|signExtendO[13], BUFFER1:p18|jumpDirO[15],          ;
+;                            ; due to stuck port data_in ; BUFFER2:p19|jumpDirO[15], BUFFER2:p19|writeRegistrerO[2],                           ;
+;                            ;                           ; BUFFER3:p20|writeRegistrerO[2], BUFFER1:p18|readData1O[13],                         ;
+;                            ;                           ; BUFFER1:p18|readData2O[13]                                                          ;
+; BUFFER0:p17|insActualO[12] ; Stuck at GND              ; BUFFER1:p18|rdO[1], BUFFER1:p18|signExtendO[12], BUFFER1:p18|jumpDirO[14],          ;
+;                            ; due to stuck port data_in ; BUFFER2:p19|jumpDirO[14], BUFFER2:p19|writeRegistrerO[1],                           ;
+;                            ;                           ; BUFFER3:p20|writeRegistrerO[1], BUFFER1:p18|readData1O[12],                         ;
+;                            ;                           ; BUFFER1:p18|readData2O[12]                                                          ;
 ; BUFFER0:p17|insActualO[6]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[6], BUFFER1:p18|jumpDirO[8], BUFFER2:p19|jumpDirO[8],       ;
 ;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[22], BUFFER1:p18|readData1O[6], BUFFER1:p18|readData2O[6],   ;
 ;                            ;                           ; BUFFER1:p18|readData2O[0]                                                           ;
 ; BUFFER0:p17|insActualO[7]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[7], BUFFER1:p18|jumpDirO[9], BUFFER2:p19|jumpDirO[9],       ;
 ;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[23], BUFFER1:p18|readData1O[7], BUFFER1:p18|readData2O[7]    ;
-; BUFFER0:p17|insActualO[2]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[2], BUFFER1:p18|jumpDirO[4], BUFFER2:p19|jumpDirO[4],       ;
-;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[2], BUFFER1:p18|readData2O[2]                                ;
-; BUFFER0:p17|insActualO[3]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[3], BUFFER1:p18|jumpDirO[5], BUFFER2:p19|jumpDirO[5],       ;
-;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[3], BUFFER1:p18|readData2O[3]                                ;
-; BUFFER0:p17|insActualO[4]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[4], BUFFER1:p18|jumpDirO[6], BUFFER2:p19|jumpDirO[6],       ;
-;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[4], BUFFER1:p18|readData2O[4]                                ;
-; BUFFER0:p17|insActualO[5]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[5], BUFFER1:p18|jumpDirO[7], BUFFER2:p19|jumpDirO[7],       ;
-;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[5], BUFFER1:p18|readData2O[5]                                ;
-; BUFFER0:p17|insActualO[8]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[8], BUFFER1:p18|jumpDirO[10], BUFFER2:p19|jumpDirO[10],     ;
-;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[8], BUFFER1:p18|readData2O[8]                                ;
 ; BUFFER0:p17|insActualO[9]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[9], BUFFER1:p18|jumpDirO[11], BUFFER2:p19|jumpDirO[11],     ;
 ;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[9], BUFFER1:p18|readData2O[9]                                ;
 ; BUFFER0:p17|insActualO[10] ; Stuck at GND              ; BUFFER1:p18|signExtendO[10], BUFFER1:p18|jumpDirO[12], BUFFER2:p19|jumpDirO[12],    ;
 ;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[10], BUFFER1:p18|readData2O[10]                              ;
+; BUFFER0:p17|insActualO[8]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[8], BUFFER1:p18|jumpDirO[10], BUFFER2:p19|jumpDirO[10],     ;
+;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[8], BUFFER1:p18|readData2O[8]                                ;
+; BUFFER0:p17|insActualO[5]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[5], BUFFER1:p18|jumpDirO[7], BUFFER2:p19|jumpDirO[7],       ;
+;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[5], BUFFER1:p18|readData2O[5]                                ;
+; BUFFER0:p17|insActualO[4]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[4], BUFFER1:p18|jumpDirO[6], BUFFER2:p19|jumpDirO[6],       ;
+;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[4], BUFFER1:p18|readData2O[4]                                ;
+; BUFFER0:p17|insActualO[3]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[3], BUFFER1:p18|jumpDirO[5], BUFFER2:p19|jumpDirO[5],       ;
+;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[3], BUFFER1:p18|readData2O[3]                                ;
+; BUFFER0:p17|insActualO[2]  ; Stuck at GND              ; BUFFER1:p18|signExtendO[2], BUFFER1:p18|jumpDirO[4], BUFFER2:p19|jumpDirO[4],       ;
+;                            ; due to stuck port data_in ; BUFFER1:p18|readData1O[2], BUFFER1:p18|readData2O[2]                                ;
 ; BUFFER0:p17|insActualO[17] ; Stuck at GND              ; BUFFER1:p18|rtO[1], BUFFER1:p18|jumpDirO[19], BUFFER2:p19|jumpDirO[19]              ;
 ;                            ; due to stuck port data_in ;                                                                                     ;
 ; BUFFER0:p17|insActualO[18] ; Stuck at GND              ; BUFFER1:p18|rtO[2], BUFFER1:p18|jumpDirO[20], BUFFER2:p19|jumpDirO[20]              ;
@@ -447,17 +448,17 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ;                            ; due to stuck port data_in ;                                                                                     ;
 ; BUFFER0:p17|insActualO[20] ; Stuck at GND              ; BUFFER1:p18|rtO[4], BUFFER1:p18|jumpDirO[22], BUFFER2:p19|jumpDirO[22]              ;
 ;                            ; due to stuck port data_in ;                                                                                     ;
-; BUFFER0:p17|insActualO[21] ; Stuck at GND              ; BUFFER1:p18|jumpDirO[23], BUFFER2:p19|jumpDirO[23]                                  ;
-;                            ; due to stuck port data_in ;                                                                                     ;
-; BUFFER0:p17|insActualO[22] ; Stuck at GND              ; BUFFER1:p18|jumpDirO[24], BUFFER2:p19|jumpDirO[24]                                  ;
-;                            ; due to stuck port data_in ;                                                                                     ;
-; BUFFER0:p17|insActualO[23] ; Stuck at GND              ; BUFFER1:p18|jumpDirO[25], BUFFER2:p19|jumpDirO[25]                                  ;
-;                            ; due to stuck port data_in ;                                                                                     ;
-; BUFFER0:p17|insActualO[24] ; Stuck at GND              ; BUFFER1:p18|jumpDirO[26], BUFFER2:p19|jumpDirO[26]                                  ;
+; BUFFER1:p18|branchO        ; Stuck at GND              ; BUFFER2:p19|selMux5db, BUFFER2:p19|branchO                                          ;
 ;                            ; due to stuck port data_in ;                                                                                     ;
 ; BUFFER0:p17|insActualO[25] ; Stuck at GND              ; BUFFER1:p18|jumpDirO[27], BUFFER2:p19|jumpDirO[27]                                  ;
 ;                            ; due to stuck port data_in ;                                                                                     ;
-; BUFFER1:p18|branchO        ; Stuck at GND              ; BUFFER2:p19|selMux5db, BUFFER2:p19|branchO                                          ;
+; BUFFER0:p17|insActualO[24] ; Stuck at GND              ; BUFFER1:p18|jumpDirO[26], BUFFER2:p19|jumpDirO[26]                                  ;
+;                            ; due to stuck port data_in ;                                                                                     ;
+; BUFFER0:p17|insActualO[23] ; Stuck at GND              ; BUFFER1:p18|jumpDirO[25], BUFFER2:p19|jumpDirO[25]                                  ;
+;                            ; due to stuck port data_in ;                                                                                     ;
+; BUFFER0:p17|insActualO[22] ; Stuck at GND              ; BUFFER1:p18|jumpDirO[24], BUFFER2:p19|jumpDirO[24]                                  ;
+;                            ; due to stuck port data_in ;                                                                                     ;
+; BUFFER0:p17|insActualO[21] ; Stuck at GND              ; BUFFER1:p18|jumpDirO[23], BUFFER2:p19|jumpDirO[23]                                  ;
 ;                            ; due to stuck port data_in ;                                                                                     ;
 ; BUFFER1:p18|jumpDirO[1]    ; Stuck at GND              ; BUFFER2:p19|jumpDirO[1]                                                             ;
 ;                            ; due to stuck port data_in ;                                                                                     ;
@@ -486,238 +487,238 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri May 22 14:10:06 2020
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Mon May 25 07:10:16 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off DATAPATH -c DATAPATH
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file uc_tb.v
-    Info (12023): Found entity 1: UC_tb File: C:/Users/Gustavo/Datapath/DATAPATH/UC_tb.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file uc.v
-    Info (12023): Found entity 1: UC File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file signext_tb.v
-    Info (12023): Found entity 1: SIGNEXT_TB File: C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT_TB.v Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file signext.v
-    Info (12023): Found entity 1: SIGNEXT File: C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file shiftleft2_tb.v
-    Info (12023): Found entity 1: SHIFTLEFT2_TB File: C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT2_TB.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file shiftleft2.v
-    Info (12023): Found entity 1: SHIFTLEFT2 File: C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT2.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file registers.v
-    Info (12023): Found entity 1: REGISTERS File: C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file pc.v
-    Info (12023): Found entity 1: PC File: C:/Users/Gustavo/Datapath/DATAPATH/PC.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file mux5.v
-    Info (12023): Found entity 1: MUX5 File: C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file mux3.v
-    Info (12023): Found entity 1: MUX3 File: C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file mux2.v
-    Info (12023): Found entity 1: MUX2 File: C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file mux1.v
-    Info (12023): Found entity 1: MUX1 File: C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file inst_mem.v
-    Info (12023): Found entity 1: INST_MEM File: C:/Users/Gustavo/Datapath/DATAPATH/INST_MEM.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file datapath_tb.v
-    Info (12023): Found entity 1: DATAPATH_TB File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v Line: 4
-Info (12021): Found 1 design units, including 1 entities, in source file datapath.v
-    Info (12023): Found entity 1: DATAPATH File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file datamemory_tb.v
-    Info (12023): Found entity 1: DATAMEMORY_TB File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY_TB.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file datamemory.v
-    Info (12023): Found entity 1: DATAMEMORY File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file cand.v
-    Info (12023): Found entity 1: CAND File: C:/Users/Gustavo/Datapath/DATAPATH/CAND.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file UC_tb.v
+    Info (12023): Found entity 1: UC_tb File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file UC.v
+    Info (12023): Found entity 1: UC File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file SIGNEXT_TB.v
+    Info (12023): Found entity 1: SIGNEXT_TB File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/SIGNEXT_TB.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file SIGNEXT.v
+    Info (12023): Found entity 1: SIGNEXT File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/SIGNEXT.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file SHIFTLEFT2_TB.v
+    Info (12023): Found entity 1: SHIFTLEFT2_TB File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/SHIFTLEFT2_TB.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file SHIFTLEFT2.v
+    Info (12023): Found entity 1: SHIFTLEFT2 File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/SHIFTLEFT2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file REGISTERS.v
+    Info (12023): Found entity 1: REGISTERS File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/REGISTERS.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file PC.v
+    Info (12023): Found entity 1: PC File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/PC.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file MUX5.v
+    Info (12023): Found entity 1: MUX5 File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/MUX5.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file MUX3.v
+    Info (12023): Found entity 1: MUX3 File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/MUX3.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file MUX2.v
+    Info (12023): Found entity 1: MUX2 File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/MUX2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file MUX1.v
+    Info (12023): Found entity 1: MUX1 File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/MUX1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file INST_MEM.v
+    Info (12023): Found entity 1: INST_MEM File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/INST_MEM.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file DATAPATH_TB.v
+    Info (12023): Found entity 1: DATAPATH_TB File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH_TB.v Line: 4
+Info (12021): Found 1 design units, including 1 entities, in source file DATAPATH.v
+    Info (12023): Found entity 1: DATAPATH File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file DATAMEMORY_TB.v
+    Info (12023): Found entity 1: DATAMEMORY_TB File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY_TB.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file DATAMEMORY.v
+    Info (12023): Found entity 1: DATAMEMORY File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file CAND.v
+    Info (12023): Found entity 1: CAND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/CAND.v Line: 1
 Warning (12019): Can't analyze file -- file ALU_TB.v is missing
-Info (12021): Found 1 design units, including 1 entities, in source file alucontrol_tb.v
-    Info (12023): Found entity 1: ALUCONTROL_tb File: C:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL_tb.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file alucontrol.v
-    Info (12023): Found entity 1: ALUCONTROL File: C:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file alu.v
-    Info (12023): Found entity 1: ALU File: C:/Users/Gustavo/Datapath/DATAPATH/ALU.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file adder_tb.v
-    Info (12023): Found entity 1: ADDER_TB File: C:/Users/Gustavo/Datapath/DATAPATH/ADDER_TB.v Line: 2
-Info (12021): Found 1 design units, including 1 entities, in source file adder.v
-    Info (12023): Found entity 1: ADDER File: C:/Users/Gustavo/Datapath/DATAPATH/ADDER.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file add.v
-    Info (12023): Found entity 1: ADD File: C:/Users/Gustavo/Datapath/DATAPATH/ADD.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file buffer0.v
-    Info (12023): Found entity 1: BUFFER0 File: C:/Users/Gustavo/Datapath/DATAPATH/BUFFER0.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ALUCONTROL_tb.v
+    Info (12023): Found entity 1: ALUCONTROL_tb File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/ALUCONTROL_tb.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file ALUCONTROL.v
+    Info (12023): Found entity 1: ALUCONTROL File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/ALUCONTROL.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ALU.v
+    Info (12023): Found entity 1: ALU File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/ALU.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file ADDER_TB.v
+    Info (12023): Found entity 1: ADDER_TB File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/ADDER_TB.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file ADDER.v
+    Info (12023): Found entity 1: ADDER File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/ADDER.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file ADD.v
+    Info (12023): Found entity 1: ADD File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/ADD.v Line: 2
+Info (12021): Found 1 design units, including 1 entities, in source file BUFFER0.v
+    Info (12023): Found entity 1: BUFFER0 File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/BUFFER0.v Line: 1
 Warning (12019): Can't analyze file -- file BUFFER01.v is missing
-Info (12021): Found 1 design units, including 1 entities, in source file buffer1.v
-    Info (12023): Found entity 1: BUFFER1 File: C:/Users/Gustavo/Datapath/DATAPATH/BUFFER1.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file buffer2.v
-    Info (12023): Found entity 1: BUFFER2 File: C:/Users/Gustavo/Datapath/DATAPATH/BUFFER2.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file buffer3.v
-    Info (12023): Found entity 1: BUFFER3 File: C:/Users/Gustavo/Datapath/DATAPATH/BUFFER3.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file mux4.v
-    Info (12023): Found entity 1: MUX4 File: C:/Users/Gustavo/Datapath/DATAPATH/MUX4.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file shiftleft1.v
-    Info (12023): Found entity 1: SHIFTLEFT1 File: C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT1.v Line: 1
-Warning (10236): Verilog HDL Implicit Net warning at DATAPATH.v(93): created implicit net for "regWrite2" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 93
+Info (12021): Found 1 design units, including 1 entities, in source file BUFFER1.v
+    Info (12023): Found entity 1: BUFFER1 File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/BUFFER1.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file BUFFER2.v
+    Info (12023): Found entity 1: BUFFER2 File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/BUFFER2.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file BUFFER3.v
+    Info (12023): Found entity 1: BUFFER3 File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/BUFFER3.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file MUX4.v
+    Info (12023): Found entity 1: MUX4 File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/MUX4.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file SHIFTLEFT1.v
+    Info (12023): Found entity 1: SHIFTLEFT1 File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/SHIFTLEFT1.v Line: 1
+Warning (10236): Verilog HDL Implicit Net warning at DATAPATH.v(178): created implicit net for "regWrite2" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 178
 Info (12127): Elaborating entity "DATAPATH" for the top level hierarchy
-Info (12128): Elaborating entity "MUX4" for hierarchy "MUX4:p21" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 75
-Info (12128): Elaborating entity "PC" for hierarchy "PC:p1" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 77
-Info (12128): Elaborating entity "ADD" for hierarchy "ADD:p2" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 79
-Info (12128): Elaborating entity "INST_MEM" for hierarchy "INST_MEM:p3" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 81
-Warning (10858): Verilog HDL warning at INST_MEM.v(6): object MR used but never assigned File: C:/Users/Gustavo/Datapath/DATAPATH/INST_MEM.v Line: 6
-Warning (10030): Net "MR" at INST_MEM.v(6) has no driver or initial value, using a default initial value '0' File: C:/Users/Gustavo/Datapath/DATAPATH/INST_MEM.v Line: 6
-Info (12128): Elaborating entity "BUFFER0" for hierarchy "BUFFER0:p17" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 83
-Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:p7" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 85
-Info (12128): Elaborating entity "SHIFTLEFT1" for hierarchy "SHIFTLEFT1:p22" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 87
-Info (12128): Elaborating entity "UC" for hierarchy "UC:p12" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 89
-Warning (10270): Verilog HDL Case Statement warning at UC.v(16): incomplete case statement has no default case item File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "regDst", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "aluSrc", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "jump", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "memToReg", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "regWrite", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "memRead", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "memWrite", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "branch", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Warning (10240): Verilog HDL Always Construct warning at UC.v(16): inferring latch(es) for variable "aluOp", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "aluOp[0]" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "aluOp[1]" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "aluOp[2]" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "aluOp[3]" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "branch" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "memWrite" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "memRead" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "regWrite" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "memToReg" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "jump" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "aluSrc" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (10041): Inferred latch for "regDst" at UC.v(16) File: C:/Users/Gustavo/Datapath/DATAPATH/UC.v Line: 16
-Info (12128): Elaborating entity "SIGNEXT" for hierarchy "SIGNEXT:p10" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 91
-Info (12128): Elaborating entity "BUFFER1" for hierarchy "BUFFER1:p18" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 93
-Info (12128): Elaborating entity "MUX1" for hierarchy "MUX1:p6" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 95
-Info (12128): Elaborating entity "ALUCONTROL" for hierarchy "ALUCONTROL:p11" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 97
-Info (12128): Elaborating entity "MUX2" for hierarchy "MUX2:p8" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 99
-Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:p15" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 101
-Info (12128): Elaborating entity "SHIFTLEFT2" for hierarchy "SHIFTLEFT2:p14" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 103
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:p9" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 105
-Info (12128): Elaborating entity "MUX5" for hierarchy "MUX5:p5" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 107
-Info (12128): Elaborating entity "MUX3" for hierarchy "MUX3:p13" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 109
-Info (12128): Elaborating entity "BUFFER2" for hierarchy "BUFFER2:p19" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 111
-Info (12128): Elaborating entity "CAND" for hierarchy "CAND:p4" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 113
-Info (12128): Elaborating entity "DATAMEMORY" for hierarchy "DATAMEMORY:p16" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 115
-Warning (10240): Verilog HDL Always Construct warning at DATAMEMORY.v(13): inferring latch(es) for variable "readData", which holds its previous value in one or more paths through the always construct File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 13
-Info (10041): Inferred latch for "readData[0]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[1]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[2]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[3]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[4]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[5]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[6]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[7]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[8]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[9]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[10]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[11]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[12]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[13]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[14]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[15]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[16]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[17]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[18]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[19]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[20]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[21]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[22]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[23]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[24]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[25]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[26]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[27]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[28]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[29]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[30]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (10041): Inferred latch for "readData[31]" at DATAMEMORY.v(19) File: C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v Line: 19
-Info (12128): Elaborating entity "BUFFER3" for hierarchy "BUFFER3:p20" File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 117
+Info (12128): Elaborating entity "MUX4" for hierarchy "MUX4:p21" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 81
+Info (12128): Elaborating entity "PC" for hierarchy "PC:p1" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 88
+Info (12128): Elaborating entity "ADD" for hierarchy "ADD:p2" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 94
+Info (12128): Elaborating entity "INST_MEM" for hierarchy "INST_MEM:p3" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 101
+Warning (10858): Verilog HDL warning at INST_MEM.v(6): object MR used but never assigned File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/INST_MEM.v Line: 6
+Warning (10030): Net "MR" at INST_MEM.v(6) has no driver or initial value, using a default initial value '0' File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/INST_MEM.v Line: 6
+Info (12128): Elaborating entity "BUFFER0" for hierarchy "BUFFER0:p17" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 110
+Info (12128): Elaborating entity "REGISTERS" for hierarchy "REGISTERS:p7" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 121
+Info (12128): Elaborating entity "SHIFTLEFT1" for hierarchy "SHIFTLEFT1:p22" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 128
+Info (12128): Elaborating entity "UC" for hierarchy "UC:p12" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 142
+Warning (10270): Verilog HDL Case Statement warning at UC.v(17): incomplete case statement has no default case item File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at UC.v(17): inferring latch(es) for variable "regDst", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at UC.v(17): inferring latch(es) for variable "aluSrc", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at UC.v(17): inferring latch(es) for variable "jump", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at UC.v(17): inferring latch(es) for variable "memToReg", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at UC.v(17): inferring latch(es) for variable "regWrite", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at UC.v(17): inferring latch(es) for variable "memRead", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at UC.v(17): inferring latch(es) for variable "memWrite", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at UC.v(17): inferring latch(es) for variable "branch", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Warning (10240): Verilog HDL Always Construct warning at UC.v(17): inferring latch(es) for variable "aluOp", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (10041): Inferred latch for "aluOp[0]" at UC.v(17) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (10041): Inferred latch for "aluOp[1]" at UC.v(17) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (10041): Inferred latch for "aluOp[2]" at UC.v(17) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (10041): Inferred latch for "aluOp[3]" at UC.v(17) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (10041): Inferred latch for "branch" at UC.v(17) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (10041): Inferred latch for "memWrite" at UC.v(17) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (10041): Inferred latch for "memRead" at UC.v(17) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (10041): Inferred latch for "regWrite" at UC.v(17) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (10041): Inferred latch for "memToReg" at UC.v(17) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (10041): Inferred latch for "jump" at UC.v(17) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (10041): Inferred latch for "aluSrc" at UC.v(17) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (10041): Inferred latch for "regDst" at UC.v(17) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/UC.v Line: 17
+Info (12128): Elaborating entity "SIGNEXT" for hierarchy "SIGNEXT:p10" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 148
+Info (12128): Elaborating entity "BUFFER1" for hierarchy "BUFFER1:p18" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 185
+Info (12128): Elaborating entity "MUX1" for hierarchy "MUX1:p6" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 193
+Info (12128): Elaborating entity "ALUCONTROL" for hierarchy "ALUCONTROL:p11" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 200
+Info (12128): Elaborating entity "MUX2" for hierarchy "MUX2:p8" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 208
+Info (12128): Elaborating entity "ADDER" for hierarchy "ADDER:p15" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 215
+Info (12128): Elaborating entity "SHIFTLEFT2" for hierarchy "SHIFTLEFT2:p14" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 221
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:p9" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 229
+Info (12128): Elaborating entity "MUX5" for hierarchy "MUX5:p5" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 237
+Info (12128): Elaborating entity "MUX3" for hierarchy "MUX3:p13" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 246
+Info (12128): Elaborating entity "BUFFER2" for hierarchy "BUFFER2:p19" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 277
+Info (12128): Elaborating entity "CAND" for hierarchy "CAND:p4" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 284
+Info (12128): Elaborating entity "DATAMEMORY" for hierarchy "DATAMEMORY:p16" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 293
+Warning (10240): Verilog HDL Always Construct warning at DATAMEMORY.v(13): inferring latch(es) for variable "readData", which holds its previous value in one or more paths through the always construct File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 13
+Info (10041): Inferred latch for "readData[0]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[1]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[2]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[3]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[4]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[5]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[6]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[7]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[8]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[9]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[10]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[11]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[12]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[13]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[14]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[15]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[16]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[17]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[18]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[19]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[20]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[21]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[22]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[23]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[24]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[25]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[26]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[27]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[28]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[29]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[30]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (10041): Inferred latch for "readData[31]" at DATAMEMORY.v(19) File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAMEMORY.v Line: 19
+Info (12128): Elaborating entity "BUFFER3" for hierarchy "BUFFER3:p20" File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 308
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "pruebaInstruccion[0]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[1]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[2]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[3]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[4]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[5]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[6]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[7]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[8]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[9]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[10]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[11]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[12]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[13]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[14]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[15]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[16]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[17]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[18]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[19]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[20]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[21]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[22]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[23]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[24]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[25]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[26]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[27]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[28]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[29]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[30]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaInstruccion[31]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 3
-    Warning (13410): Pin "pruebaDatoSalida[0]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[1]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[2]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[3]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[4]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[5]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[6]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[7]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[8]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[9]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[10]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[11]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[12]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[13]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[14]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[15]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[16]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[17]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[18]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[19]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[20]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[21]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[22]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[23]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[24]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[25]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[26]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[27]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[28]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[29]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[30]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "pruebaDatoSalida[31]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 4
-    Warning (13410): Pin "direccionASaltar[0]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "direccionASaltar[1]" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 5
-    Warning (13410): Pin "selMux5db" is stuck at GND File: C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v Line: 8
+    Warning (13410): Pin "pruebaInstruccion[0]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[1]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[2]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[3]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[4]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[5]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[6]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[7]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[8]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[9]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[10]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[11]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[12]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[13]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[14]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[15]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[16]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[17]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[18]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[19]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[20]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[21]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[22]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[23]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[24]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[25]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[26]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[27]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[28]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[29]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[30]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaInstruccion[31]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 3
+    Warning (13410): Pin "pruebaDatoSalida[0]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[1]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[2]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[3]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[4]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[5]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[6]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[7]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[8]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[9]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[10]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[11]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[12]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[13]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[14]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[15]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[16]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[17]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[18]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[19]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[20]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[21]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[22]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[23]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[24]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[25]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[26]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[27]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[28]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[29]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[30]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "pruebaDatoSalida[31]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 4
+    Warning (13410): Pin "direccionASaltar[0]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "direccionASaltar[1]" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 5
+    Warning (13410): Pin "selMux5db" is stuck at GND File: /home/jorozco/Documentos/semArq/Datapath/DATAPATH/DATAPATH.v Line: 8
 Info (17049): 170 registers lost all their fanouts during netlist optimizations.
 Info (21057): Implemented 187 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 1 input pins
     Info (21059): Implemented 97 output pins
     Info (21061): Implemented 89 logic cells
-Info (144001): Generated suppressed messages file C:/Users/Gustavo/Datapath/DATAPATH/output_files/DATAPATH.map.smsg
+Info (144001): Generated suppressed messages file /home/jorozco/Documentos/semArq/Datapath/DATAPATH/output_files/DATAPATH.map.smsg
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 85 warnings
-    Info: Peak virtual memory: 4715 megabytes
-    Info: Processing ended: Fri May 22 14:10:21 2020
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:34
+    Info: Peak virtual memory: 906 megabytes
+    Info: Processing ended: Mon May 25 07:10:29 2020
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:29
 
 
 +------------------------------------------+
 ; Analysis & Synthesis Suppressed Messages ;
 +------------------------------------------+
-The suppressed messages can be found in C:/Users/Gustavo/Datapath/DATAPATH/output_files/DATAPATH.map.smsg.
+The suppressed messages can be found in /home/jorozco/Documentos/semArq/Datapath/DATAPATH/output_files/DATAPATH.map.smsg.
 
 

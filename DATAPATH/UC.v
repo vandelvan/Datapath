@@ -1,3 +1,4 @@
+//Unidad de Control
 module UC(
 	input [5:0]opcode,
 	output reg regDst,//a MUX1

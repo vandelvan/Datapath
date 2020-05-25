@@ -1,6 +1,6 @@
 Flow report for DATAPATH
-Fri May 22 14:10:30 2020
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Mon May 25 07:10:38 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -21,9 +21,9 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -33,15 +33,16 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +---------------------------------------------------------------------+
 ; Flow Summary                                                        ;
 +-----------------------+---------------------------------------------+
-; Flow Status           ; Successful - Fri May 22 14:10:30 2020       ;
-; Quartus Prime Version ; 18.0.0 Build 614 04/24/2018 SJ Lite Edition ;
+; Flow Status           ; Successful - Mon May 25 07:10:38 2020       ;
+; Quartus Prime Version ; 19.1.0 Build 670 09/22/2019 SJ Lite Edition ;
 ; Revision Name         ; DATAPATH                                    ;
 ; Top-level Entity Name ; DATAPATH                                    ;
 ; Family                ; MAX V                                       ;
@@ -59,7 +60,7 @@ refer to the applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 05/22/2020 14:10:07 ;
+; Start date & time ; 05/25/2020 07:10:16 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; DATAPATH            ;
 +-------------------+---------------------+
@@ -70,7 +71,7 @@ refer to the applicable agreement for further details.
 +--------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                      ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +--------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                ; 30902519927152.159017460716060 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID                ; 26728433180837.159040861600999 ; --            ; --          ; --             ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; shiftLeft2_tb  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; ALUCONTROL_tb  ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                             ; --            ; --          ; ADDER_TB       ;
@@ -117,26 +118,26 @@ refer to the applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 4715 MB             ; 00:00:34                           ;
-; Fitter               ; 00:00:03     ; 1.0                     ; 5074 MB             ; 00:00:03                           ;
-; Assembler            ; 00:00:00     ; 1.0                     ; 4655 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 4660 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4618 MB             ; 00:00:01                           ;
-; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:40                           ;
+; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 906 MB              ; 00:00:29                           ;
+; Fitter               ; 00:00:02     ; 1.0                     ; 1088 MB             ; 00:00:03                           ;
+; Assembler            ; 00:00:00     ; 1.0                     ; 813 MB              ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:01     ; 1.0                     ; 734 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1030 MB             ; 00:00:01                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:35                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                    ;
-+----------------------+------------------+------------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
-+----------------------+------------------+------------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-AFNED4P  ; Windows 10 ; 10.0       ; x86_64         ;
-; Fitter               ; DESKTOP-AFNED4P  ; Windows 10 ; 10.0       ; x86_64         ;
-; Assembler            ; DESKTOP-AFNED4P  ; Windows 10 ; 10.0       ; x86_64         ;
-; Timing Analyzer      ; DESKTOP-AFNED4P  ; Windows 10 ; 10.0       ; x86_64         ;
-; EDA Netlist Writer   ; DESKTOP-AFNED4P  ; Windows 10 ; 10.0       ; x86_64         ;
-+----------------------+------------------+------------+------------+----------------+
++-------------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                           ;
++----------------------+---------------------------+----------+------------+----------------+
+; Module Name          ; Machine Hostname          ; OS Name  ; OS Version ; Processor type ;
++----------------------+---------------------------+----------+------------+----------------+
+; Analysis & Synthesis ; jorozco-HP-ProBook-440-G3 ; KDE neon ; 5          ; x86_64         ;
+; Fitter               ; jorozco-HP-ProBook-440-G3 ; KDE neon ; 5          ; x86_64         ;
+; Assembler            ; jorozco-HP-ProBook-440-G3 ; KDE neon ; 5          ; x86_64         ;
+; Timing Analyzer      ; jorozco-HP-ProBook-440-G3 ; KDE neon ; 5          ; x86_64         ;
+; EDA Netlist Writer   ; jorozco-HP-ProBook-440-G3 ; KDE neon ; 5          ; x86_64         ;
++----------------------+---------------------------+----------+------------+----------------+
 
 
 ------------

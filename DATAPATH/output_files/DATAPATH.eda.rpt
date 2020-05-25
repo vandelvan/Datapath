@@ -1,6 +1,6 @@
 EDA Netlist Writer report for DATAPATH
-Fri May 22 14:10:30 2020
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Mon May 25 07:10:38 2020
+Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
 
 
 ---------------------
@@ -17,9 +17,9 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2019  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -29,14 +29,15 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri May 22 14:10:30 2020 ;
+; EDA Netlist Writer Status ; Successful - Mon May 25 07:10:38 2020 ;
 ; Revision Name             ; DATAPATH                              ;
 ; Top-level Entity Name     ; DATAPATH                              ;
 ; Family                    ; MAX V                                 ;
@@ -50,8 +51,7 @@ refer to the applicable agreement for further details.
 ; Option                                                                                            ; Setting                   ;
 +---------------------------------------------------------------------------------------------------+---------------------------+
 ; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
-; Generate functional simulation netlist                                                            ; Off                       ;
-; Time scale                                                                                        ; 1 ps                      ;
+; Generate functional simulation netlist                                                            ; On                        ;
 ; Truncate long hierarchy paths                                                                     ; Off                       ;
 ; Map illegal HDL characters                                                                        ; Off                       ;
 ; Flatten buses into individual nodes                                                               ; Off                       ;
@@ -66,14 +66,13 @@ refer to the applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------+
-; Simulation Generated Files                                            ;
-+-----------------------------------------------------------------------+
-; Generated Files                                                       ;
-+-----------------------------------------------------------------------+
-; C:/Users/Gustavo/Datapath/DATAPATH/simulation/modelsim/DATAPATH.vo    ;
-; C:/Users/Gustavo/Datapath/DATAPATH/simulation/modelsim/DATAPATH_v.sdo ;
-+-----------------------------------------------------------------------+
++-----------------------------------------------------------------------------------+
+; Simulation Generated Files                                                        ;
++-----------------------------------------------------------------------------------+
+; Generated Files                                                                   ;
++-----------------------------------------------------------------------------------+
+; /home/jorozco/Documentos/semArq/Datapath/DATAPATH/simulation/modelsim/DATAPATH.vo ;
++-----------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -81,14 +80,14 @@ refer to the applicable agreement for further details.
 +-----------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime EDA Netlist Writer
-    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Fri May 22 14:10:29 2020
+    Info: Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+    Info: Processing started: Mon May 25 07:10:37 2020
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off DATAPATH -c DATAPATH
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (204018): Generated files "DATAPATH.vo" and "DATAPATH_v.sdo" in directory "C:/Users/Gustavo/Datapath/DATAPATH/simulation/modelsim/" for EDA simulation tool
+Info (204019): Generated file DATAPATH.vo in folder "/home/jorozco/Documentos/semArq/Datapath/DATAPATH/simulation/modelsim/" for EDA simulation tool
 Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4618 megabytes
-    Info: Processing ended: Fri May 22 14:10:30 2020
+    Info: Peak virtual memory: 1034 megabytes
+    Info: Processing ended: Mon May 25 07:10:38 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
