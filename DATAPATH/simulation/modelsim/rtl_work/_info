@@ -7,94 +7,94 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/simulation/modelsim
+Z0 dC:/Users/Gustavo/Datapath/DATAPATH/simulation/modelsim
 vADD
-Z1 !s110 1590206238
+Z1 !s110 1590673781
 !i10b 1
-!s100 HIbk3OmG]A3UIGoea=W`d2
-I8OGM>K^5@CL[M=c:]nLBN3
+!s100 k2KmjNb=Pk>ke7@:?J[7E2
+IoZ6^o7GOR?5XJV>eF`o0<2
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z3 w1589496459
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADD.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADD.v
-L0 1
+Z3 w1590428345
+8C:/Users/Gustavo/Datapath/DATAPATH/ADD.v
+FC:/Users/Gustavo/Datapath/DATAPATH/ADD.v
+L0 2
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1590206238.000000
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADD.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADD.v|
+Z5 !s108 1590673781.000000
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/ADD.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/ADD.v|
 !i113 1
 Z6 o-vlog01compat -work work
-Z7 !s92 -vlog01compat -work work +incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH
+Z7 !s92 -vlog01compat -work work +incdir+C:/Users/Gustavo/Datapath/DATAPATH
 Z8 tCvgOpt 0
 n@a@d@d
 vADDER
 R1
 !i10b 1
 !s100 kW6^i:eYJ5NOJj:CWRj=J3
-I9l<;T1PEWzA:?dG]`N5c20
+InEaQVOPM<1z@gVod`i3?03
 R2
 R0
 R3
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADDER.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADDER.v
+8C:/Users/Gustavo/Datapath/DATAPATH/ADDER.v
+FC:/Users/Gustavo/Datapath/DATAPATH/ADDER.v
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADDER.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ADDER.v|
+Z9 !s108 1590673780.000000
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/ADDER.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/ADDER.v|
 !i113 1
 R6
 R7
 R8
 n@a@d@d@e@r
 vALU
-R1
+Z10 !s110 1590673780
 !i10b 1
-!s100 `PX7^6DR[bNVMKH3Z9a7;2
-I1ZfR;^dbgS?74>f?Q]^1@0
+!s100 Y7WTJ24e?Fmznih]R;]I[0
+IaklUNWIzaEmR2B@o1[KV^2
 R2
 R0
-Z9 w1589812793
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALU.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALU.v
-L0 1
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/ALU.v
+FC:/Users/Gustavo/Datapath/DATAPATH/ALU.v
+L0 2
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALU.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALU.v|
+R9
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/ALU.v|
 !i113 1
 R6
 R7
 R8
 n@a@l@u
 vALUCONTROL
-R1
+R10
 !i10b 1
 !s100 M=Z6nS5CA2fY?Y^;C=DkK2
-IESD09bbFhGZfi0UQ[m>VJ2
+IJoelb4K]5F3Xg;OZJ`QOJ3
 R2
 R0
-w1589848441
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL.v
+FC:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL.v
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/ALUCONTROL.v|
+R9
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/ALUCONTROL.v|
 !i113 1
 R6
 R7
@@ -104,20 +104,20 @@ vBUFFER0
 R1
 !i10b 1
 !s100 IR3Q<]5IPRI:UW8Z]FDYi3
-IC?F7h:IOKMgjgV=ZYYVkz1
+Ii=_MEX]L1MJjaQ]]mPz3=3
 R2
 R0
-w1589831759
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER0.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER0.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/BUFFER0.v
+FC:/Users/Gustavo/Datapath/DATAPATH/BUFFER0.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER0.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER0.v|
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/BUFFER0.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/BUFFER0.v|
 !i113 1
 R6
 R7
@@ -127,20 +127,20 @@ vBUFFER1
 R1
 !i10b 1
 !s100 V>c60h;X9I>_@QQD67:Wh1
-IUP4T;OZiHhnh<Sl^59IzW3
+I@lbW>]d1O_EXnD3HoQ51f2
 R2
 R0
-Z10 w1590181789
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER1.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER1.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/BUFFER1.v
+FC:/Users/Gustavo/Datapath/DATAPATH/BUFFER1.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER1.v|
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/BUFFER1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/BUFFER1.v|
 !i113 1
 R6
 R7
@@ -150,20 +150,20 @@ vBUFFER2
 R1
 !i10b 1
 !s100 06XiSED?cW0m;mS^g1F_n3
-In?GTL2a>0gb[=:3K@[OAD1
+If=bBjDo9Z=@IZ6J3biK:b2
 R2
 R0
-R10
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER2.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER2.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/BUFFER2.v
+FC:/Users/Gustavo/Datapath/DATAPATH/BUFFER2.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER2.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER2.v|
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/BUFFER2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/BUFFER2.v|
 !i113 1
 R6
 R7
@@ -173,388 +173,388 @@ vBUFFER3
 R1
 !i10b 1
 !s100 4_9I`^OX5`N6zCWTmUTA52
-IMV;^1LQP<63Z_U]6^<H3n1
+IhlPP7kEdDC5EmjKTA<Oc02
 R2
 R0
-R10
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER3.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER3.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/BUFFER3.v
+FC:/Users/Gustavo/Datapath/DATAPATH/BUFFER3.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER3.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/BUFFER3.v|
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/BUFFER3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/BUFFER3.v|
 !i113 1
 R6
 R7
 R8
 n@b@u@f@f@e@r3
 vCAND
-R1
+R10
 !i10b 1
 !s100 7RAC1>HHbHd5fH:jiHDP21
-IHQ;ze:DOgz1LaK]QAdRid1
+I9k4BLiY2LU^?keOYV2gh;2
 R2
 R0
 R3
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/CAND.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/CAND.v
+8C:/Users/Gustavo/Datapath/DATAPATH/CAND.v
+FC:/Users/Gustavo/Datapath/DATAPATH/CAND.v
 L0 1
 R4
 r1
 !s85 0
 31
-R5
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/CAND.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/CAND.v|
+R9
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/CAND.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/CAND.v|
 !i113 1
 R6
 R7
 R8
 n@c@a@n@d
 vDATAMEMORY
-Z11 !s110 1590206237
+R10
 !i10b 1
 !s100 12gNFbTd4z37`=g`?QBS]3
-I_^S8a_G^iLb5j;SAZMFFK3
+I2lNJOYhgzUm`zaCg3[R;62
 R2
 R0
-R10
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v
+FC:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v
 L0 1
 R4
 r1
 !s85 0
 31
-Z12 !s108 1590206237.000000
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAMEMORY.v|
+R9
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/DATAMEMORY.v|
 !i113 1
 R6
 R7
 R8
 n@d@a@t@a@m@e@m@o@r@y
 vDATAPATH
-R11
+R10
 !i10b 1
-!s100 :>hEXI1HPoPNW;[9^AR450
-IDVUok5RdWQg?:KcbioJ843
+!s100 gW>HVizhD>idjn>A=?>?M3
+IC]6e=ESY0?T0TPDlmYI>j2
 R2
 R0
-R10
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v
+FC:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v
 L0 1
 R4
 r1
 !s85 0
 31
-R12
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH.v|
+R9
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH.v|
 !i113 1
 R6
 R7
 R8
 n@d@a@t@a@p@a@t@h
 vDATAPATH_TB
-Z13 !s110 1590206239
+R1
 !i10b 1
-!s100 Z=V7K_SLbaDH_1^E<eWci3
-I[W>b1k:7i5mTV]SG`0a2d1
+!s100 ch?6l?Y3bS5cH?XZWbRFY0
+II@XAeYjfQU>6Y<F>@;Mnj0
 R2
 R0
-w1590206229
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH_TB.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH_TB.v
+w1590673768
+8C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v
+FC:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v
 L0 4
 R4
 r1
 !s85 0
 31
-Z14 !s108 1590206239.000000
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH_TB.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/DATAPATH_TB.v|
+R5
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/DATAPATH_TB.v|
 !i113 1
 R6
 R7
 R8
 n@d@a@t@a@p@a@t@h_@t@b
 vINST_MEM
-R11
+R10
 !i10b 1
-!s100 M;m>60<`][8gVA2]WJ6Zm2
-I2XmHC_A<^3^94igA:bd871
+!s100 `LadD[7BL4Fl3eZT;^_Vj1
+IceX56N7NT4n@JBE[jz1IJ2
 R2
 R0
-R9
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/INST_MEM.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/INST_MEM.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/INST_MEM.v
+FC:/Users/Gustavo/Datapath/DATAPATH/INST_MEM.v
 L0 2
 R4
 r1
 !s85 0
 31
-R12
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/INST_MEM.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/INST_MEM.v|
+R9
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/INST_MEM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/INST_MEM.v|
 !i113 1
 R6
 R7
 R8
 n@i@n@s@t_@m@e@m
 vMUX1
-R11
+R10
 !i10b 1
 !s100 mGgfjTR7i6_3mgUHE^0gT0
-I=QHdSiPD;NaM<WzVn^I7a1
+IR:XIjF;VfP]oS9gXXm??X0
 R2
 R0
-w1589848326
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX1.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX1.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v
+FC:/Users/Gustavo/Datapath/DATAPATH/MUX1.v
 L0 1
 R4
 r1
 !s85 0
 31
-R12
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX1.v|
+R9
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX1.v|
 !i113 1
 R6
 R7
 R8
 n@m@u@x1
 vMUX2
-R11
+R10
 !i10b 1
 !s100 Lm:7nbJcMcN1SYoS9>j^D1
-IglE6b5WKI;J>J<N:O5GE:3
+IK:gjXEa57X:aIjC3_T02X0
 R2
 R0
-w1589848482
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX2.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX2.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v
+FC:/Users/Gustavo/Datapath/DATAPATH/MUX2.v
 L0 1
 R4
 r1
 !s85 0
 31
-R12
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX2.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX2.v|
+R9
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX2.v|
 !i113 1
 R6
 R7
 R8
 n@m@u@x2
 vMUX3
-R11
+R10
 !i10b 1
 !s100 l:D0mgSe;QAYoHT]9e4lI3
-IM>=HaX`JEPIQd6:d_EH1A2
+IE4f]0UGY1^Nm@SD6>>bmP1
 R2
 R0
-w1589925553
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX3.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX3.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v
+FC:/Users/Gustavo/Datapath/DATAPATH/MUX3.v
 L0 1
 R4
 r1
 !s85 0
 31
-R12
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX3.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX3.v|
+R9
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX3.v|
 !i113 1
 R6
 R7
 R8
 n@m@u@x3
 vMUX4
-R13
+R1
 !i10b 1
 !s100 8j6ClNKJRI@CPjz@`>9a`2
-IO;K81WJ^m<E_AZBEWYGc50
+IA8S:c5FgUTj<OC;ECf>Ml1
 R2
 R0
-R10
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX4.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX4.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/MUX4.v
+FC:/Users/Gustavo/Datapath/DATAPATH/MUX4.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX4.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX4.v|
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX4.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX4.v|
 !i113 1
 R6
 R7
 R8
 n@m@u@x4
 vMUX5
-R11
+R10
 !i10b 1
 !s100 @F9:AC?`T`YN]O:FRJGLH2
-I`;jiVzi1H^[@e1QmmW`Z[0
+IXkY8XBPeF8Q;]BgfIZTlh3
 R2
 R0
 R3
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX5.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX5.v
+8C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v
+FC:/Users/Gustavo/Datapath/DATAPATH/MUX5.v
 L0 1
 R4
 r1
 !s85 0
 31
-R12
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX5.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/MUX5.v|
+R9
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/MUX5.v|
 !i113 1
 R6
 R7
 R8
 n@m@u@x5
 vPC
-R11
+R10
 !i10b 1
-!s100 9iS1:Z[Acz=3V[;?`P14I1
-ImS8ab^K`<ZbWY>ZdJfkQ^2
+!s100 TcAF96M8JORT:j?McbjJ?3
+I6=S<2<]J:zBz9WCoN?o[c0
 R2
 R0
 R3
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/PC.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/PC.v
+8C:/Users/Gustavo/Datapath/DATAPATH/PC.v
+FC:/Users/Gustavo/Datapath/DATAPATH/PC.v
 L0 2
 R4
 r1
 !s85 0
 31
-R12
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/PC.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/PC.v|
+R9
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/PC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/PC.v|
 !i113 1
 R6
 R7
 R8
 n@p@c
 vREGISTERS
-R11
+R10
 !i10b 1
-!s100 D_gRml`EbhAdkKD^=VJ453
-ILTBVP0ff[nHVPLVcnKK<;0
+!s100 QSMZkRVmMPXnd@<o<Jea60
+II8dB_E^A>7^^z=_CY]2EW2
 R2
 R0
-w1590105956
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v
-L0 1
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v
+FC:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v
+L0 2
 R4
 r1
 !s85 0
 31
-R12
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/REGISTERS.v|
+R9
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/REGISTERS.v|
 !i113 1
 R6
 R7
 R8
 n@r@e@g@i@s@t@e@r@s
 vSHIFTLEFT1
-R13
+R1
 !i10b 1
 !s100 iBHB`4CfNU;BiI=8aH[dH0
-Ihebz_az2MTAL]NNig8;8C2
+IYAZBbQcYaeKjWID:[gJ7H0
 R2
 R0
-R10
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SHIFTLEFT1.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SHIFTLEFT1.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT1.v
+FC:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT1.v
 L0 1
 R4
 r1
 !s85 0
 31
-R14
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SHIFTLEFT1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SHIFTLEFT1.v|
+R5
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT1.v|
 !i113 1
 R6
 R7
 R8
 n@s@h@i@f@t@l@e@f@t1
 vSHIFTLEFT2
-R11
+Z11 !s110 1590673779
 !i10b 1
 !s100 eZ38Rmj:naJ@MJ9bJD0Y>1
-IkB6LEeLI;_XW^T69[<HeK2
+IR=@dd09`968i>gc:k6SnX2
 R2
 R0
 R3
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SHIFTLEFT2.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SHIFTLEFT2.v
+8C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT2.v
+FC:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT2.v
 L0 1
 R4
 r1
 !s85 0
 31
-R12
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SHIFTLEFT2.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SHIFTLEFT2.v|
+Z12 !s108 1590673779.000000
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT2.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/SHIFTLEFT2.v|
 !i113 1
 R6
 R7
 R8
 n@s@h@i@f@t@l@e@f@t2
 vSIGNEXT
-Z15 !s110 1590206236
+R11
 !i10b 1
 !s100 [2kF1a[;JTP`aB5Bb;U2^1
-IdMmje;2lHAQj9zenJo=<=0
+I`Z06eiOEIF4gb0O8mNIcE3
 R2
 R0
-w1589845494
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SIGNEXT.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SIGNEXT.v
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v
+FC:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v
 L0 1
 R4
 r1
 !s85 0
 31
-Z16 !s108 1590206236.000000
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SIGNEXT.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/SIGNEXT.v|
+R12
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/SIGNEXT.v|
 !i113 1
 R6
 R7
 R8
 n@s@i@g@n@e@x@t
 vUC
-R15
+R11
 !i10b 1
-!s100 6[lKF`Jg22018Hhll:RQi1
-INNWjn=njGboRQ=cm3HlVF1
+!s100 0;zX]2Afo45eZWh9XJm5O0
+IW5[1JWiXU<KmZ:Hh]<Clk2
 R2
 R0
-w1589844799
-8C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v
-FC:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v
-L0 1
+R3
+8C:/Users/Gustavo/Datapath/DATAPATH/UC.v
+FC:/Users/Gustavo/Datapath/DATAPATH/UC.v
+L0 2
 R4
 r1
 !s85 0
 31
-R16
-!s107 C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH|C:/simulacionesSeminarioArquitectura/Datapath/DATAPATH/UC.v|
+R12
+!s107 C:/Users/Gustavo/Datapath/DATAPATH/UC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+C:/Users/Gustavo/Datapath/DATAPATH|C:/Users/Gustavo/Datapath/DATAPATH/UC.v|
 !i113 1
 R6
 R7

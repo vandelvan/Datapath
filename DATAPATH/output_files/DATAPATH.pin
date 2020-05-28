@@ -1,6 +1,6 @@
- -- Copyright (C) 2019  Intel Corporation. All rights reserved.
+ -- Copyright (C) 2018  Intel Corporation. All rights reserved.
  -- Your use of Intel Corporation's design tools, logic functions 
- -- and other software and tools, and any partner logic 
+ -- and other software and tools, and its AMPP partner logic 
  -- functions, and any output files from any of the foregoing 
  -- (including device programming or simulation files), and any 
  -- associated documentation or information are expressly subject 
@@ -10,8 +10,7 @@
  -- agreement, including, without limitation, that your use is for
  -- the sole purpose of programming logic devices manufactured by
  -- Intel and sold by Intel or its authorized distributors.  Please
- -- refer to the applicable agreement for further details, at
- -- https://fpgasoftware.intel.com/eula.
+ -- refer to the applicable agreement for further details.
  -- 
  -- This is a Quartus Prime output file. It is for reporting purposes only, and is
  -- not intended for use as a Quartus Prime input file. This file cannot be used
@@ -58,79 +57,79 @@
  -- Pin directions (input, output or bidir) are based on device operating in user mode.
  ---------------------------------------------------------------------------------
 
-Quartus Prime Version 19.1.0 Build 670 09/22/2019 SJ Lite Edition
+Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 CHIP  "DATAPATH"  ASSIGNED TO AN: 5M570ZF256C4
 
 Pin Name/Usage               : Location  : Dir.   : I/O Standard      : Voltage : I/O Bank  : User Assignment
 -------------------------------------------------------------------------------------------------------------
 GND                          : A1        : gnd    :                   :         :           :                
-GND*                         : A2        :        :                   :         : 2         :                
+pruebaDatoSalida[26]         : A2        : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : A3        : power  :                   : 3.3V    : 2         :                
 GND*                         : A4        :        :                   :         : 2         :                
 GND*                         : A5        :        :                   :         : 2         :                
-direccionASaltar[7]          : A6        : output : 3.3-V LVTTL       :         : 2         : N              
-direccionASaltar[21]         : A7        : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaDatoSalida[13]         : A8        : output : 3.3-V LVTTL       :         : 2         : N              
-direccionASaltar[22]         : A9        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : A10       :        :                   :         : 2         :                
-direccionASaltar[26]         : A11       : output : 3.3-V LVTTL       :         : 2         : N              
-direccionASaltar[29]         : A12       : output : 3.3-V LVTTL       :         : 2         : N              
-direccionASaltar[23]         : A13       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : A6        :        :                   :         : 2         :                
+GND*                         : A7        :        :                   :         : 2         :                
+direccionASaltar[3]          : A8        : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaInstruccion[26]        : A9        : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaInstruccion[6]         : A10       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaDatoSalida[24]         : A11       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaInstruccion[29]        : A12       : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[0]          : A13       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : A14       : power  :                   : 3.3V    : 2         :                
-GND*                         : A15       :        :                   :         : 2         :                
+pruebaDatoSalida[0]          : A15       : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : A16       : gnd    :                   :         :           :                
 GND*                         : B1        :        :                   :         : 2         :                
 GND                          : B2        : gnd    :                   :         :           :                
 GND*                         : B3        :        :                   :         : 2         :                
-GND*                         : B4        :        :                   :         : 2         :                
+pruebaDatoSalida[11]         : B4        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : B5        :        :                   :         : 2         :                
-direccionASaltar[8]          : B6        : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaInstruccion[21]        : B6        : output : 3.3-V LVTTL       :         : 2         : N              
 GND                          : B7        : gnd    :                   :         :           :                
-pruebaInstruccion[9]         : B8        : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaDatoSalida[17]         : B8        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : B9        :        :                   :         : 2         :                
-direccionASaltar[20]         : B10       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : B11       :        :                   :         : 2         :                
-GND*                         : B12       :        :                   :         : 2         :                
-pruebaInstruccion[5]         : B13       : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[9]          : B10       : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[30]         : B11       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaDatoSalida[3]          : B12       : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[20]         : B13       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : B14       :        :                   :         : 2         :                
 GND                          : B15       : gnd    :                   :         :           :                
 pruebaDatoSalida[31]         : B16       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO1                       : C1        : power  :                   : 3.3V    : 1         :                
 GND*                         : C2        :        :                   :         : 1         :                
-pruebaDatoSalida[15]         : C3        : output : 3.3-V LVTTL       :         : 1         : N              
-direccionASaltar[6]          : C4        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : C3        :        :                   :         : 1         :                
+pruebaDatoSalida[12]         : C4        : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : C5        :        :                   :         : 2         :                
-direccionASaltar[11]         : C6        : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaInstruccion[4]         : C7        : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : C8        :        :                   :         : 2         :                
-pruebaInstruccion[22]        : C9        : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaDatoSalida[27]         : C10       : output : 3.3-V LVTTL       :         : 2         : N              
-direccionASaltar[25]         : C11       : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaInstruccion[21]        : C12       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : C6        :        :                   :         : 2         :                
+direccionASaltar[13]         : C7        : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[2]          : C8        : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[5]          : C9        : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[21]         : C10       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : C11       :        :                   :         : 2         :                
+pruebaDatoSalida[30]         : C12       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : C13       :        :                   :         : 2         :                
-pruebaInstruccion[12]        : C14       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : C15       :        :                   :         : 2         :                
+direccionASaltar[23]         : C14       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaInstruccion[4]         : C15       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO2                       : C16       : power  :                   : 3.3V    : 2         :                
-pruebaDatoSalida[26]         : D1        : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaInstruccion[6]         : D2        : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaDatoSalida[18]         : D3        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[7]          : D1        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaInstruccion[19]        : D2        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[6]          : D3        : output : 3.3-V LVTTL       :         : 1         : N              
 pruebaInstruccion[17]        : D4        : output : 3.3-V LVTTL       :         : 2         : N              
-direccionASaltar[9]          : D5        : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : D5        :        :                   :         : 2         :                
 NC                           : D6        :        :                   :         :           :                
 NC                           : D7        :        :                   :         :           :                
 NC                           : D8        :        :                   :         :           :                
 NC                           : D9        :        :                   :         :           :                
 NC                           : D10       :        :                   :         :           :                
-GND*                         : D11       :        :                   :         : 2         :                
-pruebaInstruccion[8]         : D12       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : D13       :        :                   :         : 2         :                
-pruebaInstruccion[25]        : D14       : output : 3.3-V LVTTL       :         : 2         : N              
-direccionASaltar[30]         : D15       : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaInstruccion[30]        : D16       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : E1        :        :                   :         : 1         :                
-pruebaDatoSalida[1]          : E2        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaInstruccion[10]        : D11       : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[10]         : D12       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaDatoSalida[9]          : D13       : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[28]         : D14       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaDatoSalida[23]         : D15       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaInstruccion[23]        : D16       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaInstruccion[3]         : E1        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : E2        :        :                   :         : 1         :                
 GND*                         : E3        :        :                   :         : 1         :                
-GND*                         : E4        :        :                   :         : 1         :                
+pruebaInstruccion[11]        : E4        : output : 3.3-V LVTTL       :         : 1         : N              
 NC                           : E5        :        :                   :         :           :                
 NC                           : E6        :        :                   :         :           :                
 NC                           : E7        :        :                   :         :           :                
@@ -139,13 +138,13 @@ NC                           : E9        :        :                   :         
 NC                           : E10       :        :                   :         :           :                
 NC                           : E11       :        :                   :         :           :                
 NC                           : E12       :        :                   :         :           :                
-direccionASaltar[10]         : E13       : output : 3.3-V LVTTL       :         : 2         : N              
-direccionASaltar[24]         : E14       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : E15       :        :                   :         : 2         :                
-pruebaInstruccion[13]        : E16       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : E13       :        :                   :         : 2         :                
+pruebaDatoSalida[13]         : E14       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaInstruccion[22]        : E15       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaInstruccion[30]        : E16       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : F1        :        :                   :         : 1         :                
 pruebaDatoSalida[25]         : F2        : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaInstruccion[19]        : F3        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : F3        :        :                   :         : 1         :                
 NC                           : F4        :        :                   :         :           :                
 NC                           : F5        :        :                   :         :           :                
 NC                           : F6        :        :                   :         :           :                
@@ -156,12 +155,12 @@ NC                           : F10       :        :                   :         
 NC                           : F11       :        :                   :         :           :                
 NC                           : F12       :        :                   :         :           :                
 GND*                         : F13       :        :                   :         : 2         :                
-pruebaInstruccion[18]        : F14       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : F15       :        :                   :         : 2         :                
-pruebaInstruccion[26]        : F16       : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaDatoSalida[20]         : G1        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : G2        :        :                   :         : 1         :                
-pruebaDatoSalida[24]         : G3        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[10]         : F14       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaDatoSalida[5]          : F15       : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[15]         : F16       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : G1        :        :                   :         : 1         :                
+pruebaInstruccion[13]        : G2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : G3        :        :                   :         : 1         :                
 NC                           : G4        :        :                   :         :           :                
 NC                           : G5        :        :                   :         :           :                
 NC                           : G6        :        :                   :         :           :                
@@ -172,12 +171,12 @@ GND                          : G10       : gnd    :                   :         
 NC                           : G11       :        :                   :         :           :                
 NC                           : G12       :        :                   :         :           :                
 NC                           : G13       :        :                   :         :           :                
-direccionASaltar[15]         : G14       : output : 3.3-V LVTTL       :         : 2         : N              
-direccionASaltar[17]         : G15       : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaDatoSalida[23]         : G16       : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaInstruccion[31]        : H1        : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaDatoSalida[3]          : H2        : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaDatoSalida[29]         : H3        : output : 3.3-V LVTTL       :         : 1         : N              
+direccionASaltar[25]         : G14       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : G15       :        :                   :         : 2         :                
+pruebaInstruccion[25]        : G16       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : H1        :        :                   :         : 1         :                
+GND*                         : H2        :        :                   :         : 1         :                
+GND*                         : H3        :        :                   :         : 1         :                
 NC                           : H4        :        :                   :         :           :                
 clk                          : H5        : input  : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : H6        : power  :                   : 3.3V    : 1         :                
@@ -186,14 +185,14 @@ VCCINT                       : H8        : power  :                   : 1.8V    
 GND                          : H9        : gnd    :                   :         :           :                
 VCCINT                       : H10       : power  :                   : 1.8V    :           :                
 VCCIO2                       : H11       : power  :                   : 3.3V    : 2         :                
-pruebaDatoSalida[4]          : H12       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : H12       :        :                   :         : 2         :                
 NC                           : H13       :        :                   :         :           :                
-GND*                         : H14       :        :                   :         : 2         :                
-direccionASaltar[28]         : H15       : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaInstruccion[3]         : H16       : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaDatoSalida[30]         : J1        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : J2        :        :                   :         : 1         :                
-pruebaInstruccion[2]         : J3        : output : 3.3-V LVTTL       :         : 1         : N              
+direccionASaltar[26]         : H14       : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[24]         : H15       : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[8]          : H16       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : J1        :        :                   :         : 1         :                
+pruebaInstruccion[27]        : J2        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[1]          : J3        : output : 3.3-V LVTTL       :         : 1         : N              
 NC                           : J4        :        :                   :         :           :                
 GND*                         : J5        :        :                   :         : 1         :                
 VCCIO1                       : J6        : power  :                   : 3.3V    : 1         :                
@@ -202,14 +201,14 @@ GND                          : J8        : gnd    :                   :         
 VCCINT                       : J9        : power  :                   : 1.8V    :           :                
 GND                          : J10       : gnd    :                   :         :           :                
 VCCIO2                       : J11       : power  :                   : 3.3V    : 2         :                
-pruebaInstruccion[28]        : J12       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaInstruccion[16]        : J12       : output : 3.3-V LVTTL       :         : 2         : N              
 NC                           : J13       :        :                   :         :           :                
-pruebaDatoSalida[5]          : J14       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : J15       :        :                   :         : 2         :                
-direccionASaltar[27]         : J16       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : J14       :        :                   :         : 2         :                
+direccionASaltar[17]         : J15       : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[19]         : J16       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : K1        :        :                   :         : 1         :                
-pruebaInstruccion[16]        : K2        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : K3        :        :                   :         : 1         :                
+pruebaDatoSalida[22]         : K2        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaInstruccion[12]        : K3        : output : 3.3-V LVTTL       :         : 1         : N              
 NC                           : K4        :        :                   :         :           :                
 NC                           : K5        :        :                   :         :           :                
 NC                           : K6        :        :                   :         :           :                
@@ -221,8 +220,8 @@ NC                           : K11       :        :                   :         
 NC                           : K12       :        :                   :         :           :                
 NC                           : K13       :        :                   :         :           :                
 GND*                         : K14       :        :                   :         : 2         :                
-pruebaInstruccion[11]        : K15       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : K16       :        :                   :         : 2         :                
+GND*                         : K15       :        :                   :         : 2         :                
+pruebaInstruccion[18]        : K16       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : L1        :        :                   :         : 1         :                
 GND*                         : L2        :        :                   :         : 1         :                
 GND*                         : L3        :        :                   :         : 1         :                
@@ -236,86 +235,86 @@ NC                           : L10       :        :                   :         
 NC                           : L11       :        :                   :         :           :                
 NC                           : L12       :        :                   :         :           :                
 GND*                         : L13       :        :                   :         : 2         :                
-GND*                         : L14       :        :                   :         : 2         :                
-pruebaDatoSalida[0]          : L15       : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[29]         : L14       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : L15       :        :                   :         : 2         :                
 pruebaInstruccion[7]         : L16       : output : 3.3-V LVTTL       :         : 2         : N              
-GND*                         : M1        :        :                   :         : 1         :                
+pruebaInstruccion[2]         : M1        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : M2        :        :                   :         : 1         :                
-GND*                         : M3        :        :                   :         : 1         :                
+selMux5db                    : M3        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : M4        :        :                   :         : 1         :                
 TDO                          : M5        : output :                   :         : 1         :                
 NC                           : M6        :        :                   :         :           :                
 NC                           : M7        :        :                   :         :           :                
-GND*                         : M8        :        :                   :         : 1         :                
-direccionASaltar[13]         : M9        : output : 3.3-V LVTTL       :         : 1         : N              
+direccionASaltar[22]         : M8        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[14]         : M9        : output : 3.3-V LVTTL       :         : 1         : N              
 NC                           : M10       :        :                   :         :           :                
 NC                           : M11       :        :                   :         :           :                
 NC                           : M12       :        :                   :         :           :                
 GND*                         : M13       :        :                   :         : 2         :                
-pruebaDatoSalida[28]         : M14       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaDatoSalida[27]         : M14       : output : 3.3-V LVTTL       :         : 2         : N              
 GND*                         : M15       :        :                   :         : 2         :                
-GND*                         : M16       :        :                   :         : 2         :                
-direccionASaltar[0]          : N1        : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaInstruccion[27]        : N2        : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaInstruccion[24]        : N3        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[2]          : M16       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : N1        :        :                   :         : 1         :                
+pruebaDatoSalida[28]         : N2        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[15]         : N3        : output : 3.3-V LVTTL       :         : 1         : N              
 TMS                          : N4        : input  :                   :         : 1         :                
-pruebaDatoSalida[7]          : N5        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaInstruccion[14]        : N5        : output : 3.3-V LVTTL       :         : 1         : N              
 NC                           : N6        :        :                   :         :           :                
 NC                           : N7        :        :                   :         :           :                
 NC                           : N8        :        :                   :         :           :                
 NC                           : N9        :        :                   :         :           :                
 NC                           : N10       :        :                   :         :           :                
 NC                           : N11       :        :                   :         :           :                
-pruebaDatoSalida[12]         : N12       : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : N13       :        :                   :         : 2         :                
-pruebaInstruccion[1]         : N14       : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaInstruccion[10]        : N15       : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaInstruccion[14]        : N16       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : N12       :        :                   :         : 1         :                
+pruebaInstruccion[20]        : N13       : output : 3.3-V LVTTL       :         : 2         : N              
+GND*                         : N14       :        :                   :         : 2         :                
+pruebaInstruccion[9]         : N15       : output : 3.3-V LVTTL       :         : 2         : N              
+pruebaInstruccion[24]        : N16       : output : 3.3-V LVTTL       :         : 2         : N              
 VCCIO1                       : P1        : power  :                   : 3.3V    : 1         :                
 GND*                         : P2        :        :                   :         : 1         :                
 TCK                          : P3        : input  :                   :         : 1         :                
 GND*                         : P4        :        :                   :         : 1         :                
-direccionASaltar[5]          : P5        : output : 3.3-V LVTTL       :         : 1         : N              
-direccionASaltar[14]         : P6        : output : 3.3-V LVTTL       :         : 1         : N              
-direccionASaltar[4]          : P7        : output : 3.3-V LVTTL       :         : 1         : N              
-direccionASaltar[12]         : P8        : output : 3.3-V LVTTL       :         : 1         : N              
-direccionASaltar[18]         : P9        : output : 3.3-V LVTTL       :         : 1         : N              
-direccionASaltar[2]          : P10       : output : 3.3-V LVTTL       :         : 1         : N              
-direccionASaltar[16]         : P11       : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : P12       :        :                   :         : 1         :                
-pruebaInstruccion[29]        : P13       : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaDatoSalida[22]         : P14       : output : 3.3-V LVTTL       :         : 2         : N              
-pruebaDatoSalida[6]          : P15       : output : 3.3-V LVTTL       :         : 2         : N              
+direccionASaltar[4]          : P5        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[18]         : P6        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[16]         : P7        : output : 3.3-V LVTTL       :         : 1         : N              
+direccionASaltar[11]         : P8        : output : 3.3-V LVTTL       :         : 1         : N              
+direccionASaltar[31]         : P9        : output : 3.3-V LVTTL       :         : 1         : N              
+direccionASaltar[7]          : P10       : output : 3.3-V LVTTL       :         : 1         : N              
+direccionASaltar[12]         : P11       : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaInstruccion[1]         : P12       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : P13       :        :                   :         : 1         :                
+GND*                         : P14       :        :                   :         : 2         :                
+GND*                         : P15       :        :                   :         : 2         :                
 VCCIO2                       : P16       : power  :                   : 3.3V    : 2         :                
 GND*                         : R1        :        :                   :         : 1         :                
 GND                          : R2        : gnd    :                   :         :           :                
-pruebaInstruccion[20]        : R3        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : R4        :        :                   :         : 1         :                
-direccionASaltar[1]          : R5        : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaDatoSalida[17]         : R6        : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaDatoSalida[10]         : R7        : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaInstruccion[23]        : R8        : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaInstruccion[15]        : R9        : output : 3.3-V LVTTL       :         : 1         : N              
-direccionASaltar[31]         : R10       : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaDatoSalida[21]         : R11       : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaDatoSalida[9]          : R12       : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaDatoSalida[16]         : R13       : output : 3.3-V LVTTL       :         : 1         : N              
-pruebaDatoSalida[14]         : R14       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : R3        :        :                   :         : 1         :                
+pruebaInstruccion[0]         : R4        : output : 3.3-V LVTTL       :         : 1         : N              
+direccionASaltar[18]         : R5        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : R6        :        :                   :         : 1         :                
+direccionASaltar[27]         : R7        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[8]          : R8        : output : 3.3-V LVTTL       :         : 1         : N              
+direccionASaltar[16]         : R9        : output : 3.3-V LVTTL       :         : 1         : N              
+direccionASaltar[6]          : R10       : output : 3.3-V LVTTL       :         : 1         : N              
+direccionASaltar[1]          : R11       : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaInstruccion[15]        : R12       : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : R13       :        :                   :         : 1         :                
+GND*                         : R14       :        :                   :         : 1         :                
 GND                          : R15       : gnd    :                   :         :           :                
 GND*                         : R16       :        :                   :         : 1         :                
 GND                          : T1        : gnd    :                   :         :           :                
-pruebaDatoSalida[2]          : T2        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : T2        :        :                   :         : 1         :                
 VCCIO1                       : T3        : power  :                   : 3.3V    : 1         :                
-selMux5db                    : T4        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[29]         : T4        : output : 3.3-V LVTTL       :         : 1         : N              
 GND*                         : T5        :        :                   :         : 1         :                
-direccionASaltar[19]         : T6        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : T7        :        :                   :         : 1         :                
-pruebaDatoSalida[8]          : T8        : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : T9        :        :                   :         : 1         :                
-direccionASaltar[3]          : T10       : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : T11       :        :                   :         : 1         :                
-pruebaDatoSalida[11]         : T12       : output : 3.3-V LVTTL       :         : 1         : N              
-GND*                         : T13       :        :                   :         : 1         :                
+pruebaInstruccion[8]         : T6        : output : 3.3-V LVTTL       :         : 1         : N              
+direccionASaltar[14]         : T7        : output : 3.3-V LVTTL       :         : 1         : N              
+GND*                         : T8        :        :                   :         : 1         :                
+pruebaDatoSalida[20]         : T9        : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[21]         : T10       : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaInstruccion[31]        : T11       : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaInstruccion[5]         : T12       : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaDatoSalida[4]          : T13       : output : 3.3-V LVTTL       :         : 1         : N              
 VCCIO1                       : T14       : power  :                   : 3.3V    : 1         :                
-pruebaInstruccion[0]         : T15       : output : 3.3-V LVTTL       :         : 1         : N              
+pruebaInstruccion[28]        : T15       : output : 3.3-V LVTTL       :         : 1         : N              
 GND                          : T16       : gnd    :                   :         :           :                
